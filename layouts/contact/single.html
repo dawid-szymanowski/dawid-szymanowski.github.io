@@ -6,7 +6,7 @@
   <dl class="cv-list wide contact-list">
     <dt>{{ i18n "email" }}</dt><dd><a href="mailto:{{ $owner.email }}">{{ $owner.email }}</a></dd>
     <dt>{{ i18n "postal_address" }}</dt><dd>{{ delimit $owner.address "<br>" | safeHTML }}</dd>
-    <dt>Profiles</dt><dd><a href="{{ $owner.orcid }}">ORCID</a> · <a href="{{ $owner.scholar }}">Google Scholar</a>{{ with $owner.bluesky }} · Bluesky: <a href="https://bsky.app/profile/{{ . }}">@{{ . }}</a>{{ end }}</dd>
+    {{ with $owner.bluesky }}<dt>Bluesky</dt><dd><a href="https://bsky.app/profile/{{ . }}">@{{ . }}</a></dd>{{ end }}
   </dl>
   <div class="prose">{{ .Content }}</div>
 </article>
