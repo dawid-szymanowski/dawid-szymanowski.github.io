@@ -8,6 +8,19 @@ sys.path.insert(0, os.path.dirname(__file__))
 from pubs_data import PUBS, THESIS, UNDER_REVIEW
 from talks_data import TALKS
 from keywords import VOCAB, KEYWORDS
+from abstracts_extra import ABSTRACTS as EXTRA_ABSTRACTS
+
+# Plain-text typography for abstracts: isotope mass numbers, km2/km3, common oxides, 10^-n.
+_SUP = str.maketrans("0123456789", "⁰¹²³⁴⁵⁶⁷⁸⁹")
+_SUB = str.maketrans("0123456789", "₀₁₂₃₄₅₆₇₈₉")
+_ISO = re.compile(r"(?<![A-Za-z0-9.,])(?<!\d[–-])(\d{2,3})(Pb|U|Ar|Sr|Nd|Hf|Lu|Th|Ti|O|C)\b")
+_OX = re.compile(r"\b(SiO2|TiO2|CO2|UO2|H2O|K2O|Na2O|Al2O3|Fe2O3|P2O5|ZrO2)\b")
+def typo(a):
+    a = _ISO.sub(lambda m: m.group(1).translate(_SUP) + m.group(2), a)
+    a = re.sub(r"\bkm([23])\b", lambda m: "km" + m.group(1).translate(_SUP), a)
+    a = _OX.sub(lambda m: m.group(0).translate(_SUB), a)
+    a = re.sub(r"(?<![\d.])10−(\d{1,2})\b", lambda m: "10⁻" + m.group(1).translate(_SUP), a)
+    return a
 
 SITE = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 OWNER = "Dawid Szymanowski"
@@ -102,7 +115,8 @@ def pub_md(p, slug, ptype, venue_str, date, weight=None):
     fm = ["---", f"title: {yq(p['title'])}", f"date: {date}", f"authors: {ylist(p['authors'])}",
           f"publication_types: [{yq(ptype)}]", f"publication: {yq(venue_str)}"]
     if p.get("doi"): fm.append(f"doi: {yq(p['doi'])}")
-    if p.get("abstract"): fm.append(f"abstract: {yq(p['abstract'])}")
+    abstract = p.get("abstract") or EXTRA_ABSTRACTS.get(p.get("doi"))
+    if abstract: fm.append(f"abstract: {yq(typo(abstract))}")
     links = []
     if p.get("doi"):
         links.append(("Preprint" if p.get("status") == "under_review" else "Publisher's Version", "https://doi.org/" + p["doi"]))

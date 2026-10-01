@@ -50,4 +50,4 @@ A playbook for anyone (human or AI) maintaining this site. Read before changing 
 ## Known limitations at handover
 
 - No publisher cover images (the build environment could not download them). Drop `featured.jpg` next to an `index.md` to add one.
-- Several abstracts are missing because Crossref does not carry them; add `abstract:` by hand where wanted.
+- Abstracts that Crossref does not carry were added by hand from the publisher pages (kept in `tools/abstracts_extra.py` for the record). Isotope mass numbers, km², km³ and common oxides in abstracts are written with Unicode super/subscripts because abstracts are rendered as plain text.

@@ -783,18 +783,18 @@
   "given": "Oscar",
   "key": "laurent"
  },
- "Hao-Yang Lee": {
-  "slug": "hao-yang-lee",
-  "short": "Lee H.-Y.",
-  "family": "Lee",
-  "given": "Hao-Yang",
-  "key": "lee"
- },
  "Daniel W. J. Lee": {
   "slug": "daniel-w-j-lee",
   "short": "Lee D.W.J.",
   "family": "Lee",
   "given": "Daniel W. J.",
+  "key": "lee"
+ },
+ "Hao-Yang Lee": {
+  "slug": "hao-yang-lee",
+  "short": "Lee H.-Y.",
+  "family": "Lee",
+  "given": "Hao-Yang",
   "key": "lee"
  },
  "Marcelo Leppe": {

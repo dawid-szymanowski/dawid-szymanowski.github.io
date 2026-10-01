@@ -1,5 +1,5 @@
 ---
-title: "Zircon geochronology and geochemical constraints on the geometry and solidification timescales of the Dufek layered mafic intrusion, Antarctica"
+title: "Zircon geochronology constraints on the geometry and solidification timescales of the Dufek layered mafic intrusion, Antarctica"
 date: 2026-09-25
 authors: ["Jill A. VanTongeren", "Dawid Szymanowski", "Aidan Taylor", "Blair Schoene"]
 publication_types: ["journal_article"]
