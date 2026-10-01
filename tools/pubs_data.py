@@ -2,11 +2,6 @@
 # area keys: magma, methods, refmat, lip, ore, moon
 
 PUBS = [
-dict(n=54, doi="10.1111/ggr.70067", date="2026-01-01",
-  title="SC-550: A sintered calcite reference material for in situ U–Pb geochronology",
-  authors=["Lorenzo Tavazzani","N. Kueter","Dawid Szymanowski","F. Marxer","I. V. Akker","Marcel Guillong","M. Chiaradia","Yannick Buret"],
-  journal="Geostandards and Geoanalytical Research", notes="Tavazzani, Kueter and Szymanowski contributed equally.",
-  areas=["refmat"], tags=["carbonate geochronology","reference materials","LA-ICP-MS","U–Pb geochronology"]),
 dict(n=53, doi="10.1093/petrology/egag084", date="2026-09-25",
   title="Zircon geochronology and geochemical constraints on the geometry and solidification timescales of the Dufek layered mafic intrusion, Antarctica",
   authors=["Jill A. VanTongeren","Dawid Szymanowski","Aidan Taylor","Blair Schoene"],
@@ -304,6 +299,12 @@ THESIS = dict(doi="10.3929/ethz-b-000313374", date="2018-01-01",
   areas=["magma"], tags=["Kneeling Nun Tuff","petrochronology","magma reservoirs","zircon","titanite"])
 
 UNDER_REVIEW = [
+dict(slug="sc-550-sintered-calcite-reference-material-situ-u", doi="10.22541/essoar.15006492/v1", date="2026-07-23",
+  title="SC-550: A sintered calcite reference material for in situ U–Pb geochronology",
+  authors=["Lorenzo Tavazzani","Nico Kueter","Dawid Szymanowski","Felix Marxer","Ismay Vénice Akker","Marcel Guillong","Massimo Chiaradia","Yannick Buret"],
+  venue="Geostandards and Geoanalytical Research, preprint on ESSOAr", notes="Tavazzani, Kueter and Szymanowski contributed equally.",
+  areas=["refmat"], tags=["carbonate geochronology","reference materials","LA-ICP-MS","U–Pb geochronology"],
+  abstract="The accuracy and precision of in situ U-Pb geochronology of carbonates is limited by the intrinsic isotopic heterogeneity of natural reference materials (RMs). Here we present a new, microcrystalline calcite material – SC-550 (Sintered Calcite 550 °C) – with element mass fraction, Sr and U/Pb isotopic ratios and ablation behaviour comparable to that of a natural carbonate. A microbial limestone is first milled to nano-sized particles and then sintered at high pressure and temperature using an internally heated pressure vessel (IHPV) apparatus. Sample heterogeneity is removed through milling, while textural coarsening is aimed at generating ablation behaviour like that of natural calcite materials. Ideal synthesis conditions were achieved at 500 MPa, 550 °C, and 24 h, where the material is texturally and compositionally homogeneous at the microscale (10s of µm). Inter- and intra-experimental element mass fraction homogeneity is determined using EPMA (Ca mass fraction) and LA-ICP-MS analyses in two laboratories using static spot analyses and area mapping. The results for elements relevant for environmental and paleoclimate applications show relative standard deviation (RSD) values in the range of 5-10%. The 87Sr/86Sr ratio of the starting nanoparticulate powder is determined by solution MC-ICP-MS as 0.708104 ± 0.000002 (2s) and the Sr isotopic micro-homogeneity in experimental charges is confirmed by LA-MC-ICP-MS. The U–Pb isotopic ratios of the nanoparticulate powder determined by ID-TIMS are 207Pb/206Pb = 0.66226 ± 0.00012 (2s) and 238U/206Pb = 4.6244 ± 0.0057 (2s). Tests of U/Pb ratio homogeneity in experimental charges by LA-ICP-MS show < 0.6% variation (RSD) for 207Pb/206Pb and < 3% variation for 238U/206Pb. The suitability of the sintered calcite material as primary RM for U-Pb geochronology of carbonates is confirmed by testing ablation and laser induced fractionation behaviour compared to natural carbonates and reproducing published dates within uncertainty limit for a set of natural calcite materials."),
 dict(slug="paleoproterozoic-breakup-mt-weld-carbonatite", marker="phd",
   title="Paleoproterozoic continental breakup triggered REE-rich Mt Weld carbonatite magmatism",
   authors=["A. O. Vicentini","D. Fougerouse","U. Kirscher","H. K. H. Olierook","A. K. Schmitt","Dawid Szymanowski","B. V. Ribeiro","L. S. Doucet","P. D. Kinny","A. M. Santos","A. P. Deditius"],

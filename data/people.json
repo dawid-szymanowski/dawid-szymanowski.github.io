@@ -6,11 +6,11 @@
   "given": "Adam B.",
   "key": "abersteiner"
  },
- "I. V. Akker": {
-  "slug": "i-v-akker",
+ "Ismay Vénice Akker": {
+  "slug": "ismay-venice-akker",
   "short": "Akker I.V.",
   "family": "Akker",
-  "given": "I. V.",
+  "given": "Ismay Vénice",
   "key": "akker"
  },
  "Yuri Amelin": {
@@ -237,11 +237,11 @@
   "given": "Xi",
   "key": "chen"
  },
- "M. Chiaradia": {
-  "slug": "m-chiaradia",
+ "Massimo Chiaradia": {
+  "slug": "massimo-chiaradia",
   "short": "Chiaradia M.",
   "family": "Chiaradia",
-  "given": "M.",
+  "given": "Massimo",
   "key": "chiaradia"
  },
  "Matthew A. Coble": {
@@ -741,11 +741,11 @@
   "given": "Andreas",
   "key": "kronz"
  },
- "N. Kueter": {
-  "slug": "n-kueter",
+ "Nico Kueter": {
+  "slug": "nico-kueter",
   "short": "Kueter N.",
   "family": "Kueter",
-  "given": "N.",
+  "given": "Nico",
   "key": "kueter"
  },
  "Duje Kukoč": {
@@ -916,11 +916,11 @@
   "given": "Sava",
   "key": "markovic"
  },
- "F. Marxer": {
-  "slug": "f-marxer",
+ "Felix Marxer": {
+  "slug": "felix-marxer",
   "short": "Marxer F.",
   "family": "Marxer",
-  "given": "F.",
+  "given": "Felix",
   "key": "marxer"
  },
  "Stanisław Mazur": {
@@ -1651,18 +1651,18 @@
   "given": "Fu-Yuan",
   "key": "wu"
  },
- "Chuan Yang": {
-  "slug": "chuan-yang",
-  "short": "Yang C.",
-  "family": "Yang",
-  "given": "Chuan",
-  "key": "yang"
- },
  "Yue-Heng Yang": {
   "slug": "yue-heng-yang",
   "short": "Yang Y.-H.",
   "family": "Yang",
   "given": "Yue-Heng",
+  "key": "yang"
+ },
+ "Chuan Yang": {
+  "slug": "chuan-yang",
+  "short": "Yang C.",
+  "family": "Yang",
+  "given": "Chuan",
   "key": "yang"
  },
  "Qing-Zhu Yin": {
