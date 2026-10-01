@@ -18,7 +18,7 @@
     </section>
     <section>
       <h2 class="side-label">{{ i18n "employment" }}</h2>
-      <ul>{{ range $bio.employment }}<li>{{ . }}</li>{{ end }}</ul>
+      <ul>{{ range $bio.employment }}<li>{{ replaceRE `(\d{4}–\d{4})` `<span class="nowrap">$1</span>` (. | htmlEscape) | safeHTML }}</li>{{ end }}</ul>
     </section>
   </aside>
 </div>
