@@ -11,6 +11,6 @@ links:
     url: "https://doi.org/10.5194/egusphere-2026-4403"
 research_areas: ["refmat", "methods"]
 tags: ["carbonate geochronology", "ID-TIMS", "LA-ICP-MS", "U–Pb geochronology"]
-keywords: ["Carbonate", "ID-TIMS", "LA-ICPMS", "Analytical methods"]
+keywords: ["ID-TIMS", "LA-ICPMS", "Carbonate", "Analytical methods"]
 status: under_review
 ---

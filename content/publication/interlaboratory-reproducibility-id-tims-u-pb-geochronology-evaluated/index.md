@@ -11,5 +11,5 @@ links:
     url: "https://doi.org/10.5194/gchron-7-409-2025"
 research_areas: ["methods"]
 tags: ["ID-TIMS", "interlaboratory reproducibility", "EARTHTIME", "U–Pb geochronology"]
-keywords: ["ID-TIMS", "Zircon", "Analytical methods"]
+keywords: ["Zircon", "ID-TIMS", "Analytical methods"]
 ---

@@ -10,5 +10,5 @@ links:
     url: "https://doi.org/10.1130/g45361.1"
 research_areas: ["magma"]
 tags: ["plutons", "magma emplacement", "Chile", "zircon"]
-keywords: ["Pluton", "Zircon"]
+keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Pluton"]
 ---

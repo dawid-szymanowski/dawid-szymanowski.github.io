@@ -11,5 +11,5 @@ links:
     url: "https://doi.org/10.1093/petrology/egag084"
 research_areas: ["lip"]
 tags: ["layered intrusions", "zircon", "Antarctica", "ID-TIMS"]
-keywords: ["LIP", "Zircon", "ID-TIMS", "Hf isotopes", "Pluton"]
+keywords: ["Zircon", "ID-TIMS", "LIP", "Pluton", "Hf isotopes"]
 ---

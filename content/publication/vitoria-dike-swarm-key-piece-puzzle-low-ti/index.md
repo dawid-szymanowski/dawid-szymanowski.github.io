@@ -10,5 +10,5 @@ links:
     url: "https://doi.org/10.1016/j.lithos.2025.108360"
 research_areas: ["lip"]
 tags: ["large igneous provinces", "dike swarms", "South America"]
-keywords: ["LIP"]
+keywords: ["LA-ICPMS", "LIP"]
 ---

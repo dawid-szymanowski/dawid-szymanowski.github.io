@@ -14,5 +14,5 @@ links:
     url: "https://ethz.ch/de/news-und-veranstaltungen/eth-news/news/2017/10/magmakammer-mit-schwammstruktur.html"
 research_areas: ["magma"]
 tags: ["Kneeling Nun Tuff", "supereruptions", "petrochronology", "magma reservoirs", "zircon", "titanite"]
-keywords: ["Zircon", "ID-TIMS", "Magma reservoir", "Large eruption", "Caldera", "Petrochronology"]
+keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Magma reservoir", "Large eruption", "Caldera"]
 ---

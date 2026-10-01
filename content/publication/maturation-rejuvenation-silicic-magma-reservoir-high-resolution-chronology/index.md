@@ -10,5 +10,5 @@ links:
     url: "https://doi.org/10.1016/j.epsl.2019.01.007"
 research_areas: ["magma"]
 tags: ["Kneeling Nun Tuff", "supereruptions", "petrochronology", "magma reservoirs", "zircon"]
-keywords: ["Zircon", "ID-TIMS", "Magma reservoir", "Large eruption", "Caldera", "Petrochronology"]
+keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Magma reservoir", "Large eruption", "Caldera"]
 ---

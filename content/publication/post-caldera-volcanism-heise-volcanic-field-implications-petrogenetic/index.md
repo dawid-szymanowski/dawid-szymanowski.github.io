@@ -10,5 +10,5 @@ links:
     url: "https://doi.org/10.1093/petrology/egx007"
 research_areas: ["magma"]
 tags: ["Heise volcanic field", "Yellowstone–Snake River Plain", "caldera", "petrogenesis"]
-keywords: ["Caldera", "Zircon", "Magma reservoir", "Yellowstone–Snake River Plain"]
+keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Magma reservoir", "Large eruption", "Caldera", "Yellowstone–Snake River Plain"]
 ---

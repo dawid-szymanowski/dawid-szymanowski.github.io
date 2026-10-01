@@ -10,5 +10,5 @@ links:
     url: "https://doi.org/10.1016/j.gr.2022.12.015"
 research_areas: ["magma"]
 tags: ["Pannonian Basin", "ignimbrite", "explosive eruptions", "Miocene"]
-keywords: ["Zircon", "Large eruption", "Pannonian Basin"]
+keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Magma reservoir", "Large eruption", "Hf isotopes", "Pannonian Basin"]
 ---

@@ -10,5 +10,5 @@ links:
     url: "https://doi.org/10.1039/d1ja00116g"
 research_areas: ["methods"]
 tags: ["ID-TIMS", "interlaboratory reproducibility", "EARTHTIME", "U–Pb geochronology"]
-keywords: ["ID-TIMS", "Zircon", "Analytical methods"]
+keywords: ["Zircon", "ID-TIMS", "Analytical methods"]
 ---

@@ -10,5 +10,5 @@ links:
     url: "https://doi.org/10.1016/j.chemgeo.2020.119830"
 research_areas: ["magma"]
 tags: ["U–Th dating", "zircon", "explosive eruptions", "Greece"]
-keywords: ["Zircon", "Caldera"]
+keywords: ["Zircon", "LA-ICPMS", "Magma reservoir", "Caldera"]
 ---

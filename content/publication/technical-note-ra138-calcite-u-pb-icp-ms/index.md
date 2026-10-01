@@ -11,5 +11,5 @@ links:
     url: "https://doi.org/10.5194/gchron-6-465-2024"
 research_areas: ["refmat"]
 tags: ["carbonate geochronology", "reference materials", "LA-ICP-MS", "U–Pb geochronology"]
-keywords: ["Carbonate", "Reference material", "LA-ICPMS", "ID-TIMS"]
+keywords: ["ID-TIMS", "LA-ICPMS", "Carbonate", "Reference material"]
 ---

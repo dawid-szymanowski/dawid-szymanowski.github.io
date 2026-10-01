@@ -10,5 +10,5 @@ links:
     url: "https://doi.org/10.1021/acsearthspacechem.3c00093"
 research_areas: ["moon", "methods"]
 tags: ["Moon", "Lu–Hf", "zircon", "isotope geochemistry"]
-keywords: ["Moon", "Zircon", "Hf isotopes", "Analytical methods"]
+keywords: ["Zircon", "Moon", "Analytical methods", "Hf isotopes"]
 ---

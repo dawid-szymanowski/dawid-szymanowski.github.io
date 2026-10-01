@@ -10,5 +10,5 @@ links:
     url: "https://doi.org/10.1016/j.epsl.2015.01.041"
 research_areas: ["magma"]
 tags: ["Yellowstone–Snake River Plain", "intermediate magmas", "petrogenesis"]
-keywords: ["Magma reservoir", "Yellowstone–Snake River Plain"]
+keywords: ["LA-ICPMS", "Magma reservoir", "Large eruption", "Caldera", "Yellowstone–Snake River Plain"]
 ---

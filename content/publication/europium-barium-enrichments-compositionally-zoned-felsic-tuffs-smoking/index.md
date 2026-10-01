@@ -10,5 +10,5 @@ links:
     url: "https://doi.org/10.1016/j.epsl.2020.116251"
 research_areas: ["magma"]
 tags: ["cumulate melting", "zoned tuffs", "magma reservoirs"]
-keywords: ["Magma reservoir", "Large eruption"]
+keywords: ["LA-ICPMS", "Magma reservoir", "Large eruption"]
 ---

@@ -10,5 +10,5 @@ links:
     url: "https://doi.org/10.1016/j.chemgeo.2022.121242"
 research_areas: ["magma"]
 tags: ["explosive eruptions", "Gran Canaria", "volcanic rocks"]
-keywords: ["Large eruption", "Magma reservoir"]
+keywords: ["LA-ICPMS", "Magma reservoir", "Large eruption"]
 ---

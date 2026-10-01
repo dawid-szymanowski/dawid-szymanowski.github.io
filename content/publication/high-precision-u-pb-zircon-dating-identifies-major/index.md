@@ -18,5 +18,5 @@ links:
 author_notes: "Barboni and Szymanowski contributed equally."
 research_areas: ["moon", "methods"]
 tags: ["Moon", "zircon", "ID-TIMS", "impacts"]
-keywords: ["Moon", "Zircon", "ID-TIMS", "Hf isotopes"]
+keywords: ["Zircon", "ID-TIMS", "Moon", "Magma reservoir", "Hf isotopes"]
 ---

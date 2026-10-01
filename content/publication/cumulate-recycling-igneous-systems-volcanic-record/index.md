@@ -10,5 +10,5 @@ links:
     url: "https://doi.org/10.1016/j.lithos.2023.107284"
 research_areas: ["magma"]
 tags: ["cumulate melting", "magma reservoirs", "volcanic rocks"]
-keywords: ["Magma reservoir", "Large eruption"]
+keywords: ["LA-ICPMS", "Magma reservoir", "Large eruption"]
 ---

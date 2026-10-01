@@ -11,5 +11,5 @@ links:
     url: "https://doi.org/10.1111/ggr.12239"
 research_areas: ["refmat"]
 tags: ["reference materials", "zircon", "SIMS", "Ti-in-zircon"]
-keywords: ["Zircon", "Reference material"]
+keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Reference material"]
 ---

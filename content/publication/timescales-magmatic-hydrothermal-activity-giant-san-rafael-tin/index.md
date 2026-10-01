@@ -10,5 +10,5 @@ links:
     url: "https://doi.org/10.1016/j.epsl.2025.119624"
 research_areas: ["ore"]
 tags: ["tin deposits", "zircon", "magmatic-hydrothermal", "Peru"]
-keywords: ["Ore", "Zircon", "ID-TIMS"]
+keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Magma reservoir", "Ore deposit"]
 ---

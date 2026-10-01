@@ -11,5 +11,5 @@ links:
     url: "https://doi.org/10.1130/b37321.1"
 research_areas: ["methods"]
 tags: ["ID-TIMS", "data reporting", "EARTHTIME", "U–Pb geochronology"]
-keywords: ["ID-TIMS", "Zircon", "Analytical methods"]
+keywords: ["Zircon", "ID-TIMS", "Analytical methods"]
 ---

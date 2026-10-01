@@ -11,5 +11,5 @@ links:
     url: "https://doi.org/10.1130/G50181.1"
 research_areas: ["lip"]
 tags: ["large igneous provinces", "CAMP", "silicic magmatism", "U–Pb geochronology"]
-keywords: ["LIP", "Zircon", "ID-TIMS", "Pluton", "Earth history"]
+keywords: ["Zircon", "ID-TIMS", "LIP", "Earth history", "Magma reservoir", "Pluton"]
 ---
