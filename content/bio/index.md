@@ -1,11 +1,8 @@
 ---
 title: "Bio"
 ---
-<!-- DRAFT for Dawid to review: the form's "Full bio" field was a placeholder, so this narrative
-     was drafted from the C.V. Replace it with your own text whenever you like. -->
+I am a geochemist and geochronologist at ETH Zürich, where I have been an established researcher (Oberassistent) in the Institute of Geochemistry and Petrology since 2022. My work focuses on constraining the dates and rates of geological processes, originally in the high-temperature realm of magma reservoirs, but increasingly across a variety of lower-temperature settings, geological problems, and locations around the world. My main tool for this work is high-precision U–Pb geochronology by isotope dilution thermal ionisation mass spectrometry (ID-TIMS), and I am fortunate to manage a specialised laboratory at ETH Zürich dedicated to this technique.
 
-Dawid Szymanowski is a geochemist and geochronologist at ETH Zürich, where he has been a researcher (Oberassistent) in the Institute of Geochemistry and Petrology since 2022. His work combines high-precision U–Pb dating with the trace-element and isotopic record of zircon and other accessory minerals to reconstruct the timescales of magmatic processes — how large silicic magma bodies are assembled in the crust, how long they persist, and what triggers their eruption.
+Much of my research is directed towards developing a better understanding of magmatic systems, magmatic and hydrothermal ore deposits, and the geochemical tools that can help address these topics. I also spend considerable time on fundamental research aimed at pushing the analytical limits of geochronology, as well as developing and applying new mineral chronometers.
 
-He studied geology at the University of Warsaw (BSc 2012) and earth sciences at ETH Zürich (MSc 2014; Dr. sc. 2019). His doctoral work used zircon and titanite petrochronology of the Kneeling Nun Tuff and the Yellowstone–Snake River Plain volcanic province to show that large magma reservoirs can be stored for long periods close to their solidus before being rejuvenated shortly ahead of eruption. From 2019 to 2022 he was a researcher and manager of the radiogenic isotope (TIMS) laboratory in the Department of Geosciences at Princeton University.
-
-Alongside applications to volcanic systems, large igneous provinces, ore deposits and the Moon, he works on the analytical side of geochronology: evaluating new mass-spectrometer amplifier technology, coordinating an EARTHTIME interlaboratory comparison of ID-TIMS U–Pb dates, and developing reference materials for in situ dating of carbonates and other minerals. He teaches the MSc course Advanced Geochronology at ETH Zürich.
+Please feel free to get in touch if you are interested in collaborating.

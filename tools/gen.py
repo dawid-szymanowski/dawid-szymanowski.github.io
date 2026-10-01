@@ -129,7 +129,7 @@ def pub_md(p, slug, ptype, venue_str, date, weight=None):
 # ---- publications ----
 legacy = {}
 for p in PUBS:
-    slug = uniq(slugify(p["title"]))
+    slug = uniq(p.get("slug") or slugify(p["title"]))
     v = venue(p)
     write(f"{C}/publication/{slug}/index.md", pub_md(p, slug, "journal_article", v, p["date"]))
     for a in p["authors"]: all_people[a] = all_people.get(a, 0) + 1
