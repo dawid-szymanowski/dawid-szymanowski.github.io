@@ -1,7 +1,7 @@
 ---
 title: "Cumulate recycling in igneous systems: The volcanic record"
 date: 2023-11-01
-authors: ["Ben S. Ellis", "John A. Wolff", "Dawid Szymanowski", "Francesca Forni", "E. A. Cortes-Calderon", "Olivier Bachmann"]
+authors: ["Ben S. Ellis", "John A. Wolff", "Dawid Szymanowski", "Francesca Forni", "E. Alejandro Cortes-Calderon", "Olivier Bachmann"]
 publication_types: ["journal_article"]
 publication: "Lithos 456–457, 107284"
 doi: "10.1016/j.lithos.2023.107284"

@@ -1,7 +1,7 @@
 ---
 title: "Evaluating the potential of rhyolitic glass as a lithium source for brine deposits"
 date: 2022-01-01
-authors: ["Ben S. Ellis", "Dawid Szymanowski", "C. Harris", "P. M. E. Tollan", "J. Neukampf", "Marcel Guillong", "E. A. Cortes-Calderon", "Olivier Bachmann"]
+authors: ["Ben S. Ellis", "Dawid Szymanowski", "Chris Harris", "P. M. E. Tollan", "J. Neukampf", "Marcel Guillong", "E. Alejandro Cortes-Calderon", "Olivier Bachmann"]
 publication_types: ["journal_article"]
 publication: "Economic Geology 117(1), 91–105"
 doi: "10.5382/econgeo.4866"

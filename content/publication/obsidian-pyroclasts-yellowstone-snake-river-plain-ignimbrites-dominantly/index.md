@@ -1,7 +1,7 @@
 ---
 title: "Obsidian pyroclasts in the Yellowstone–Snake River Plain ignimbrites are dominantly juvenile in origin"
 date: 2021-03-29
-authors: ["L. R. Monnereau", "Ben S. Ellis", "Dawid Szymanowski", "Olivier Bachmann", "Marcel Guillong"]
+authors: ["Lena R. Monnereau", "Ben S. Ellis", "Dawid Szymanowski", "Olivier Bachmann", "Marcel Guillong"]
 publication_types: ["journal_article"]
 publication: "Bulletin of Volcanology 83, 27"
 doi: "10.1007/s00445-021-01448-1"

@@ -20,11 +20,11 @@
   "given": "Yuri",
   "key": "amelin"
  },
- "G. D. M. Andrews": {
-  "slug": "g-d-m-andrews",
+ "Graham D. M. Andrews": {
+  "slug": "graham-d-m-andrews",
   "short": "Andrews G.D.M.",
   "family": "Andrews",
-  "given": "G. D. M.",
+  "given": "Graham D. M.",
   "key": "andrews"
  },
  "Eliel S. C. Anttila": {
@@ -104,11 +104,11 @@
   "given": "Asish R.",
   "key": "basu"
  },
- "N. B. Baumann": {
-  "slug": "n-b-baumann",
+ "Nils B. Baumann": {
+  "slug": "nils-b-baumann",
   "short": "Baumann N.B.",
   "family": "Baumann",
-  "given": "N. B.",
+  "given": "Nils B.",
   "key": "baumann"
  },
  "Christoph Beier": {
@@ -118,11 +118,11 @@
   "given": "Christoph",
   "key": "beier"
  },
- "I. N. Bindeman": {
-  "slug": "i-n-bindeman",
+ "Ilya N. Bindeman": {
+  "slug": "ilya-n-bindeman",
   "short": "Bindeman I.N.",
   "family": "Bindeman",
-  "given": "I. N.",
+  "given": "Ilya N.",
   "key": "bindeman"
  },
  "Nicolas Blanco": {
@@ -272,11 +272,11 @@
   "given": "James N.",
   "key": "connelly"
  },
- "B. Cordonnier": {
-  "slug": "b-cordonnier",
+ "Benoît Cordonnier": {
+  "slug": "benoit-cordonnier",
   "short": "Cordonnier B.",
   "family": "Cordonnier",
-  "given": "B.",
+  "given": "Benoît",
   "key": "cordonnier"
  },
  "Fernando Corfu": {
@@ -286,11 +286,11 @@
   "given": "Fernando",
   "key": "corfu"
  },
- "E. A. Cortes-Calderon": {
-  "slug": "e-a-cortes-calderon",
+ "E. Alejandro Cortes-Calderon": {
+  "slug": "e-alejandro-cortes-calderon",
   "short": "Cortes-Calderon E.A.",
   "family": "Cortes-Calderon",
-  "given": "E. A.",
+  "given": "E. Alejandro",
   "key": "cortescalderon"
  },
  "James L. Crowley": {
@@ -510,11 +510,11 @@
   "given": "Marcel",
   "key": "guillong"
  },
- "F. Gutiérrez": {
-  "slug": "f-gutierrez",
+ "Francisco Gutiérrez": {
+  "slug": "francisco-gutierrez",
   "short": "Gutiérrez F.",
   "family": "Gutiérrez",
-  "given": "F.",
+  "given": "Francisco",
   "key": "gutierrez"
  },
  "Szabolcs Harangi": {
@@ -524,11 +524,11 @@
   "given": "Szabolcs",
   "key": "harangi"
  },
- "C. Harris": {
-  "slug": "c-harris",
+ "Chris Harris": {
+  "slug": "chris-harris",
   "short": "Harris C.",
   "family": "Harris",
-  "given": "C.",
+  "given": "Chris",
   "key": "harris"
  },
  "Folkmar Hauff": {
@@ -979,11 +979,11 @@
   "given": "Michael T.",
   "key": "mohr"
  },
- "L. R. Monnereau": {
-  "slug": "l-r-monnereau",
+ "Lena R. Monnereau": {
+  "slug": "lena-r-monnereau",
   "short": "Monnereau L.R.",
   "family": "Monnereau",
-  "given": "L. R.",
+  "given": "Lena R.",
   "key": "monnereau"
  },
  "T. Muedi": {
@@ -993,18 +993,18 @@
   "given": "T.",
   "key": "muedi"
  },
- "Inigo A. Müller": {
-  "slug": "inigo-a-muller",
-  "short": "Müller I.A.",
-  "family": "Müller",
-  "given": "Inigo A.",
-  "key": "muller"
- },
  "Samuel Müller": {
   "slug": "samuel-muller",
   "short": "Müller S.",
   "family": "Müller",
   "given": "Samuel",
+  "key": "muller"
+ },
+ "Inigo A. Müller": {
+  "slug": "inigo-a-muller",
+  "short": "Müller I.A.",
+  "family": "Müller",
+  "given": "Inigo A.",
   "key": "muller"
  },
  "Joshua Murray": {
@@ -1105,11 +1105,11 @@
   "given": "Maria",
   "key": "ovtcharova"
  },
- "M. A. Parada": {
-  "slug": "m-a-parada",
+ "Miguel A. Parada": {
+  "slug": "miguel-a-parada",
   "short": "Parada M.A.",
   "family": "Parada",
-  "given": "M. A.",
+  "given": "Miguel A.",
   "key": "parada"
  },
  "Natalia Pardo": {
@@ -1126,11 +1126,11 @@
   "given": "André N.",
   "key": "paul"
  },
- "I. Payacán": {
-  "slug": "i-payacan",
+ "Italo Payacán": {
+  "slug": "italo-payacan",
   "short": "Payacán I.",
   "family": "Payacán",
-  "given": "I.",
+  "given": "Italo",
   "key": "payacan"
  },
  "Maurizio Petrelli": {
@@ -1329,11 +1329,11 @@
   "given": "Max W.",
   "key": "schmidt"
  },
- "A. K. Schmitt": {
-  "slug": "a-k-schmitt",
+ "Axel K. Schmitt": {
+  "slug": "axel-k-schmitt",
   "short": "Schmitt A.K.",
   "family": "Schmitt",
-  "given": "A. K.",
+  "given": "Axel K.",
   "key": "schmitt"
  },
  "Mark D. Schmitz": {

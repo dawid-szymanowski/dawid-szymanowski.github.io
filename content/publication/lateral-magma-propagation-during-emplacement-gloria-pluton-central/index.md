@@ -1,7 +1,7 @@
 ---
 title: "Lateral magma propagation during the emplacement of La Gloria Pluton, central Chile"
 date: 2018-10-23
-authors: ["F. Gutiérrez", "I. Payacán", "Dawid Szymanowski", "Marcel Guillong", "Olivier Bachmann", "M. A. Parada"]
+authors: ["Francisco Gutiérrez", "Italo Payacán", "Dawid Szymanowski", "Marcel Guillong", "Olivier Bachmann", "Miguel A. Parada"]
 publication_types: ["journal_article"]
 publication: "Geology 46(12), 1051–1054"
 doi: "10.1130/g45361.1"
