@@ -1,5 +1,5 @@
 ---
-title: "ID–TIMS U–Pb geochronology at the 0.1‰ level using 10^13 Ω resistors and simultaneous U and 18O/16O isotope ratio determination for accurate UO2 interference correction"
+title: "ID–TIMS U–Pb geochronology at the 0.1‰ level using 10¹³ Ω resistors and simultaneous U and 18O/16O isotope ratio determination for accurate UO2 interference correction"
 date: 2017-03-01
 authors: ["Jörn-Frederik Wotzlaw", "Yannick Buret", "Simon J. E. Large", "Dawid Szymanowski", "Albrecht von Quadt"]
 publication_types: ["journal_article"]

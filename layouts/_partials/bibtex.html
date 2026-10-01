@@ -19,7 +19,7 @@
   {{- end -}}
 {{- end -}}
 {{- $journal := replaceRE `(,\s|\s+\d).*$` "" ($p.Params.publication | default "") -}}
-{{- $out := slice (printf "  title = {%s}" $p.Title) (printf "  author = {%s}" (delimit $names " and ")) (printf "  year = {%s}" ($p.Date.Format "2006")) -}}
+{{- $out := slice (printf "  title = {%s}" (replaceRE `(\d+)\^(\d+)` "$1$${}^{$2}$$" (replaceRE `(^|[^\p{L}\p{N}.])(\d{1,3})(Pb|U|Ar|Lu|Hf|O|Sr|Nd|Th|He|Be|C)\b` "$1$$^{$2}$$$3" $p.Title))) (printf "  author = {%s}" (delimit $names " and ")) (printf "  year = {%s}" ($p.Date.Format "2006")) -}}
 {{- if $isReview -}}
   {{- $out = $out | append (printf "  note = {%s}" $p.Params.publication) -}}
 {{- else -}}

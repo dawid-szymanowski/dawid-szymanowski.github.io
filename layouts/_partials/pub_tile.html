@@ -9,7 +9,7 @@
     {{- if not $isReview }}<span class="pub-badge">{{ $p.Date.Format "2006" }}</span>{{ end }}
     <span class="pub-badge">{{ if $isReview }}{{ i18n "badge_preprint" }}{{ else }}{{ i18n "badge_article" }}{{ end }}</span>
   </div>
-  <h2 class="pub-card-title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2>
+  <h2 class="pub-card-title"><a href="{{ $p.RelPermalink }}">{{ partial "chem.html" $p.Title }}</a></h2>
   <p class="pub-authors">{{ partial "author_line.html" (dict "authors" ($p.Params.authors | default slice) "max" 10 "link" false "full" true) }}</p>
   {{- with $p.Params.publication }}<p class="pub-venue"><em class="journal">{{ replaceRE `(,\s|\s+\d).*$` "" . }}</em>{{ with findRE `(,\s|\s+\d).*$` . 1 }}{{ index . 0 }}{{ end }}{{ if not $isReview }}, {{ $p.Date.Format "2006" }}{{ end }}.</p>{{ end }}
 </div>
@@ -28,7 +28,7 @@
 {{- end }}
 <div class="pub-panel" id="{{ $id }}-citation" hidden>
   <p class="pub-panel-head">{{ i18n "citation" }}</p>
-  <p class="pub-cite-text">{{ partial "author_line.html" (dict "authors" ($p.Params.authors | default slice) "max" 0 "link" false) }}{{ if not $isReview }} ({{ $p.Date.Format "2006" }}).{{ end }} {{ $p.Title }}{{ if not (findRE `[.?!]$` $p.Title) }}.{{ end }} <em class="journal">{{ replaceRE `(,\s|\s+\d).*$` "" $p.Params.publication }}</em>{{ with findRE `(,\s|\s+\d).*$` $p.Params.publication 1 }}{{ index . 0 }}{{ end }}.{{ with $p.Params.doi }} doi:{{ . }}{{ end }}</p>
+  <p class="pub-cite-text">{{ partial "author_line.html" (dict "authors" ($p.Params.authors | default slice) "max" 0 "link" false) }}{{ if not $isReview }} ({{ $p.Date.Format "2006" }}).{{ end }} {{ partial "chem.html" $p.Title }}{{ if not (findRE `[.?!]$` $p.Title) }}.{{ end }} <em class="journal">{{ replaceRE `(,\s|\s+\d).*$` "" $p.Params.publication }}</em>{{ with findRE `(,\s|\s+\d).*$` $p.Params.publication 1 }}{{ index . 0 }}{{ end }}.{{ with $p.Params.doi }} doi:{{ . }}{{ end }}</p>
   <pre class="pub-bibtex"><code>{{ $bib }}</code></pre>
   <button class="pub-btn" type="button" data-copy>{{ i18n "copy_bibtex" }}</button>
 </div>

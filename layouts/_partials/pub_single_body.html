@@ -3,7 +3,7 @@
 {{- $parent := cond (eq .Section "talk") "talk" "publication" -}}
 <article class="container narrow pub-single">
   <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ "" | relURL }}">{{ i18n "home" }}</a> / <a href="{{ "publication/" | relURL }}{{ if eq .Section "talk" }}#presentations{{ end }}">{{ i18n "writings" }}</a> / <span>{{ .Title | truncate 60 }}</span></nav>
-  <h1 class="pub-title">{{ .Title }}</h1>
+  <h1 class="pub-title">{{ partial "chem.html" .Title }}</h1>
   <p class="pub-authors">{{ partial "author_line.html" (dict "authors" (.Params.authors | default slice) "max" 0 "link" false "full" true) }}</p>
   <p class="pub-meta">
     {{- with .Params.publication }}<span class="venue"><em class="journal">{{ replaceRE `(,\s|\s+\d).*$` "" . }}</em>{{ with findRE `(,\s|\s+\d).*$` . 1 }}{{ index . 0 }}{{ end }}</span>{{ end }}

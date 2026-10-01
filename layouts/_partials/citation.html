@@ -4,7 +4,7 @@
 <span class="cite">
   {{- partial "author_line.html" (dict "authors" ($p.Params.authors | default slice) "max" (.max | default 6) "link" false) -}}
   {{- if not $isReview }} ({{ $p.Date.Format "2006" }}).{{ end }}
-  <a class="cite-title" href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>{{ if not (findRE `[.?!]$` $p.Title) }}.{{ end }}
+  <a class="cite-title" href="{{ $p.RelPermalink }}">{{ partial "chem.html" $p.Title }}</a>{{ if not (findRE `[.?!]$` $p.Title) }}.{{ end }}
   {{- with $p.Params.publication }} <span class="venue"><em class="journal">{{ replaceRE `(,\s|\s+\d).*$` "" . }}</em>{{ with findRE `(,\s|\s+\d).*$` . 1 }}{{ index . 0 }}{{ end }}</span>{{ if not (findRE `[.)]$` .) }}.{{ end }}{{ end }}
   {{- if $p.Params.invited }} <span class="tag-invited">{{ i18n "invited" }}</span>{{ end }}
   {{- if .label }} <span class="kind">[{{ partial "kind_label.html" $p }}]</span>{{ end }}
