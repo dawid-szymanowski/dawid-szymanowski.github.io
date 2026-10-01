@@ -9,6 +9,8 @@ abstract: "Age determination of minerals using the U–Pb technique is widely us
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1039/d1ja00116g"
+  - name: "PDF"
+    url: "files/long-term-repeatability-interlaboratory-reproducibility-high-precision-id.pdf"
 research_areas: ["methods"]
 tags: ["ID-TIMS", "interlaboratory reproducibility", "EARTHTIME", "U–Pb geochronology"]
 keywords: ["Zircon", "ID-TIMS", "Analytical methods"]

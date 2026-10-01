@@ -9,6 +9,8 @@ abstract: "The Tokaj Mts. volcanism occurred in a thinning continental lithosphe
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1016/j.gr.2024.01.004"
+  - name: "PDF"
+    url: "files/mid-miocene-silicic-explosive-volcanism-tokaj-mts-eastern.pdf"
 research_areas: ["magma"]
 tags: ["Pannonian Basin", "explosive eruptions", "Miocene", "zircon"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Magma reservoir", "Large eruption", "Hf isotopes", "Pannonian Basin"]

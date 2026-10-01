@@ -9,6 +9,8 @@ abstract: "Zircons are found in extraterrestrial rocks from the Moon, Mars, and 
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1021/acsearthspacechem.3c00093"
+  - name: "PDF"
+    url: "files/methodologies-176lu-176hf-analysis-zircon-grains-moon-beyond.pdf"
 research_areas: ["moon", "methods"]
 tags: ["Moon", "Lu–Hf", "zircon", "isotope geochemistry"]
 keywords: ["Zircon", "Moon", "Analytical methods", "Hf isotopes"]

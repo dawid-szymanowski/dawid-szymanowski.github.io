@@ -9,6 +9,8 @@ abstract: "Crystallization of the lunar magma ocean yielded a chemically unique 
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1073/pnas.2413802121"
+  - name: "PDF"
+    url: "files/completion-lunar-magma-ocean-solidification-4-43-ga.pdf"
   - name: "Press release (UChicago News)"
     url: "https://news.uchicago.edu/story/lunar-rocks-help-scientists-pinpoint-when-moon-crystallized"
 research_areas: ["moon"]

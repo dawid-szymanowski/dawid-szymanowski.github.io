@@ -16,8 +16,11 @@
   {{- end }}
   {{- with .Params.author_notes }}<p class="pub-note">{{ . }}</p>{{ end }}
   {{- with .Params.links }}
+  {{- /* The PDF button, when there is one, comes first and is the filled (highlighted) button. */ -}}
+  {{- $pdf := where . "name" "PDF" -}}
+  {{- $ordered := $pdf | append (where . "name" "ne" "PDF") }}
   <p class="btn-row">
-    {{- range $i, $l := . }}
+    {{- range $i, $l := $ordered }}
     {{- $url := $l.url -}}
     {{- if not (findRE `^https?://` $url) }}{{ $url = $url | relURL }}{{ end -}}
     <a class="btn{{ if gt $i 0 }} secondary{{ end }}" href="{{ $url }}">{{ if eq $l.name "Publisher's Version" }}{{ i18n "publisher_version" }}{{ else }}{{ $l.name }}{{ end }}</a>
