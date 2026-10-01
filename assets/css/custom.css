@@ -135,7 +135,7 @@ main:focus { outline: none; }
 .view-citation { display: block !important; }
 .cite-title { font-weight: 600; color: var(--color-text); text-decoration: none; }
 .cite-title:hover { color: var(--color-link); text-decoration: underline; }
-.venue { font-style: italic; color: var(--color-text-muted); }
+.venue { color: var(--color-text-muted); }
 .owner { font-weight: 700; }
 .kind { font-size: 0.8rem; font-weight: 650; color: var(--color-accent); letter-spacing: 0.02em; }
 .tag-invited { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-accent); border: 1px solid currentColor; border-radius: 3px; padding: 0 5px; }
@@ -335,3 +335,6 @@ main:focus { outline: none; }
 .pub-abstract { margin: 0; line-height: 1.6; max-width: 52rem; }
 .pub-cite-text { margin: 0 0 10px; }
 .pub-bibtex { margin: 0 0 10px; padding: 10px 12px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 6px; font-size: 0.78rem; line-height: 1.45; overflow-x: auto; white-space: pre; }
+
+/* Journal names: bold italic in the accent colour */
+.journal { font-style: italic; font-weight: 700; color: var(--color-accent-ink); }

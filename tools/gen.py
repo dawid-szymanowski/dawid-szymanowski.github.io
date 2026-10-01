@@ -84,7 +84,7 @@ def write(path, text):
 if "--force" not in sys.argv:
     sys.exit("Refusing to overwrite content without --force (see docstring).")
 # reset generated sections
-for sec in ["publication", "talk", "authors"]:
+for sec in ["publication", "talk"]:
     shutil.rmtree(os.path.join(C, sec), ignore_errors=True)
 
 all_people = {}   # name -> count
@@ -184,11 +184,6 @@ LINKS = {
 people_data = {}
 student_names = [s for s, _ in STUDENTS]
 all_people.pop(OWNER, None)
-write(f"{C}/authors/_index.md", """---
-title: "People"
-summary: "Dawid’s research is highly collaborative. These are the students he has supervised and the colleagues he has published with."
----
-""")
 for name in sorted(set(list(all_people) + student_names), key=lambda x: ascii_fold(split_name(x)[0]).lower()):
     if name.startswith("EARTHTIME"):
         grp = "Collaborators"
@@ -203,7 +198,6 @@ for name in sorted(set(list(all_people) + student_names), key=lambda x: ascii_fo
     body = ""
     if name not in LINKS and not name.startswith("EARTHTIME"):
         body = "<!-- No external page verified for this person; add `website:` above if you know it. -->\n"
-    write(f"{C}/authors/{slug}/_index.md", "\n".join(fm) + body)
     fam, giv = split_name(name)
     people_data[name] = {"slug": slug, "short": short(name), "family": fam, "given": giv, "key": re.sub(r"[^a-z]", "", ascii_fold(fam).lower())}
 

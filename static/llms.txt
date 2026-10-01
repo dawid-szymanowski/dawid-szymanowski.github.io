@@ -6,8 +6,6 @@
 
 - [Bio](bio/): career and research interests
 - [Publications](publication/): all journal articles and preprints, with abstracts and DOIs
-- [People](authors/): co-authors and supervised students
-- [Teaching](teaching/): courses and student supervision
 - [Contact](contact/): dawid.szymanowski@eaps.ethz.ch
 - [Machine-readable list of works](index.json)
 

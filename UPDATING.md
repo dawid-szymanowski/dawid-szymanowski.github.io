@@ -9,7 +9,6 @@ Everything on the site is plain text in this repository. Edit a file on GitHub (
 | Homepage intro (the short paragraph under your name) | `content/_index.md` → the `intro:` line |
 | Bio narrative | `content/bio/index.md` |
 | Photo | replace `static/images/dawid-szymanowski.jpg` (square, ~640×640) |
-| Teaching | `content/teaching/index.md` |
 | Email, title, ORCID, Scholar, postal address | `hugo.yaml` → `params.owner` |
 | Research-area names and descriptions | `data/research_areas.json` |
 | Menu items | `hugo.yaml` → `menu.main` |
@@ -37,24 +36,13 @@ tags: ["Lipari", "rhyolite", "zircon"]
 ---
 ```
 
-3. Commit. The paper appears on the Publications page, the homepage (if recent), the matching research area, every co-author's People page, and "See also" links are worked out automatically.
+3. Commit. The paper appears on the Publications page, the homepage (if recent), the matching research area, and "See also" links are worked out automatically.
 
 Tips:
 - Write author names exactly as they appear on other papers (e.g. "Ben S. Ellis", "Jörn-Frederik Wotzlaw") so they link to the same person.
 - A preprint under review: use `publication_types: ["under_review"]`, set `publication: "In review at Geology (preprint on EGUsphere)"`, and link the preprint DOI with `name: "Preprint"`. When it is published, change the type to `journal_article` and fill in the venue and DOI — keep the same folder.
 - To host a PDF yourself, put it in `static/files/` and add a link with `url: "files/your-file.pdf"` (no leading slash).
 - To force particular "See also" entries, add `related_papers: ["folder-name-of-other-paper"]`.
-
-## People page — please review
-
-The People page was **filled in automatically from your co-author lists, and the external links were found by web search.** Automated name matching can pick the wrong person or an outdated page, so please check every entry:
-
-- Each person is a folder in `content/authors/` (e.g. `content/authors/blair-schoene/_index.md`).
-- Fix or add a link with `website: "https://…"`; delete the line to remove a link.
-- Add a role/affiliation with `role: "Professor, Princeton University"`.
-- Students are listed under `user_groups: ["Students"]`; everyone else under `["Collaborators"]`.
-- A new co-author on a new paper still appears in author lists; to give them a People card, add a folder for them and an entry in `data/people.json` (copy an existing entry: full name → `slug` and short citation form).
-- Most people currently have no external link because none could be verified — a hidden note in their file says so.
 
 ## Preview before publishing (optional)
 

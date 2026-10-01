@@ -85,12 +85,6 @@ menu:
     - name: Research Areas
       url: "/#research-areas"
       weight: 30
-    - name: People
-      url: /authors/
-      weight: 50
-    - name: Teaching
-      url: /teaching/
-      weight: 60
     - name: Contact
       url: /contact/
       weight: 70
