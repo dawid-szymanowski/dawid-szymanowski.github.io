@@ -11,4 +11,5 @@ links:
     url: "https://doi.org/10.1130/G49613.1"
 research_areas: ["lip"]
 tags: ["large igneous provinces", "Deccan Traps", "zircon", "silicic magmatism"]
+keywords: ["LIP", "Zircon", "Hf isotopes"]
 ---

@@ -11,4 +11,5 @@ links:
     url: "https://doi.org/10.5382/econgeo.5237"
 research_areas: ["ore"]
 tags: ["porphyry copper", "zircon", "molybdenite", "Chile"]
+keywords: ["Ore", "Zircon", "ID-TIMS", "Pluton"]
 ---

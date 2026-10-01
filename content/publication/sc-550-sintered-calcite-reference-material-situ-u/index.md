@@ -12,5 +12,6 @@ links:
 author_notes: "Tavazzani, Kueter and Szymanowski contributed equally."
 research_areas: ["refmat"]
 tags: ["carbonate geochronology", "reference materials", "LA-ICP-MS", "U–Pb geochronology"]
+keywords: ["Carbonate", "Reference material", "LA-ICPMS", "ID-TIMS"]
 status: under_review
 ---

@@ -10,4 +10,5 @@ links:
     url: "https://doi.org/10.1016/j.mex.2023.102406"
 research_areas: ["magma", "methods"]
 tags: ["zircon age spectra", "software", "modelling", "magma reservoirs"]
+keywords: ["Zircon", "ID-TIMS", "Magma reservoir", "Analytical methods"]
 ---

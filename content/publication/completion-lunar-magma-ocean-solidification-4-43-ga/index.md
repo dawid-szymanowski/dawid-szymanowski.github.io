@@ -13,4 +13,5 @@ links:
     url: "https://news.uchicago.edu/story/lunar-rocks-help-scientists-pinpoint-when-moon-crystallized"
 research_areas: ["moon"]
 tags: ["Moon", "lunar magma ocean", "Lu–Hf", "zircon"]
+keywords: ["Moon", "Zircon", "Hf isotopes"]
 ---

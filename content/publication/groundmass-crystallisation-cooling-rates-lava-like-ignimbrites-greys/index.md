@@ -10,4 +10,5 @@ links:
     url: "https://doi.org/10.1007/s00445-015-0972-5"
 research_areas: ["magma"]
 tags: ["ignimbrite", "Yellowstone–Snake River Plain", "cooling rates"]
+keywords: ["Large eruption", "Yellowstone–Snake River Plain"]
 ---

@@ -10,4 +10,5 @@ links:
     url: "https://doi.org/10.1016/j.lithos.2024.107651"
 research_areas: ["lip"]
 tags: ["large igneous provinces", "Paraná-Etendeka", "Namibia", "zircon"]
+keywords: ["LIP", "Zircon", "ID-TIMS", "Pluton"]
 ---

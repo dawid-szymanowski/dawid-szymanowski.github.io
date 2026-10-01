@@ -11,4 +11,5 @@ links:
     url: "https://doi.org/10.1130/G47405.1"
 research_areas: ["magma"]
 tags: ["zircon saturation", "cumulate melting", "magma reservoirs"]
+keywords: ["Zircon", "Magma reservoir"]
 ---

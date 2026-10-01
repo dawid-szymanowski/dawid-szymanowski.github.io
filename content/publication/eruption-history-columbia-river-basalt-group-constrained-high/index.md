@@ -10,4 +10,5 @@ links:
     url: "https://doi.org/10.1016/j.epsl.2023.118269"
 research_areas: ["lip"]
 tags: ["large igneous provinces", "Columbia River Basalt", "flood basalts", "U–Pb geochronology"]
+keywords: ["LIP", "Zircon", "ID-TIMS", "Earth history"]
 ---

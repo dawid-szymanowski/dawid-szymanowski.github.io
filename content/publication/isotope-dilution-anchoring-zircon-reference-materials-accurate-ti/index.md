@@ -10,4 +10,5 @@ links:
     url: "https://doi.org/10.1016/j.chemgeo.2018.02.001"
 research_areas: ["refmat"]
 tags: ["reference materials", "Ti-in-zircon", "isotope dilution", "zircon"]
+keywords: ["Zircon", "Reference material", "Analytical methods"]
 ---

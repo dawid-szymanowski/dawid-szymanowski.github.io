@@ -10,4 +10,5 @@ links:
     url: "https://doi.org/10.1039/c6ja00278a"
 research_areas: ["methods"]
 tags: ["ID-TIMS", "mass spectrometry", "U–Pb geochronology"]
+keywords: ["ID-TIMS", "Zircon", "Analytical methods"]
 ---

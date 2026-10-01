@@ -10,4 +10,5 @@ links:
     url: "https://doi.org/10.1016/j.jvolgeores.2026.108636"
 research_areas: ["magma"]
 tags: ["Pannonian Basin", "ignimbrite", "explosive eruptions", "Miocene"]
+keywords: ["Zircon", "Large eruption", "Pannonian Basin"]
 ---

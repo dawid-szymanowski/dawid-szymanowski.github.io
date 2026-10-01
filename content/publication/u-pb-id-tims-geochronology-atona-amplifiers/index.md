@@ -10,4 +10,5 @@ links:
     url: "https://doi.org/10.1039/d0ja00135j"
 research_areas: ["methods"]
 tags: ["ID-TIMS", "mass spectrometry", "amplifiers", "U–Pb geochronology"]
+keywords: ["ID-TIMS", "Analytical methods"]
 ---

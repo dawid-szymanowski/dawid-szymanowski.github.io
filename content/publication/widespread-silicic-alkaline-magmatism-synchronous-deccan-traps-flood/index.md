@@ -10,4 +10,5 @@ links:
     url: "https://doi.org/10.1016/j.epsl.2020.116616"
 research_areas: ["lip"]
 tags: ["large igneous provinces", "Deccan Traps", "silicic magmatism", "U–Pb geochronology"]
+keywords: ["LIP", "Zircon", "ID-TIMS"]
 ---

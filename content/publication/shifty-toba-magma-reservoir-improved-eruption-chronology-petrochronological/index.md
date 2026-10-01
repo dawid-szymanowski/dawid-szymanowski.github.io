@@ -10,4 +10,5 @@ links:
     url: "https://doi.org/10.1016/j.epsl.2023.118408"
 research_areas: ["magma"]
 tags: ["Toba", "supereruptions", "petrochronology", "magma reservoirs", "zircon"]
+keywords: ["Zircon", "ID-TIMS", "Magma reservoir", "Large eruption", "Caldera", "Petrochronology"]
 ---

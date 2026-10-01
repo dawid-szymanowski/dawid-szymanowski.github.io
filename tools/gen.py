@@ -7,6 +7,7 @@ import json, re, os, unicodedata, shutil, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from pubs_data import PUBS, THESIS, UNDER_REVIEW
 from talks_data import TALKS
+from keywords import VOCAB, KEYWORDS
 
 SITE = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 OWNER = "Dawid Szymanowski"
@@ -114,6 +115,12 @@ def pub_md(p, slug, ptype, venue_str, date, weight=None):
     if p.get("notes"): fm.append(f"author_notes: {yq(p['notes'])}")
     fm.append(f"research_areas: {ylist(p.get('areas', []))}")
     fm.append(f"tags: {ylist(p.get('tags', []))}")
+    kw = KEYWORDS.get(slug)
+    if kw is None:
+        print("WARNING: no keywords for", slug)
+    else:
+        assert all(k in VOCAB for k in kw), (slug, kw)
+        fm.append(f"keywords: {ylist(kw)}")
     if p.get("status"): fm.append(f"status: {p['status']}")
     if weight is not None: fm.append(f"weight: {weight}")
     fm.append("---\n")
@@ -205,6 +212,7 @@ people_data[OWNER] = {"slug": "", "short": short(OWNER), "owner": True, "family"
 for a, b in ALIASES.items():
     people_data[a] = people_data[b]
 os.makedirs(D, exist_ok=True)
+json.dump({"vocab": VOCAB}, open(f"{D}/keywords.json", "w"), ensure_ascii=False, indent=1)
 json.dump(people_data, open(f"{D}/people.json", "w"), ensure_ascii=False, indent=1)
 json.dump({k: {"url": v, "type": "university" if "linkedin" not in v else "linkedin"} for k, v in LINKS.items()},
           open(f"{D}/coauthors.json", "w"), ensure_ascii=False, indent=1)

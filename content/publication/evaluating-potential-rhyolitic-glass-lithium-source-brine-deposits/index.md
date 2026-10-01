@@ -11,4 +11,5 @@ links:
     url: "https://doi.org/10.5382/econgeo.4866"
 research_areas: ["ore"]
 tags: ["lithium", "brines", "rhyolite", "Yellowstone–Snake River Plain"]
+keywords: ["Lithium", "Ore", "Yellowstone–Snake River Plain"]
 ---

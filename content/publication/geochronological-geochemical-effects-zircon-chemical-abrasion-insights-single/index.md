@@ -11,4 +11,5 @@ links:
     url: "https://doi.org/10.5194/gchron-6-1-2024"
 research_areas: ["methods"]
 tags: ["chemical abrasion", "ID-TIMS", "zircon", "Pb loss"]
+keywords: ["Zircon", "ID-TIMS", "Analytical methods"]
 ---

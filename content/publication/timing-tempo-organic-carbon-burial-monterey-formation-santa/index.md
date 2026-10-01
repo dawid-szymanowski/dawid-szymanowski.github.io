@@ -10,4 +10,5 @@ links:
     url: "https://doi.org/10.1016/j.epsl.2023.118343"
 research_areas: ["lip"]
 tags: ["Miocene", "paleoclimate", "Monterey Formation", "U–Pb geochronology"]
+keywords: ["Earth history", "Paleoclimate", "Zircon", "ID-TIMS"]
 ---

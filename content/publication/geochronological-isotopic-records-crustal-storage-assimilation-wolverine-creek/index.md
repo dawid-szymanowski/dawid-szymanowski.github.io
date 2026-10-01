@@ -10,4 +10,5 @@ links:
     url: "https://doi.org/10.1007/s00410-016-1314-0"
 research_areas: ["magma"]
 tags: ["Heise volcanic field", "Yellowstone–Snake River Plain", "crustal assimilation", "zircon"]
+keywords: ["Zircon", "ID-TIMS", "Magma reservoir", "Large eruption", "Caldera", "Yellowstone–Snake River Plain"]
 ---

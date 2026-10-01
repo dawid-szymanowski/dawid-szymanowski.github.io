@@ -11,4 +11,5 @@ links:
     url: "https://doi.org/10.1093/petrology/egaf050"
 research_areas: ["lip", "magma"]
 tags: ["large igneous provinces", "Paraná-Etendeka", "plutons", "Namibia", "zircon"]
+keywords: ["LIP", "Zircon", "ID-TIMS", "Pluton", "Large eruption", "Magma reservoir"]
 ---

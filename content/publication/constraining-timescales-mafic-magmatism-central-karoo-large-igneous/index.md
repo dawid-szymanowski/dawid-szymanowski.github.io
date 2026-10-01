@@ -11,4 +11,5 @@ links:
     url: "https://doi.org/10.25131/sajg.125.0009"
 research_areas: ["lip"]
 tags: ["large igneous provinces", "Karoo", "dolerites", "U–Pb geochronology"]
+keywords: ["LIP", "Zircon", "ID-TIMS", "Earth history"]
 ---

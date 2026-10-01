@@ -10,4 +10,5 @@ links:
     url: "https://doi.org/10.1016/j.gsf.2026.102306"
 research_areas: ["lip"]
 tags: ["large igneous provinces", "dike swarms", "South America", "CAMP"]
+keywords: ["LIP", "Earth history"]
 ---

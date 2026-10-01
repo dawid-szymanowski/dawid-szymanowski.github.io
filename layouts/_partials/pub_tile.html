@@ -12,6 +12,11 @@
   <h2 class="pub-card-title"><a href="{{ $p.RelPermalink }}">{{ partial "chem.html" $p.Title }}</a></h2>
   <p class="pub-authors">{{ partial "author_line.html" (dict "authors" ($p.Params.authors | default slice) "max" 10 "link" false "full" true) }}</p>
   {{- with $p.Params.publication }}<p class="pub-venue"><em class="journal">{{ replaceRE `(,\s|\s+\d).*$` "" . }}</em>{{ with findRE `(,\s|\s+\d).*$` . 1 }}{{ index . 0 }}{{ end }}{{ if not $isReview }}, {{ $p.Date.Format "2006" }}{{ end }}.</p>{{ end }}
+  {{- with $p.Params.keywords }}
+  <div class="pub-keywords" aria-label="Keywords">
+    {{- range . }}<button class="pub-kw" type="button" data-kw="{{ . }}" aria-pressed="false">{{ . }}</button>{{ end }}
+  </div>
+  {{- end }}
 </div>
 <div class="pub-actions">
   {{- if $p.Params.abstract }}<button class="pub-btn" type="button" data-panel="abstract" aria-expanded="false" aria-controls="{{ $id }}-abstract">{{ i18n "abstract" }}</button>{{ end }}

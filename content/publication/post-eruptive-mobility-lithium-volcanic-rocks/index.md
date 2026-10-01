@@ -11,4 +11,5 @@ links:
     url: "https://doi.org/10.1038/s41467-018-05688-2"
 research_areas: ["ore", "magma"]
 tags: ["lithium", "ignimbrite", "diffusion", "Yellowstone–Snake River Plain"]
+keywords: ["Lithium", "Yellowstone–Snake River Plain"]
 ---

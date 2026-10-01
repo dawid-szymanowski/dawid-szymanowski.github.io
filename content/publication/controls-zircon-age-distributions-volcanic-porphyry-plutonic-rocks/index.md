@@ -11,4 +11,5 @@ links:
     url: "https://doi.org/10.5194/gchron-7-15-2025"
 research_areas: ["methods", "magma"]
 tags: ["zircon age spectra", "CA-ID-TIMS", "magma reservoirs", "porphyry copper"]
+keywords: ["Zircon", "ID-TIMS", "Magma reservoir", "Pluton", "Ore", "Analytical methods"]
 ---

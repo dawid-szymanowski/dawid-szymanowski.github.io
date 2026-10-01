@@ -10,4 +10,5 @@ links:
     url: "https://doi.org/10.1016/j.precamres.2025.107888"
 research_areas: ["lip"]
 tags: ["Neoproterozoic", "microfossils", "Kazakhstan", "U–Pb geochronology"]
+keywords: ["Earth history", "Zircon", "ID-TIMS"]
 ---

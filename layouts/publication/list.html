@@ -17,6 +17,8 @@
 {{- range $items }}{{ $years = $years | append (.Date.Format "2006") }}{{ end -}}
 {{- $years = $years | uniq | sort | collections.Reverse -}}
 {{- $entries := slice -}}
+{{- $kwCount := dict -}}
+{{- range $items }}{{ range .Params.keywords }}{{ $kwCount = merge $kwCount (dict . (add (index $kwCount . | default 0) 1)) }}{{ end }}{{ end -}}
 
 <div class="container page-head">
   <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ "" | relURL }}">{{ i18n "home" }}</a> / <span>{{ .Title }}</span></nav>
@@ -45,6 +47,14 @@
       {{- range site.Data.research_areas.areas }}<option value="{{ .key }}">{{ .name }}</option>{{ end }}
     </select>
 
+    <fieldset class="f-keywords">
+      <legend class="f-label">{{ i18n "filter_keywords" }}</legend>
+      <div class="kw-box">
+        {{- range $kw := site.Data.keywords.vocab }}{{ with index $kwCount $kw }}
+        <label class="check"><input type="checkbox" name="kw" value="{{ $kw }}"><span>{{ $kw }}</span><span class="kw-n">{{ . }}</span></label>
+        {{- end }}{{ end }}
+      </div>
+    </fieldset>
     <fieldset class="f-years">
       <legend class="f-label">{{ i18n "filter_year" }}</legend>
       <div class="year-box">
@@ -74,9 +84,9 @@
       {{- range $i, $p := $items }}
       {{- $tab := partial "tab_for.html" $p -}}
       {{- $areas := $p.Params.research_areas | default slice -}}
-      {{- $search := printf "%s %s %s %s %s" $p.Title (delimit ($p.Params.authors | default slice) " ") ($p.Params.publication | default "") ($p.Params.abstract | default "") (delimit ($p.Params.tags | default slice) " ") | lower -}}
+      {{- $search := printf "%s %s %s %s %s" $p.Title (delimit ($p.Params.authors | default slice) " ") ($p.Params.publication | default "") ($p.Params.abstract | default "") (delimit ($p.Params.tags | default slice) " ") | printf "%s %s" (delimit ($p.Params.keywords | default slice) " ") | lower -}}
       {{- $entries = $entries | append (dict "i" $i "title" $p.Title "url" $p.Permalink "slug" (path.Base (strings.TrimSuffix "/" $p.RelPermalink)) "date" ($p.Date.Format "2006-01-02") "year" ($p.Date.Format "2006") "authors" ($p.Params.authors | default slice) "publication" ($p.Params.publication | default "") "doi" ($p.Params.doi | default "") "pubTypes" ($p.Params.publication_types | default slice) "tab" $tab "bib" (partial "bibtex.html" $p)) -}}
-      <li class="pub-item pub-row" data-i="{{ $i }}" data-tab="{{ $tab }}" data-year="{{ $p.Date.Format "2006" }}" data-date="{{ $p.Date.Format "2006-01-02" }}{{ printf "-%03d" (sub 999 ($p.Params.weight | default 0)) }}" data-areas="{{ delimit $areas " " }}" data-types='{{ $p.Params.publication_types | default slice | jsonify }}' data-title="{{ $p.Title | lower }}" data-search="{{ $search }}">
+      <li class="pub-item pub-row" data-i="{{ $i }}" data-tab="{{ $tab }}" data-year="{{ $p.Date.Format "2006" }}" data-date="{{ $p.Date.Format "2006-01-02" }}{{ printf "-%03d" (sub 999 ($p.Params.weight | default 0)) }}" data-areas="{{ delimit $areas " " }}" data-kw="|{{ delimit ($p.Params.keywords | default slice) "|" }}|" data-types='{{ $p.Params.publication_types | default slice | jsonify }}' data-title="{{ $p.Title | lower }}" data-search="{{ $search }}">
         {{ partial "pub_tile.html" (dict "page" $p "i" $i) }}
       </li>
       {{- end }}
@@ -96,11 +106,12 @@
   var yearBoxes = document.querySelectorAll('input[name="year"]');
   var countEl = document.getElementById('count-visible');
   var validTabs = Array.prototype.map.call(tabs, function (b) { return b.dataset.tab; });
-  var state = { tab: 'all', q: '', area: '', years: [], sort: 'newest' };
+  var state = { tab: 'all', q: '', area: '', years: [], kws: [], sort: 'newest' };
+  var kwBoxes = document.querySelectorAll('input[name="kw"]');
 
   function readHash() {
     var h = decodeURIComponent(location.hash.replace(/^#/, ''));
-    var parts = h.split('?'), s = { tab: 'all', q: '', area: '', years: [], sort: 'newest' };
+    var parts = h.split('?'), s = { tab: 'all', q: '', area: '', years: [], kws: [], sort: 'newest' };
     if (parts[0] && validTabs.indexOf(parts[0]) > -1) s.tab = parts[0];
     (parts[1] || '').split('&').forEach(function (kv) {
       var p = kv.split('='); if (!p[0]) return;
@@ -108,6 +119,7 @@
       if (p[0] === 'area') s.area = p[1] || '';
       if (p[0] === 'years') s.years = (p[1] || '').split(',').filter(Boolean);
       if (p[0] === 'sort') s.sort = p[1] || 'newest';
+      if (p[0] === 'kw') s.kws = (p[1] || '').split(',').filter(Boolean);
     });
     return s;
   }
@@ -117,6 +129,7 @@
     if (state.area) extra.push('area=' + state.area);
     if (state.years.length) extra.push('years=' + state.years.join(','));
     if (state.sort !== 'newest') extra.push('sort=' + state.sort);
+    if (state.kws.length) extra.push('kw=' + state.kws.map(encodeURIComponent).join(','));
     var h = '#' + state.tab + (extra.length ? '?' + extra.join('&') : '');
     if (h === location.hash) return;
     if (push) history.pushState(null, '', h); else history.replaceState(null, '', h);
@@ -124,6 +137,8 @@
   function syncControls() {
     q.value = state.q; area.value = state.area; sort.value = state.sort;
     yearBoxes.forEach(function (b) { b.checked = state.years.indexOf(b.value) > -1; });
+    kwBoxes.forEach(function (b) { b.checked = state.kws.indexOf(b.value) > -1; });
+    list.querySelectorAll('.pub-kw').forEach(function (c) { var on = state.kws.indexOf(c.dataset.kw) > -1; c.classList.toggle('active', on); c.setAttribute('aria-pressed', on ? 'true' : 'false'); });
     tabs.forEach(function (btn) {
       var on = btn.dataset.tab === state.tab;
       btn.classList.toggle('active', on); btn.setAttribute('aria-selected', on ? 'true' : 'false');
@@ -136,6 +151,7 @@
       var show = (state.tab === 'all' || d.tab === state.tab)
         && (!state.area || (' ' + d.areas + ' ').indexOf(' ' + state.area + ' ') > -1)
         && (!state.years.length || state.years.indexOf(d.year) > -1)
+        && state.kws.every(function (k) { return d.kw.indexOf('|' + k + '|') > -1; })
         && terms.every(function (t) { return d.search.indexOf(t) > -1; });
       it.hidden = !show; if (show) visible++;
     });
@@ -158,8 +174,12 @@
     state.years = Array.prototype.filter.call(yearBoxes, function (x) { return x.checked; }).map(function (x) { return x.value; });
     update(true);
   }); });
+  kwBoxes.forEach(function (b) { b.addEventListener('change', function () {
+    state.kws = Array.prototype.filter.call(kwBoxes, function (x) { return x.checked; }).map(function (x) { return x.value; });
+    update(true);
+  }); });
   document.getElementById('f-reset').addEventListener('click', function () {
-    state = { tab: state.tab, q: '', area: '', years: [], sort: 'newest' }; update(true);
+    state = { tab: state.tab, q: '', area: '', years: [], kws: [], sort: 'newest' }; update(true);
   });
   window.addEventListener('popstate', function () { state = readHash(); syncControls(); apply(); });
   window.addEventListener('hashchange', function () { state = readHash(); syncControls(); apply(); });
@@ -173,6 +193,14 @@
   });
 
   list.addEventListener('click', function (e) {
+    var k = e.target.closest('.pub-kw');
+    if (k) {
+      var i = state.kws.indexOf(k.dataset.kw);
+      if (i > -1) state.kws.splice(i, 1); else state.kws.push(k.dataset.kw);
+      update(true);
+      document.querySelector('.pub-toolbar').scrollIntoView({ block: 'nearest' });
+      return;
+    }
     var b = e.target.closest('[data-panel]');
     if (b) {
       var panel = document.getElementById(b.getAttribute('aria-controls'));

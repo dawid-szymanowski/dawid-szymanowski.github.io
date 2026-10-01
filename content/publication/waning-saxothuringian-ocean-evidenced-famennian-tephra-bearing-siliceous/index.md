@@ -11,4 +11,5 @@ links:
     url: "https://doi.org/10.1130/B35971.1"
 research_areas: ["lip"]
 tags: ["Devonian", "tephra", "Poland", "Variscan orogeny"]
+keywords: ["Earth history"]
 ---

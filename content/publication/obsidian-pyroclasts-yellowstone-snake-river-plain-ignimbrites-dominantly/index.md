@@ -11,4 +11,5 @@ links:
     url: "https://doi.org/10.1007/s00445-021-01448-1"
 research_areas: ["magma"]
 tags: ["Yellowstone–Snake River Plain", "ignimbrite", "obsidian", "volcanic conduits"]
+keywords: ["Large eruption", "Yellowstone–Snake River Plain"]
 ---

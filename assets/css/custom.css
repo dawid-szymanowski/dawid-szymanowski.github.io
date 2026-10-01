@@ -339,3 +339,17 @@ main:focus { outline: none; }
 /* Journal names: bold italic in the accent colour */
 .journal { font-style: italic; font-weight: 700; color: var(--color-accent-ink); }
 sup, sub { line-height: 0; font-size: 0.72em; }
+
+/* Keyword chips and filter */
+.pub-keywords { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+.pub-kw {
+  padding: 1px 8px; border: 1px solid var(--color-border); border-radius: 999px; background: transparent;
+  font: inherit; font-size: 0.74rem; color: var(--color-text-muted); cursor: pointer; line-height: 1.6;
+}
+.pub-kw:hover { border-color: var(--color-accent); color: var(--color-accent); }
+.pub-kw.active { background: var(--color-accent); border-color: var(--color-accent); color: #fff; }
+.f-keywords { border: 0; margin: 0 0 14px; padding: 0; }
+.kw-box { max-height: 260px; overflow-y: auto; border: 1px solid var(--color-border); border-radius: var(--radius); background: #fffdf9; padding: 6px 8px; }
+.kw-box .check span:first-of-type { flex: 1 1 auto; }
+.kw-n { color: var(--color-text-muted); font-size: 0.8rem; font-variant-numeric: tabular-nums; }
+@media (max-width: 960px) { .pub-filters .f-keywords { grid-column: 1 / -1; } .kw-box { max-height: 150px; } }

@@ -10,4 +10,5 @@ links:
     url: "https://doi.org/10.1007/s00410-018-1502-1"
 research_areas: ["magma"]
 tags: ["kimberlites", "Lesotho", "petrology"]
+keywords: ["Earth history"]
 ---

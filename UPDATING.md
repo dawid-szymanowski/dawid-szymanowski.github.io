@@ -11,6 +11,7 @@ Everything on the site is plain text in this repository. Edit a file on GitHub (
 | Photo | replace `static/images/dawid-szymanowski.jpg` (square, ~640×640) |
 | Email, title, ORCID, Scholar, postal address | `hugo.yaml` → `params.owner` |
 | Research-area names and descriptions | `data/research_areas.json` |
+| Keyword list (filter order) | `data/keywords.json` |
 | Menu items | `hugo.yaml` → `menu.main` |
 | Button and label wording | `i18n/en.yaml` |
 
@@ -33,6 +34,7 @@ links:
     url: "https://doi.org/10.1093/petrology/egaa001"
 research_areas: ["magma"]                  # magma, methods, refmat, lip, ore, moon
 tags: ["Lipari", "rhyolite", "zircon"]
+keywords: ["Zircon", "ID-TIMS", "Magma reservoir"]   # pick from the list in data/keywords.json; add new ones there
 ---
 ```
 

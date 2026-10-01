@@ -11,4 +11,5 @@ links:
     url: "https://doi.org/10.1130/G50973.1"
 research_areas: ["magma"]
 tags: ["arcs", "xenoliths", "lower crust", "Andes"]
+keywords: ["Zircon", "ID-TIMS"]
 ---

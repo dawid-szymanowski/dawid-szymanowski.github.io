@@ -10,4 +10,5 @@ links:
     url: "https://doi.org/10.1016/j.epsl.2023.118432"
 research_areas: ["magma"]
 tags: ["zircon age spectra", "magma reservoirs", "ID-TIMS", "Southern Alps"]
+keywords: ["Zircon", "ID-TIMS", "Magma reservoir", "Caldera", "Pluton"]
 ---

@@ -10,4 +10,5 @@ links:
     url: "https://doi.org/10.1016/j.gr.2024.01.004"
 research_areas: ["magma"]
 tags: ["Pannonian Basin", "explosive eruptions", "Miocene", "zircon"]
+keywords: ["Zircon", "Large eruption", "Pannonian Basin"]
 ---

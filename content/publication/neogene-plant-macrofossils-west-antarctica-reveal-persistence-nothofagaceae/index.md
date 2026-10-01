@@ -10,4 +10,5 @@ links:
     url: "https://doi.org/10.1038/s43247-025-02921-x"
 research_areas: ["lip"]
 tags: ["Antarctica", "paleoclimate", "Miocene", "geochronology"]
+keywords: ["Earth history", "Paleoclimate"]
 ---
