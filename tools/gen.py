@@ -135,7 +135,7 @@ for i, p in enumerate([q for q in UNDER_REVIEW if q.get("doi")]):
     for a in p["authors"]: all_people[a] = all_people.get(a, 0) + 1
 
 write(f"{C}/publication/_index.md", """---
-title: "Writings"
+title: "Publications"
 ---
 """)
 
@@ -204,9 +204,10 @@ for name in sorted(set(list(all_people) + student_names), key=lambda x: ascii_fo
     if name not in LINKS and not name.startswith("EARTHTIME"):
         body = "<!-- No external page verified for this person; add `website:` above if you know it. -->\n"
     write(f"{C}/authors/{slug}/_index.md", "\n".join(fm) + body)
-    people_data[name] = {"slug": slug, "short": short(name)}
+    fam, giv = split_name(name)
+    people_data[name] = {"slug": slug, "short": short(name), "family": fam, "given": giv, "key": re.sub(r"[^a-z]", "", ascii_fold(fam).lower())}
 
-people_data[OWNER] = {"slug": "", "short": short(OWNER), "owner": True}
+people_data[OWNER] = {"slug": "", "short": short(OWNER), "owner": True, "family": "Szymanowski", "given": "Dawid", "key": "szymanowski"}
 for a, b in ALIASES.items():
     people_data[a] = people_data[b]
 os.makedirs(D, exist_ok=True)

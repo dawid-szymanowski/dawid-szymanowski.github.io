@@ -1,0 +1,35 @@
+{{- /* BibTeX entry for a page, returned as a string. */ -}}
+{{- $p := . -}}
+{{- $types := $p.Params.publication_types | default slice -}}
+{{- $isReview := or (in $types "under_review") (eq $p.Params.status "under_review") -}}
+{{- $people := site.Data.people -}}
+{{- $first := index ($p.Params.authors | default (slice "anon")) 0 -}}
+{{- $fp := index $people $first -}}
+{{- $fam := cond (ne $fp nil) (index $fp "key") (index (last 1 (split $first " ")) 0 | lower) -}}
+{{- $word := "" -}}{{- range split $p.Title " " }}{{ if and (eq $word "") (gt (len .) 3) (findRE `^[A-Za-z]` .) }}{{ $word = . }}{{ end }}{{ end -}}
+{{- $key := printf "%s%s%s" $fam ($p.Date.Format "2006") (lower $word) | replaceRE "[^a-z0-9]" "" -}}
+{{- $names := slice -}}
+{{- range $p.Params.authors -}}
+  {{- $pp := index $people . -}}
+  {{- if and $pp (index $pp "family") -}}
+    {{- $names = $names | append (cond (eq (index $pp "given") "") (printf "{%s}" (index $pp "family")) (printf "%s, %s" (index $pp "family") (index $pp "given"))) -}}
+  {{- else -}}
+    {{- $parts := split . " " -}}
+    {{- $names = $names | append (printf "%s, %s" (index (last 1 $parts) 0) (delimit (first (sub (len $parts) 1) $parts) " ")) -}}
+  {{- end -}}
+{{- end -}}
+{{- $journal := replaceRE `\s+\d.*$` "" ($p.Params.publication | default "") -}}
+{{- $out := slice (printf "  title = {%s}" $p.Title) (printf "  author = {%s}" (delimit $names " and ")) (printf "  year = {%s}" ($p.Date.Format "2006")) -}}
+{{- if $isReview -}}
+  {{- $out = $out | append (printf "  note = {%s}" $p.Params.publication) -}}
+{{- else -}}
+  {{- $out = $out | append (printf "  journal = {%s}" $journal) -}}
+  {{- with findRESubmatch `^\D+?\s(\d[\d–-]*)(?:\(([^)]+)\))?,\s*(.+)$` ($p.Params.publication | default "") 1 -}}
+    {{- $m := index . 0 -}}
+    {{- $out = $out | append (printf "  volume = {%s}" (index $m 1)) -}}
+    {{- with index $m 2 }}{{ $out = $out | append (printf "  number = {%s}" .) }}{{ end -}}
+    {{- $out = $out | append (printf "  pages = {%s}" (replace (index $m 3) "–" "--")) -}}
+  {{- end -}}
+{{- end -}}
+{{- with $p.Params.doi }}{{ $out = $out | append (printf "  doi = {%s}" .) }}{{ end -}}
+{{- return printf "@%s{%s,\n%s\n}" (cond $isReview "unpublished" "article") $key (delimit $out ",\n") -}}

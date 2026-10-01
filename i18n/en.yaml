@@ -109,3 +109,13 @@
   translation: "show all"
 - id: postal_address
   translation: "Postal address"
+- id: citation
+  translation: "Citation"
+- id: copy_bibtex
+  translation: "Copy BibTeX"
+- id: copied
+  translation: "Copied"
+- id: badge_article
+  translation: "Article"
+- id: badge_preprint
+  translation: "Preprint"

@@ -1,0 +1,34 @@
+{{- /* One publication tile: badges, title, authors, venue, action buttons and collapsible panels. ctx: dict "page" "i" */ -}}
+{{- $p := .page -}}
+{{- $id := printf "pub-%d" .i -}}
+{{- $types := $p.Params.publication_types | default slice -}}
+{{- $isReview := or (in $types "under_review") (eq $p.Params.status "under_review") -}}
+{{- $bib := partial "bibtex.html" $p -}}
+<div class="pub-card-head">
+  <div class="pub-badges">
+    {{- if not $isReview }}<span class="pub-badge">{{ $p.Date.Format "2006" }}</span>{{ end }}
+    <span class="pub-badge">{{ if $isReview }}{{ i18n "badge_preprint" }}{{ else }}{{ i18n "badge_article" }}{{ end }}</span>
+  </div>
+  <h2 class="pub-card-title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2>
+  <p class="pub-authors">{{ partial "author_line.html" (dict "authors" ($p.Params.authors | default slice) "max" 10 "link" false "full" true) }}</p>
+  {{- with $p.Params.publication }}<p class="pub-venue"><em>{{ replaceRE `\s+\d.*$` "" . }}</em>{{ with findRE `\s+\d.*$` . 1 }}{{ index . 0 }}{{ end }}{{ if not $isReview }}, {{ $p.Date.Format "2006" }}{{ end }}.</p>{{ end }}
+</div>
+<div class="pub-actions">
+  {{- if $p.Params.abstract }}<button class="pub-btn" type="button" data-panel="abstract" aria-expanded="false" aria-controls="{{ $id }}-abstract">{{ i18n "abstract" }}</button>{{ end }}
+  <button class="pub-btn" type="button" data-panel="citation" aria-expanded="false" aria-controls="{{ $id }}-citation">{{ i18n "citation" }}</button>
+  {{- range $p.Params.links }}
+  <a class="pub-btn" href="{{ .url }}" rel="noopener">{{ if eq .name "Publisher's Version" }}{{ i18n "publisher_version" }}{{ else }}{{ .name }}{{ end }}</a>
+  {{- end }}
+</div>
+{{- with $p.Params.abstract }}
+<div class="pub-panel" id="{{ $id }}-abstract" hidden>
+  <p class="pub-panel-head">{{ i18n "abstract" }}</p>
+  <p class="pub-abstract">{{ . }}</p>
+</div>
+{{- end }}
+<div class="pub-panel" id="{{ $id }}-citation" hidden>
+  <p class="pub-panel-head">{{ i18n "citation" }}</p>
+  <p class="pub-cite-text">{{ partial "author_line.html" (dict "authors" ($p.Params.authors | default slice) "max" 0 "link" false) }}{{ if not $isReview }} ({{ $p.Date.Format "2006" }}).{{ end }} {{ $p.Title }}{{ if not (findRE `[.?!]$` $p.Title) }}.{{ end }} <em>{{ $p.Params.publication }}</em>.{{ with $p.Params.doi }} doi:{{ . }}{{ end }}</p>
+  <pre class="pub-bibtex"><code>{{ $bib }}</code></pre>
+  <button class="pub-btn" type="button" data-copy>{{ i18n "copy_bibtex" }}</button>
+</div>

@@ -75,9 +75,9 @@
       {{- $tab := partial "tab_for.html" $p -}}
       {{- $areas := $p.Params.research_areas | default slice -}}
       {{- $search := printf "%s %s %s %s %s" $p.Title (delimit ($p.Params.authors | default slice) " ") ($p.Params.publication | default "") ($p.Params.abstract | default "") (delimit ($p.Params.tags | default slice) " ") | lower -}}
-      {{- $entries = $entries | append (dict "i" $i "title" $p.Title "url" $p.Permalink "slug" (path.Base (strings.TrimSuffix "/" $p.RelPermalink)) "date" ($p.Date.Format "2006-01-02") "year" ($p.Date.Format "2006") "authors" ($p.Params.authors | default slice) "publication" ($p.Params.publication | default "") "doi" ($p.Params.doi | default "") "pubTypes" ($p.Params.publication_types | default slice) "tab" $tab) -}}
-      <li class="pub-item" data-i="{{ $i }}" data-tab="{{ $tab }}" data-year="{{ $p.Date.Format "2006" }}" data-date="{{ $p.Date.Format "2006-01-02" }}{{ printf "-%03d" (sub 999 ($p.Params.weight | default 0)) }}" data-areas="{{ delimit $areas " " }}" data-types='{{ $p.Params.publication_types | default slice | jsonify }}' data-title="{{ $p.Title | lower }}" data-search="{{ $search }}">
-        {{ partial "citation.html" (dict "page" $p "max" 8 "label" (eq $tab "presentations")) }}
+      {{- $entries = $entries | append (dict "i" $i "title" $p.Title "url" $p.Permalink "slug" (path.Base (strings.TrimSuffix "/" $p.RelPermalink)) "date" ($p.Date.Format "2006-01-02") "year" ($p.Date.Format "2006") "authors" ($p.Params.authors | default slice) "publication" ($p.Params.publication | default "") "doi" ($p.Params.doi | default "") "pubTypes" ($p.Params.publication_types | default slice) "tab" $tab "bib" (partial "bibtex.html" $p)) -}}
+      <li class="pub-item pub-row" data-i="{{ $i }}" data-tab="{{ $tab }}" data-year="{{ $p.Date.Format "2006" }}" data-date="{{ $p.Date.Format "2006-01-02" }}{{ printf "-%03d" (sub 999 ($p.Params.weight | default 0)) }}" data-areas="{{ delimit $areas " " }}" data-types='{{ $p.Params.publication_types | default slice | jsonify }}' data-title="{{ $p.Title | lower }}" data-search="{{ $search }}">
+        {{ partial "pub_tile.html" (dict "page" $p "i" $i) }}
       </li>
       {{- end }}
     </ol>
@@ -164,26 +164,29 @@
   window.addEventListener('popstate', function () { state = readHash(); syncControls(); apply(); });
   window.addEventListener('hashchange', function () { state = readHash(); syncControls(); apply(); });
 
-  // BibTeX export of the currently visible entries
-  function bibName(n) { var p = n.split(' '); return p.length > 1 ? p[p.length - 1] + ', ' + p.slice(0, -1).join(' ') : n; }
-  function key(e) { var a = (e.authors[0] || 'anon').split(' ').pop().normalize('NFD').replace(/[^A-Za-z]/g, ''); var w = e.title.split(/\s+/).find(function (x) { return x.length > 3; }) || 'x'; return (a + e.year + w.normalize('NFD').replace(/[^A-Za-z]/g, '')).toLowerCase(); }
-  function bib(e) {
-    var type = e.tab === 'presentations' ? 'inproceedings' : e.tab === 'thesis' ? 'phdthesis' : e.tab === 'under-review' ? 'unpublished' : 'article';
-    var f = ['  title = {' + e.title + '}', '  author = {' + e.authors.map(bibName).join(' and ') + '}', '  year = {' + e.year + '}'];
-    if (type === 'article') f.push('  journal = {' + e.publication + '}');
-    else if (type === 'inproceedings') f.push('  booktitle = {' + e.publication + '}');
-    else if (type === 'phdthesis') f.push('  school = {ETH Z{\\"u}rich}');
-    else f.push('  note = {' + e.publication + '}');
-    if (e.doi) f.push('  doi = {' + e.doi + '}');
-    f.push('  url = {' + (e.doi ? 'https://doi.org/' + e.doi : e.url) + '}');
-    return '@' + type + '{' + key(e) + ',\n' + f.join(',\n') + '\n}';
-  }
   document.getElementById('bibtex-btn').addEventListener('click', function () {
     var vis = Array.prototype.filter.call(list.querySelectorAll('.pub-item'), function (it) { return !it.hidden; })
       .map(function (it) { return data[+it.dataset.i]; });
-    var blob = new Blob([vis.map(bib).join('\n\n') + '\n'], { type: 'application/x-bibtex' });
-    var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'szymanowski-writings.bib';
+    var blob = new Blob([vis.map(function (e) { return e.bib; }).join('\n\n') + '\n'], { type: 'application/x-bibtex' });
+    var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'szymanowski-publications.bib';
     document.body.appendChild(a); a.click(); a.remove();
+  });
+
+  list.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-panel]');
+    if (b) {
+      var panel = document.getElementById(b.getAttribute('aria-controls'));
+      var open = b.getAttribute('aria-expanded') !== 'true';
+      b.setAttribute('aria-expanded', open ? 'true' : 'false'); b.classList.toggle('active', open);
+      if (panel) panel.hidden = !open;
+      return;
+    }
+    var c = e.target.closest('[data-copy]');
+    if (c) {
+      var txt = c.parentNode.querySelector('.pub-bibtex').textContent;
+      var done = function () { var t = c.textContent; c.textContent = {{ i18n "copied" }}; setTimeout(function () { c.textContent = t; }, 1500); };
+      if (navigator.clipboard) navigator.clipboard.writeText(txt).then(done, function () {});
+    }
   });
 
   state = readHash(); syncControls(); apply();

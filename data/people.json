@@ -1,983 +1,1718 @@
 {
  "Adam B. Abersteiner": {
   "slug": "adam-b-abersteiner",
-  "short": "Abersteiner A.B."
+  "short": "Abersteiner A.B.",
+  "family": "Abersteiner",
+  "given": "Adam B.",
+  "key": "abersteiner"
  },
  "I. V. Akker": {
   "slug": "i-v-akker",
-  "short": "Akker I.V."
+  "short": "Akker I.V.",
+  "family": "Akker",
+  "given": "I. V.",
+  "key": "akker"
  },
  "Yuri Amelin": {
   "slug": "yuri-amelin",
-  "short": "Amelin Y."
+  "short": "Amelin Y.",
+  "family": "Amelin",
+  "given": "Yuri",
+  "key": "amelin"
  },
  "G. D. M. Andrews": {
   "slug": "g-d-m-andrews",
-  "short": "Andrews G.D.M."
+  "short": "Andrews G.D.M.",
+  "family": "Andrews",
+  "given": "G. D. M.",
+  "key": "andrews"
  },
  "Eliel S. C. Anttila": {
   "slug": "eliel-s-c-anttila",
-  "short": "Anttila E.S.C."
+  "short": "Anttila E.S.C.",
+  "family": "Anttila",
+  "given": "Eliel S. C.",
+  "key": "anttila"
  },
  "Lars E. Augland": {
   "slug": "lars-e-augland",
-  "short": "Augland L.E."
+  "short": "Augland L.E.",
+  "family": "Augland",
+  "given": "Lars E.",
+  "key": "augland"
  },
  "Olivier Bachmann": {
   "slug": "olivier-bachmann",
-  "short": "Bachmann O."
+  "short": "Bachmann O.",
+  "family": "Bachmann",
+  "given": "Olivier",
+  "key": "bachmann"
  },
  "Juan R. Bahamonde": {
   "slug": "juan-r-bahamonde",
-  "short": "Bahamonde J.R."
+  "short": "Bahamonde J.R.",
+  "family": "Bahamonde",
+  "given": "Juan R.",
+  "key": "bahamonde"
  },
  "Dražen Balen": {
   "slug": "drazen-balen",
-  "short": "Balen D."
+  "short": "Balen D.",
+  "family": "Balen",
+  "given": "Dražen",
+  "key": "balen"
  },
  "Mélanie Barboni": {
   "slug": "melanie-barboni",
-  "short": "Barboni M."
+  "short": "Barboni M.",
+  "family": "Barboni",
+  "given": "Mélanie",
+  "key": "barboni"
  },
  "Waldemar Bardziński": {
   "slug": "waldemar-bardzinski",
-  "short": "Bardziński W."
+  "short": "Bardziński W.",
+  "family": "Bardziński",
+  "given": "Waldemar",
+  "key": "bardzinski"
  },
  "Dan Barfod": {
   "slug": "dan-barfod",
-  "short": "Barfod D."
+  "short": "Barfod D.",
+  "family": "Barfod",
+  "given": "Dan",
+  "key": "barfod"
  },
  "Tiffany Barry": {
   "slug": "tiffany-barry",
-  "short": "Barry T."
+  "short": "Barry T.",
+  "family": "Barry",
+  "given": "Tiffany",
+  "key": "barry"
  },
  "Joaquin Bastias-Silva": {
   "slug": "joaquin-bastias-silva",
-  "short": "Bastias-Silva J."
+  "short": "Bastias-Silva J.",
+  "family": "Bastias-Silva",
+  "given": "Joaquin",
+  "key": "bastiassilva"
  },
  "Asish R. Basu": {
   "slug": "asish-r-basu",
-  "short": "Basu A.R."
+  "short": "Basu A.R.",
+  "family": "Basu",
+  "given": "Asish R.",
+  "key": "basu"
  },
  "N. B. Baumann": {
   "slug": "n-b-baumann",
-  "short": "Baumann N.B."
+  "short": "Baumann N.B.",
+  "family": "Baumann",
+  "given": "N. B.",
+  "key": "baumann"
  },
  "Christoph Beier": {
   "slug": "christoph-beier",
-  "short": "Beier C."
+  "short": "Beier C.",
+  "family": "Beier",
+  "given": "Christoph",
+  "key": "beier"
  },
  "I. N. Bindeman": {
   "slug": "i-n-bindeman",
-  "short": "Bindeman I.N."
+  "short": "Bindeman I.N.",
+  "family": "Bindeman",
+  "given": "I. N.",
+  "key": "bindeman"
  },
  "Nicolas Blanco": {
   "slug": "nicolas-blanco",
-  "short": "Blanco N."
+  "short": "Blanco N.",
+  "family": "Blanco",
+  "given": "Nicolas",
+  "key": "blanco"
  },
  "Elias Bloch": {
   "slug": "elias-bloch",
-  "short": "Bloch E."
+  "short": "Bloch E.",
+  "family": "Bloch",
+  "given": "Elias",
+  "key": "bloch"
  },
  "Uyanga Bold": {
   "slug": "uyanga-bold",
-  "short": "Bold U."
+  "short": "Bold U.",
+  "family": "Bold",
+  "given": "Uyanga",
+  "key": "bold"
  },
  "Caroline Bouvet de Maisonneuve": {
   "slug": "caroline-bouvet-de-maisonneuve",
-  "short": "Bouvet de Maisonneuve C."
+  "short": "Bouvet de Maisonneuve C.",
+  "family": "Bouvet de Maisonneuve",
+  "given": "Caroline",
+  "key": "bouvetdemaisonneuve"
  },
  "Dwight C. Bradley": {
   "slug": "dwight-c-bradley",
-  "short": "Bradley D.C."
+  "short": "Bradley D.C.",
+  "family": "Bradley",
+  "given": "Dwight C.",
+  "key": "bradley"
  },
  "Jana Brčeková": {
   "slug": "jana-brcekova",
-  "short": "Brčeková J."
+  "short": "Brčeková J.",
+  "family": "Brčeková",
+  "given": "Jana",
+  "key": "brcekova"
  },
  "Vlatko Brčić": {
   "slug": "vlatko-brcic",
-  "short": "Brčić V."
+  "short": "Brčić V.",
+  "family": "Brčić",
+  "given": "Vlatko",
+  "key": "brcic"
  },
  "Mihovil Brlek": {
   "slug": "mihovil-brlek",
-  "short": "Brlek M."
+  "short": "Brlek M.",
+  "family": "Brlek",
+  "given": "Mihovil",
+  "key": "brlek"
  },
  "Yannick Buret": {
   "slug": "yannick-buret",
-  "short": "Buret Y."
+  "short": "Buret Y.",
+  "family": "Buret",
+  "given": "Yannick",
+  "key": "buret"
  },
  "Mário Neto Cavalcanti de Araújo": {
   "slug": "mario-neto-cavalcanti-de-araujo",
-  "short": "Cavalcanti de Araújo M.N."
+  "short": "Cavalcanti de Araújo M.N.",
+  "family": "Cavalcanti de Araújo",
+  "given": "Mário Neto",
+  "key": "cavalcantidearaujo"
  },
  "Puloma Chakrabarty": {
   "slug": "puloma-chakrabarty",
-  "short": "Chakrabarty P."
+  "short": "Chakrabarty P.",
+  "family": "Chakrabarty",
+  "given": "Puloma",
+  "key": "chakrabarty"
  },
  "Kevin R. Chamberlain": {
   "slug": "kevin-r-chamberlain",
-  "short": "Chamberlain K.R."
+  "short": "Chamberlain K.R.",
+  "family": "Chamberlain",
+  "given": "Kevin R.",
+  "key": "chamberlain"
  },
  "Chutimun Chanmuang N.": {
   "slug": "chutimun-chanmuang-n",
-  "short": "Chanmuang N. C."
+  "short": "Chanmuang N. C.",
+  "family": "Chanmuang N.",
+  "given": "Chutimun",
+  "key": "chanmuangn"
  },
  "Alexandre O. Chaves": {
   "slug": "alexandre-o-chaves",
-  "short": "Chaves A.O."
+  "short": "Chaves A.O.",
+  "family": "Chaves",
+  "given": "Alexandre O.",
+  "key": "chaves"
  },
  "Cyril Chelle-Michou": {
   "slug": "cyril-chelle-michou",
-  "short": "Chelle-Michou C."
+  "short": "Chelle-Michou C.",
+  "family": "Chelle-Michou",
+  "given": "Cyril",
+  "key": "chellemichou"
  },
  "Xi Chen": {
   "slug": "xi-chen",
-  "short": "Chen X."
+  "short": "Chen X.",
+  "family": "Chen",
+  "given": "Xi",
+  "key": "chen"
  },
  "M. Chiaradia": {
   "slug": "m-chiaradia",
-  "short": "Chiaradia M."
+  "short": "Chiaradia M.",
+  "family": "Chiaradia",
+  "given": "M.",
+  "key": "chiaradia"
  },
  "Matthew A. Coble": {
   "slug": "matthew-a-coble",
-  "short": "Coble M.A."
+  "short": "Coble M.A.",
+  "family": "Coble",
+  "given": "Matthew A.",
+  "key": "coble"
  },
  "Drew S. Coleman": {
   "slug": "drew-s-coleman",
-  "short": "Coleman D.S."
+  "short": "Coleman D.S.",
+  "family": "Coleman",
+  "given": "Drew S.",
+  "key": "coleman"
  },
  "Dan Condon": {
   "slug": "dan-condon",
-  "short": "Condon D."
+  "short": "Condon D.",
+  "family": "Condon",
+  "given": "Dan",
+  "key": "condon"
  },
  "James N. Connelly": {
   "slug": "james-n-connelly",
-  "short": "Connelly J.N."
+  "short": "Connelly J.N.",
+  "family": "Connelly",
+  "given": "James N.",
+  "key": "connelly"
  },
  "B. Cordonnier": {
   "slug": "b-cordonnier",
-  "short": "Cordonnier B."
+  "short": "Cordonnier B.",
+  "family": "Cordonnier",
+  "given": "B.",
+  "key": "cordonnier"
  },
  "Fernando Corfu": {
   "slug": "fernando-corfu",
-  "short": "Corfu F."
+  "short": "Corfu F.",
+  "family": "Corfu",
+  "given": "Fernando",
+  "key": "corfu"
  },
  "E. A. Cortes-Calderon": {
   "slug": "e-a-cortes-calderon",
-  "short": "Cortes-Calderon E.A."
+  "short": "Cortes-Calderon E.A.",
+  "family": "Cortes-Calderon",
+  "given": "E. A.",
+  "key": "cortescalderon"
  },
  "James L. Crowley": {
   "slug": "james-l-crowley",
-  "short": "Crowley J.L."
+  "short": "Crowley J.L.",
+  "family": "Crowley",
+  "given": "James L.",
+  "key": "crowley"
  },
  "Clara Danhof": {
   "slug": "clara-danhof",
-  "short": "Danhof C."
+  "short": "Danhof C.",
+  "family": "Danhof",
+  "given": "Clara",
+  "key": "danhof"
  },
  "Elton L. Dantas": {
   "slug": "elton-l-dantas",
-  "short": "Dantas E.L."
+  "short": "Dantas E.L.",
+  "family": "Dantas",
+  "given": "Elton L.",
+  "key": "dantas"
  },
  "Nicolas Dauphas": {
   "slug": "nicolas-dauphas",
-  "short": "Dauphas N."
+  "short": "Dauphas N.",
+  "family": "Dauphas",
+  "given": "Nicolas",
+  "key": "dauphas"
  },
  "Joshua H. F. L. Davies": {
   "slug": "joshua-h-f-l-davies",
-  "short": "Davies J.H.F.L."
+  "short": "Davies J.H.F.L.",
+  "family": "Davies",
+  "given": "Joshua H. F. L.",
+  "key": "davies"
  },
  "Gabriella Demarchi": {
   "slug": "gabriella-demarchi",
-  "short": "Demarchi G."
+  "short": "Demarchi G.",
+  "family": "Demarchi",
+  "given": "Gabriella",
+  "key": "demarchi"
  },
  "Steven W. Denyszyn": {
   "slug": "steven-w-denyszyn",
-  "short": "Denyszyn S.W."
+  "short": "Denyszyn S.W.",
+  "family": "Denyszyn",
+  "given": "Steven W.",
+  "key": "denyszyn"
  },
  "R. Dohmen": {
   "slug": "r-dohmen",
-  "short": "Dohmen R."
+  "short": "Dohmen R.",
+  "family": "Dohmen",
+  "given": "R.",
+  "key": "dohmen"
  },
  "Rita Economos": {
   "slug": "rita-economos",
-  "short": "Economos R."
+  "short": "Economos R.",
+  "family": "Economos",
+  "given": "Rita",
+  "key": "economos"
  },
  "Michael P. Eddy": {
   "slug": "michael-p-eddy",
-  "short": "Eddy M.P."
+  "short": "Eddy M.P.",
+  "family": "Eddy",
+  "given": "Michael P.",
+  "key": "eddy"
  },
  "Ben S. Ellis": {
   "slug": "ben-s-ellis",
-  "short": "Ellis B.S."
+  "short": "Ellis B.S.",
+  "family": "Ellis",
+  "given": "Ben S.",
+  "key": "ellis"
  },
  "Martin Ende": {
   "slug": "martin-ende",
-  "short": "Ende M."
+  "short": "Ende M.",
+  "family": "Ende",
+  "given": "Martin",
+  "key": "ende"
  },
  "Richard E. Ernst": {
   "slug": "richard-e-ernst",
-  "short": "Ernst R.E."
+  "short": "Ernst R.E.",
+  "family": "Ernst",
+  "given": "Richard E.",
+  "key": "ernst"
  },
  "Federico Farina": {
   "slug": "federico-farina",
-  "short": "Farina F."
+  "short": "Farina F.",
+  "family": "Farina",
+  "given": "Federico",
+  "key": "farina"
  },
  "Manuela A. Fehr": {
   "slug": "manuela-a-fehr",
-  "short": "Fehr M.A."
+  "short": "Fehr M.A.",
+  "family": "Fehr",
+  "given": "Manuela A.",
+  "key": "fehr"
  },
  "Paweł Filipiak": {
   "slug": "pawel-filipiak",
-  "short": "Filipiak P."
+  "short": "Filipiak P.",
+  "family": "Filipiak",
+  "given": "Paweł",
+  "key": "filipiak"
  },
  "László Fodor": {
   "slug": "laszlo-fodor",
-  "short": "Fodor L."
+  "short": "Fodor L.",
+  "family": "Fodor",
+  "given": "László",
+  "key": "fodor"
  },
  "Francesca Forni": {
   "slug": "francesca-forni",
-  "short": "Forni F."
+  "short": "Forni F.",
+  "family": "Forni",
+  "given": "Francesca",
+  "key": "forni"
  },
  "Andre Fourie": {
   "slug": "andre-fourie",
-  "short": "Fourie A."
+  "short": "Fourie A.",
+  "family": "Fourie",
+  "given": "Andre",
+  "key": "fourie"
  },
  "Bethany R. S. Fox": {
   "slug": "bethany-r-s-fox",
-  "short": "Fox B.R.S."
+  "short": "Fox B.R.S.",
+  "family": "Fox",
+  "given": "Bethany R. S.",
+  "key": "fox"
  },
  "Sarah E. M. Gain": {
   "slug": "sarah-e-m-gain",
-  "short": "Gain S.E.M."
+  "short": "Gain S.E.M.",
+  "family": "Gain",
+  "given": "Sarah E. M.",
+  "key": "gain"
  },
  "Andrea Galli": {
   "slug": "andrea-galli",
-  "short": "Galli A."
+  "short": "Galli A.",
+  "family": "Galli",
+  "given": "Andrea",
+  "key": "galli"
  },
  "Liang Gao": {
   "slug": "liang-gao",
-  "short": "Gao L."
+  "short": "Gao L.",
+  "family": "Gao",
+  "given": "Liang",
+  "key": "gao"
  },
  "Sean P. Gaynor": {
   "slug": "sean-p-gaynor",
-  "short": "Gaynor S.P."
+  "short": "Gaynor S.P.",
+  "family": "Gaynor",
+  "given": "Sean P.",
+  "key": "gaynor"
  },
  "R. Bastian Georg": {
   "slug": "r-bastian-georg",
-  "short": "Georg R.B."
+  "short": "Georg R.B.",
+  "family": "Georg",
+  "given": "R. Bastian",
+  "key": "georg"
  },
  "Svetoslav V. Georgiev": {
   "slug": "svetoslav-v-georgiev",
-  "short": "Georgiev S.V."
+  "short": "Georgiev S.V.",
+  "family": "Georgiev",
+  "given": "Svetoslav V.",
+  "key": "georgiev"
  },
  "Nilotpal Ghosh": {
   "slug": "nilotpal-ghosh",
-  "short": "Ghosh N."
+  "short": "Ghosh N.",
+  "family": "Ghosh",
+  "given": "Nilotpal",
+  "key": "ghosh"
  },
  "Gerald Giester": {
   "slug": "gerald-giester",
-  "short": "Giester G."
+  "short": "Giester G.",
+  "family": "Giester",
+  "given": "Gerald",
+  "key": "giester"
  },
  "Nicolas David Greber": {
   "slug": "nicolas-david-greber",
-  "short": "Greber N.D."
+  "short": "Greber N.D.",
+  "family": "Greber",
+  "given": "Nicolas David",
+  "key": "greber"
  },
  "William L. Griffin": {
   "slug": "william-l-griffin",
-  "short": "Griffin W.L."
+  "short": "Griffin W.L.",
+  "family": "Griffin",
+  "given": "William L.",
+  "key": "griffin"
  },
  "Marcel Guillong": {
   "slug": "marcel-guillong",
-  "short": "Guillong M."
+  "short": "Guillong M.",
+  "family": "Guillong",
+  "given": "Marcel",
+  "key": "guillong"
  },
  "F. Gutiérrez": {
   "slug": "f-gutierrez",
-  "short": "Gutiérrez F."
+  "short": "Gutiérrez F.",
+  "family": "Gutiérrez",
+  "given": "F.",
+  "key": "gutierrez"
  },
  "Szabolcs Harangi": {
   "slug": "szabolcs-harangi",
-  "short": "Harangi S."
+  "short": "Harangi S.",
+  "family": "Harangi",
+  "given": "Szabolcs",
+  "key": "harangi"
  },
  "C. Harris": {
   "slug": "c-harris",
-  "short": "Harris C."
+  "short": "Harris C.",
+  "family": "Harris",
+  "given": "C.",
+  "key": "harris"
  },
  "Folkmar Hauff": {
   "slug": "folkmar-hauff",
-  "short": "Hauff F."
+  "short": "Hauff F.",
+  "family": "Hauff",
+  "given": "Folkmar",
+  "key": "hauff"
  },
  "Larry M. Heaman": {
   "slug": "larry-m-heaman",
-  "short": "Heaman L.M."
+  "short": "Heaman L.M.",
+  "family": "Heaman",
+  "given": "Larry M.",
+  "key": "heaman"
  },
  "Francisco Hervé": {
   "slug": "francisco-herve",
-  "short": "Hervé F."
+  "short": "Hervé F.",
+  "family": "Hervé",
+  "given": "Francisco",
+  "key": "herve"
  },
  "Maria Helena Hollanda": {
   "slug": "maria-helena-hollanda",
-  "short": "Hollanda M.H."
+  "short": "Hollanda M.H.",
+  "family": "Hollanda",
+  "given": "Maria Helena",
+  "key": "hollanda"
  },
  "Philip J. Hopley": {
   "slug": "philip-j-hopley",
-  "short": "Hopley P.J."
+  "short": "Hopley P.J.",
+  "family": "Hopley",
+  "given": "Philip J.",
+  "key": "hopley"
  },
  "Ying-Jui Hsu": {
   "slug": "ying-jui-hsu",
-  "short": "Hsu Y.-J."
+  "short": "Hsu Y.-J.",
+  "family": "Hsu",
+  "given": "Ying-Jui",
+  "key": "hsu"
  },
  "Natália Hudáčková": {
   "slug": "natalia-hudackova",
-  "short": "Hudáčková N."
+  "short": "Hudáčková N.",
+  "family": "Hudáčková",
+  "given": "Natália",
+  "key": "hudackova"
  },
  "Marco Hunziker": {
   "slug": "marco-hunziker",
-  "short": "Hunziker M."
+  "short": "Hunziker M.",
+  "family": "Hunziker",
+  "given": "Marco",
+  "key": "hunziker"
  },
  "Magdalena H. Huyskens": {
   "slug": "magdalena-h-huyskens",
-  "short": "Huyskens M.H."
+  "short": "Huyskens M.H.",
+  "family": "Huyskens",
+  "given": "Magdalena H.",
+  "key": "huyskens"
  },
  "Mauricio Ibañez-Mejia": {
   "slug": "mauricio-ibanez-mejia",
-  "short": "Ibañez-Mejia M."
+  "short": "Ibañez-Mejia M.",
+  "family": "Ibañez-Mejia",
+  "given": "Mauricio",
+  "key": "ibanezmejia"
  },
  "Ryan B. Ickert": {
   "slug": "ryan-b-ickert",
-  "short": "Ickert R.B."
+  "short": "Ickert R.B.",
+  "family": "Ickert",
+  "given": "Ryan B.",
+  "key": "ickert"
  },
  "Valdecir A. Janasi": {
   "slug": "valdecir-a-janasi",
-  "short": "Janasi V.A."
+  "short": "Janasi V.A.",
+  "family": "Janasi",
+  "given": "Valdecir A.",
+  "key": "janasi"
  },
  "Steven J. Jaret": {
   "slug": "steven-j-jaret",
-  "short": "Jaret S.J."
+  "short": "Jaret S.J.",
+  "family": "Jaret",
+  "given": "Steven J.",
+  "key": "jaret"
  },
  "Brian Jicha": {
   "slug": "brian-jicha",
-  "short": "Jicha B."
+  "short": "Jicha B.",
+  "family": "Jicha",
+  "given": "Brian",
+  "key": "jicha"
  },
  "David S. Jones": {
   "slug": "david-s-jones",
-  "short": "Jones D.S."
+  "short": "Jones D.S.",
+  "family": "Jones",
+  "given": "David S.",
+  "key": "jones"
  },
  "Fred Jourdan": {
   "slug": "fred-jourdan",
-  "short": "Jourdan F."
+  "short": "Jourdan F.",
+  "family": "Jourdan",
+  "given": "Fred",
+  "key": "jourdan"
  },
  "Sándor Józsa": {
   "slug": "sandor-jozsa",
-  "short": "Józsa S."
+  "short": "Józsa S.",
+  "family": "Józsa",
+  "given": "Sándor",
+  "key": "jozsa"
  },
  "Miroslav Kalinaj": {
   "slug": "miroslav-kalinaj",
-  "short": "Kalinaj M."
+  "short": "Kalinaj M.",
+  "family": "Kalinaj",
+  "given": "Miroslav",
+  "key": "kalinaj"
  },
  "Sandra Kamo": {
   "slug": "sandra-kamo",
-  "short": "Kamo S."
+  "short": "Kamo S.",
+  "family": "Kamo",
+  "given": "Sandra",
+  "key": "kamo"
  },
  "Jennifer Kasbohm": {
   "slug": "jennifer-kasbohm",
-  "short": "Kasbohm J."
+  "short": "Kasbohm J.",
+  "family": "Kasbohm",
+  "given": "Jennifer",
+  "key": "kasbohm"
  },
  "Alexandra Käßner": {
   "slug": "alexandra-kassner",
-  "short": "Käßner A."
+  "short": "Käßner A.",
+  "family": "Käßner",
+  "given": "Alexandra",
+  "key": "kassner"
  },
  "C. Brenhin Keller": {
   "slug": "c-brenhin-keller",
-  "short": "Keller C.B."
+  "short": "Keller C.B.",
+  "family": "Keller",
+  "given": "C. Brenhin",
+  "key": "keller"
  },
  "Allen K. Kennedy": {
   "slug": "allen-k-kennedy",
-  "short": "Kennedy A.K."
+  "short": "Kennedy A.K.",
+  "family": "Kennedy",
+  "given": "Allen K.",
+  "key": "kennedy"
  },
  "Sean T. Kinney": {
   "slug": "sean-t-kinney",
-  "short": "Kinney S.T."
+  "short": "Kinney S.T.",
+  "family": "Kinney",
+  "given": "Sean T.",
+  "key": "kinney"
  },
  "Josefine Koefoed": {
   "slug": "josefine-koefoed",
-  "short": "Koefoed J."
+  "short": "Koefoed J.",
+  "family": "Koefoed",
+  "given": "Josefine",
+  "key": "koefoed"
  },
  "Katarzyna Kołtonik": {
   "slug": "katarzyna-koltonik",
-  "short": "Kołtonik K."
+  "short": "Kołtonik K.",
+  "family": "Kołtonik",
+  "given": "Katarzyna",
+  "key": "koltonik"
  },
  "Júlia Kotulová": {
   "slug": "julia-kotulova",
-  "short": "Kotulová J."
+  "short": "Kotulová J.",
+  "family": "Kotulová",
+  "given": "Júlia",
+  "key": "kotulova"
  },
  "Kalin Kouzmanov": {
   "slug": "kalin-kouzmanov",
-  "short": "Kouzmanov K."
+  "short": "Kouzmanov K.",
+  "family": "Kouzmanov",
+  "given": "Kalin",
+  "key": "kouzmanov"
  },
  "Barbara Kremer": {
   "slug": "barbara-kremer",
-  "short": "Kremer B."
+  "short": "Kremer B.",
+  "family": "Kremer",
+  "given": "Barbara",
+  "key": "kremer"
  },
  "Andreas Kronz": {
   "slug": "andreas-kronz",
-  "short": "Kronz A."
+  "short": "Kronz A.",
+  "family": "Kronz",
+  "given": "Andreas",
+  "key": "kronz"
  },
  "N. Kueter": {
   "slug": "n-kueter",
-  "short": "Kueter N."
+  "short": "Kueter N.",
+  "family": "Kueter",
+  "given": "N.",
+  "key": "kueter"
  },
  "Duje Kukoč": {
   "slug": "duje-kukoc",
-  "short": "Kukoč D."
+  "short": "Kukoč D.",
+  "family": "Kukoč",
+  "given": "Duje",
+  "key": "kukoc"
  },
  "Steffen Kutterolf": {
   "slug": "steffen-kutterolf",
-  "short": "Kutterolf S."
+  "short": "Kutterolf S.",
+  "family": "Kutterolf",
+  "given": "Steffen",
+  "key": "kutterolf"
  },
  "Andrew Kylander-Clark": {
   "slug": "andrew-kylander-clark",
-  "short": "Kylander-Clark A."
+  "short": "Kylander-Clark A.",
+  "family": "Kylander-Clark",
+  "given": "Andrew",
+  "key": "kylanderclark"
  },
  "Simon J. E. Large": {
   "slug": "simon-j-e-large",
-  "short": "Large S.J.E."
+  "short": "Large S.J.E.",
+  "family": "Large",
+  "given": "Simon J. E.",
+  "key": "large"
  },
  "Oscar Laurent": {
   "slug": "oscar-laurent",
-  "short": "Laurent O."
- },
- "Daniel W. J. Lee": {
-  "slug": "daniel-w-j-lee",
-  "short": "Lee D.W.J."
+  "short": "Laurent O.",
+  "family": "Laurent",
+  "given": "Oscar",
+  "key": "laurent"
  },
  "Hao-Yang Lee": {
   "slug": "hao-yang-lee",
-  "short": "Lee H.-Y."
+  "short": "Lee H.-Y.",
+  "family": "Lee",
+  "given": "Hao-Yang",
+  "key": "lee"
+ },
+ "Daniel W. J. Lee": {
+  "slug": "daniel-w-j-lee",
+  "short": "Lee D.W.J.",
+  "family": "Lee",
+  "given": "Daniel W. J.",
+  "key": "lee"
  },
  "Marcelo Leppe": {
   "slug": "marcelo-leppe",
-  "short": "Leppe M."
+  "short": "Leppe M.",
+  "family": "Leppe",
+  "given": "Marcelo",
+  "key": "leppe"
  },
  "Ingo Leya": {
   "slug": "ingo-leya",
-  "short": "Leya I."
+  "short": "Leya I.",
+  "family": "Leya",
+  "given": "Ingo",
+  "key": "leya"
  },
  "Lucas M. Lino": {
   "slug": "lucas-m-lino",
-  "short": "Lino L.M."
+  "short": "Lino L.M.",
+  "family": "Lino",
+  "given": "Lucas M.",
+  "key": "lino"
  },
  "B. Linol": {
   "slug": "b-linol",
-  "short": "Linol B."
+  "short": "Linol B.",
+  "family": "Linol",
+  "given": "B.",
+  "key": "linol"
  },
  "Mary C. Lonsdale": {
   "slug": "mary-c-lonsdale",
-  "short": "Lonsdale M.C."
+  "short": "Lonsdale M.C.",
+  "family": "Lonsdale",
+  "given": "Mary C.",
+  "key": "lonsdale"
  },
  "Nathan Looser": {
   "slug": "nathan-looser",
-  "short": "Looser N."
+  "short": "Looser N.",
+  "family": "Looser",
+  "given": "Nathan",
+  "key": "looser"
  },
  "Réka Lukács": {
   "slug": "reka-lukacs",
-  "short": "Lukács R."
+  "short": "Lukács R.",
+  "family": "Lukács",
+  "given": "Réka",
+  "key": "lukacs"
  },
  "Francis A. Macdonald": {
   "slug": "francis-a-macdonald",
-  "short": "Macdonald F.A."
+  "short": "Macdonald F.A.",
+  "family": "Macdonald",
+  "given": "Francis A.",
+  "key": "macdonald"
  },
  "Antomat A. Macêdo Filho": {
   "slug": "antomat-a-macedo-filho",
-  "short": "Macêdo Filho A.A."
+  "short": "Macêdo Filho A.A.",
+  "family": "Macêdo Filho",
+  "given": "Antomat A.",
+  "key": "macedofilho"
  },
  "Scott A. MacLennan": {
   "slug": "scott-a-maclennan",
-  "short": "MacLennan S.A."
+  "short": "MacLennan S.A.",
+  "family": "MacLennan",
+  "given": "Scott A.",
+  "key": "maclennan"
  },
  "Matthias Magiera": {
   "slug": "matthias-magiera",
-  "short": "Magiera M."
+  "short": "Magiera M.",
+  "family": "Magiera",
+  "given": "Matthias",
+  "key": "magiera"
  },
  "T. Magna": {
   "slug": "t-magna",
-  "short": "Magna T."
+  "short": "Magna T.",
+  "family": "Magna",
+  "given": "T.",
+  "key": "magna"
  },
  "Leslie Manriquez": {
   "slug": "leslie-manriquez",
-  "short": "Manriquez L."
+  "short": "Manriquez L.",
+  "family": "Manriquez",
+  "given": "Leslie",
+  "key": "manriquez"
  },
  "Héctor Mansilla": {
   "slug": "hector-mansilla",
-  "short": "Mansilla H."
+  "short": "Mansilla H.",
+  "family": "Mansilla",
+  "given": "Héctor",
+  "key": "mansilla"
  },
  "Joelle Marbach": {
   "slug": "joelle-marbach",
-  "short": "Marbach J."
+  "short": "Marbach J.",
+  "family": "Marbach",
+  "given": "Joelle",
+  "key": "marbach"
  },
  "Darren F. Mark": {
   "slug": "darren-f-mark",
-  "short": "Mark D.F."
+  "short": "Mark D.F.",
+  "family": "Mark",
+  "given": "Darren F.",
+  "key": "mark"
  },
  "Sava Markovic": {
   "slug": "sava-markovic",
-  "short": "Markovic S."
+  "short": "Markovic S.",
+  "family": "Markovic",
+  "given": "Sava",
+  "key": "markovic"
  },
  "F. Marxer": {
   "slug": "f-marxer",
-  "short": "Marxer F."
+  "short": "Marxer F.",
+  "family": "Marxer",
+  "given": "F.",
+  "key": "marxer"
  },
  "Stanisław Mazur": {
   "slug": "stanislaw-mazur",
-  "short": "Mazur S."
+  "short": "Mazur S.",
+  "family": "Mazur",
+  "given": "Stanisław",
+  "key": "mazur"
  },
  "Alyssa J. McKanna": {
   "slug": "alyssa-j-mckanna",
-  "short": "McKanna A.J."
+  "short": "McKanna A.J.",
+  "family": "McKanna",
+  "given": "Alyssa J.",
+  "key": "mckanna"
  },
  "Kevin D. McKeegan": {
   "slug": "kevin-d-mckeegan",
-  "short": "McKeegan K.D."
+  "short": "McKeegan K.D.",
+  "family": "McKeegan",
+  "given": "Kevin D.",
+  "key": "mckeegan"
  },
  "Noah M. McLean": {
   "slug": "noah-m-mclean",
-  "short": "McLean N.M."
+  "short": "McLean N.M.",
+  "family": "McLean",
+  "given": "Noah M.",
+  "key": "mclean"
  },
  "Óscar Merino-Tomé": {
   "slug": "oscar-merino-tome",
-  "short": "Merino-Tomé Ó."
+  "short": "Merino-Tomé Ó.",
+  "family": "Merino-Tomé",
+  "given": "Óscar",
+  "key": "merinotome"
  },
  "Ivan Mišur": {
   "slug": "ivan-misur",
-  "short": "Mišur I."
+  "short": "Mišur I.",
+  "family": "Mišur",
+  "given": "Ivan",
+  "key": "misur"
  },
  "Thabang Mohapi": {
   "slug": "thabang-mohapi",
-  "short": "Mohapi T."
+  "short": "Mohapi T.",
+  "family": "Mohapi",
+  "given": "Thabang",
+  "key": "mohapi"
  },
  "Michael T. Mohr": {
   "slug": "michael-t-mohr",
-  "short": "Mohr M.T."
+  "short": "Mohr M.T.",
+  "family": "Mohr",
+  "given": "Michael T.",
+  "key": "mohr"
  },
  "L. R. Monnereau": {
   "slug": "l-r-monnereau",
-  "short": "Monnereau L.R."
+  "short": "Monnereau L.R.",
+  "family": "Monnereau",
+  "given": "L. R.",
+  "key": "monnereau"
  },
  "T. Muedi": {
   "slug": "t-muedi",
-  "short": "Muedi T."
- },
- "Samuel Müller": {
-  "slug": "samuel-muller",
-  "short": "Müller S."
+  "short": "Muedi T.",
+  "family": "Muedi",
+  "given": "T.",
+  "key": "muedi"
  },
  "Inigo A. Müller": {
   "slug": "inigo-a-muller",
-  "short": "Müller I.A."
+  "short": "Müller I.A.",
+  "family": "Müller",
+  "given": "Inigo A.",
+  "key": "muller"
+ },
+ "Samuel Müller": {
+  "slug": "samuel-muller",
+  "short": "Müller S.",
+  "family": "Müller",
+  "given": "Samuel",
+  "key": "muller"
  },
  "Joshua Murray": {
   "slug": "joshua-murray",
-  "short": "Murray J."
+  "short": "Murray J.",
+  "family": "Murray",
+  "given": "Joshua",
+  "key": "murray"
  },
  "Sezim Mustapayeva": {
   "slug": "sezim-mustapayeva",
-  "short": "Mustapayeva S."
+  "short": "Mustapayeva S.",
+  "family": "Mustapayeva",
+  "given": "Sezim",
+  "key": "mustapayeva"
  },
  "Katarzyna Narkiewicz": {
   "slug": "katarzyna-narkiewicz",
-  "short": "Narkiewicz K."
+  "short": "Narkiewicz K.",
+  "family": "Narkiewicz",
+  "given": "Katarzyna",
+  "key": "narkiewicz"
  },
  "Lutz Nasdala": {
   "slug": "lutz-nasdala",
-  "short": "Nasdala L."
+  "short": "Nasdala L.",
+  "family": "Nasdala",
+  "given": "Lutz",
+  "key": "nasdala"
  },
  "Chetan Nathwani": {
   "slug": "chetan-nathwani",
-  "short": "Nathwani C."
+  "short": "Nathwani C.",
+  "family": "Nathwani",
+  "given": "Chetan",
+  "key": "nathwani"
  },
  "Lyle L. Nelson": {
   "slug": "lyle-l-nelson",
-  "short": "Nelson L.L."
+  "short": "Nelson L.L.",
+  "family": "Nelson",
+  "given": "Lyle L.",
+  "key": "nelson"
  },
  "Bianka Németh": {
   "slug": "bianka-nemeth",
-  "short": "Németh B."
+  "short": "Németh B.",
+  "family": "Németh",
+  "given": "Bianka",
+  "key": "nemeth"
  },
  "J. Neukampf": {
   "slug": "j-neukampf",
-  "short": "Neukampf J."
+  "short": "Neukampf J.",
+  "family": "Neukampf",
+  "given": "J.",
+  "key": "neukampf"
  },
  "Stephen Noble": {
   "slug": "stephen-noble",
-  "short": "Noble S."
+  "short": "Noble S.",
+  "family": "Noble",
+  "given": "Stephen",
+  "key": "noble"
  },
  "J. Oalmann": {
   "slug": "j-oalmann",
-  "short": "Oalmann J."
+  "short": "Oalmann J.",
+  "family": "Oalmann",
+  "given": "J.",
+  "key": "oalmann"
  },
  "Liam O’Connor": {
   "slug": "liam-oconnor",
-  "short": "O’Connor L."
+  "short": "O’Connor L.",
+  "family": "O’Connor",
+  "given": "Liam",
+  "key": "oconnor"
  },
  "Alisson L. Oliveira": {
   "slug": "alisson-l-oliveira",
-  "short": "Oliveira A.L."
+  "short": "Oliveira A.L.",
+  "family": "Oliveira",
+  "given": "Alisson L.",
+  "key": "oliveira"
  },
  "Paul E. Olsen": {
   "slug": "paul-e-olsen",
-  "short": "Olsen P.E."
+  "short": "Olsen P.E.",
+  "family": "Olsen",
+  "given": "Paul E.",
+  "key": "olsen"
  },
  "Maria Ovtcharova": {
   "slug": "maria-ovtcharova",
-  "short": "Ovtcharova M."
+  "short": "Ovtcharova M.",
+  "family": "Ovtcharova",
+  "given": "Maria",
+  "key": "ovtcharova"
  },
  "M. A. Parada": {
   "slug": "m-a-parada",
-  "short": "Parada M.A."
+  "short": "Parada M.A.",
+  "family": "Parada",
+  "given": "M. A.",
+  "key": "parada"
  },
  "Natalia Pardo": {
   "slug": "natalia-pardo",
-  "short": "Pardo N."
+  "short": "Pardo N.",
+  "family": "Pardo",
+  "given": "Natalia",
+  "key": "pardo"
  },
  "André N. Paul": {
   "slug": "andre-n-paul",
-  "short": "Paul A.N."
+  "short": "Paul A.N.",
+  "family": "Paul",
+  "given": "André N.",
+  "key": "paul"
  },
  "I. Payacán": {
   "slug": "i-payacan",
-  "short": "Payacán I."
+  "short": "Payacán I.",
+  "family": "Payacán",
+  "given": "I.",
+  "key": "payacan"
  },
  "Maurizio Petrelli": {
   "slug": "maurizio-petrelli",
-  "short": "Petrelli M."
+  "short": "Petrelli M.",
+  "family": "Petrelli",
+  "given": "Maurizio",
+  "key": "petrelli"
  },
  "Irena Peytcheva": {
   "slug": "irena-peytcheva",
-  "short": "Peytcheva I."
+  "short": "Peytcheva I.",
+  "family": "Peytcheva",
+  "given": "Irena",
+  "key": "peytcheva"
  },
  "William M. Phillips": {
   "slug": "william-m-phillips",
-  "short": "Phillips W.M."
+  "short": "Phillips W.M.",
+  "family": "Phillips",
+  "given": "William M.",
+  "key": "phillips"
  },
  "Marcus Phua": {
   "slug": "marcus-phua",
-  "short": "Phua M."
+  "short": "Phua M.",
+  "family": "Phua",
+  "given": "Marcus",
+  "key": "phua"
  },
  "Agnieszka Pisarzowska": {
   "slug": "agnieszka-pisarzowska",
-  "short": "Pisarzowska A."
+  "short": "Pisarzowska A.",
+  "family": "Pisarzowska",
+  "given": "Agnieszka",
+  "key": "pisarzowska"
  },
  "Răzvan-Gabriel Popa": {
   "slug": "razvan-gabriel-popa",
-  "short": "Popa R.-G."
+  "short": "Popa R.-G.",
+  "family": "Popa",
+  "given": "Răzvan-Gabriel",
+  "key": "popa"
  },
  "Maxim Portnyagin": {
   "slug": "maxim-portnyagin",
-  "short": "Portnyagin M."
+  "short": "Portnyagin M.",
+  "family": "Portnyagin",
+  "given": "Maxim",
+  "key": "portnyagin"
  },
  "Grzegorz Racki": {
   "slug": "grzegorz-racki",
-  "short": "Racki G."
+  "short": "Racki G.",
+  "family": "Racki",
+  "given": "Grzegorz",
+  "key": "racki"
  },
  "Jahandar Ramezani": {
   "slug": "jahandar-ramezani",
-  "short": "Ramezani J."
+  "short": "Ramezani J.",
+  "family": "Ramezani",
+  "given": "Jahandar",
+  "key": "ramezani"
  },
  "Stephen Reidel": {
   "slug": "stephen-reidel",
-  "short": "Reidel S."
+  "short": "Reidel S.",
+  "family": "Reidel",
+  "given": "Stephen",
+  "key": "reidel"
  },
  "Peter W. Reiners": {
   "slug": "peter-w-reiners",
-  "short": "Reiners P.W."
+  "short": "Reiners P.W.",
+  "family": "Reiners",
+  "given": "Peter W.",
+  "key": "reiners"
  },
  "Joakim Reuteler": {
   "slug": "joakim-reuteler",
-  "short": "Reuteler J."
+  "short": "Reuteler J.",
+  "family": "Reuteler",
+  "given": "Joakim",
+  "key": "reuteler"
  },
  "Hamdi Rifai": {
   "slug": "hamdi-rifai",
-  "short": "Rifai H."
+  "short": "Rifai H.",
+  "family": "Rifai",
+  "given": "Hamdi",
+  "key": "rifai"
  },
  "Matt Rioux": {
   "slug": "matt-rioux",
-  "short": "Rioux M."
+  "short": "Rioux M.",
+  "family": "Rioux",
+  "given": "Matt",
+  "key": "rioux"
  },
  "Gabriel Rojas": {
   "slug": "gabriel-rojas",
-  "short": "Rojas G."
+  "short": "Rojas G.",
+  "family": "Rojas",
+  "given": "Gabriel",
+  "key": "rojas"
  },
  "Rodrigo Rojas-Arancibia": {
   "slug": "rodrigo-rojas-arancibia",
-  "short": "Rojas-Arancibia R."
+  "short": "Rojas-Arancibia R.",
+  "family": "Rojas-Arancibia",
+  "given": "Rodrigo",
+  "key": "rojasarancibia"
  },
  "Alan D. Rooney": {
   "slug": "alan-d-rooney",
-  "short": "Rooney A.D."
+  "short": "Rooney A.D.",
+  "family": "Rooney",
+  "given": "Alan D.",
+  "key": "rooney"
  },
  "Ricarda Rosskopf": {
   "slug": "ricarda-rosskopf",
-  "short": "Rosskopf R."
+  "short": "Rosskopf R.",
+  "family": "Rosskopf",
+  "given": "Ricarda",
+  "key": "rosskopf"
  },
  "M. C. Rowe": {
   "slug": "m-c-rowe",
-  "short": "Rowe M.C."
+  "short": "Rowe M.C.",
+  "family": "Rowe",
+  "given": "M. C.",
+  "key": "rowe"
  },
  "Samuel Rybár": {
   "slug": "samuel-rybar",
-  "short": "Rybár S."
+  "short": "Rybár S.",
+  "family": "Rybár",
+  "given": "Samuel",
+  "key": "rybar"
  },
  "Diana Sahy": {
   "slug": "diana-sahy",
-  "short": "Sahy D."
+  "short": "Sahy D.",
+  "family": "Sahy",
+  "given": "Diana",
+  "key": "sahy"
  },
  "Elias Samankassou": {
   "slug": "elias-samankassou",
-  "short": "Samankassou E."
+  "short": "Samankassou E.",
+  "family": "Samankassou",
+  "given": "Elias",
+  "key": "samankassou"
  },
  "Kyle M. Samperton": {
   "slug": "kyle-m-samperton",
-  "short": "Samperton K.M."
+  "short": "Samperton K.M.",
+  "family": "Samperton",
+  "given": "Kyle M.",
+  "key": "samperton"
  },
  "Katarína Šarinová": {
   "slug": "katarina-sarinova",
-  "short": "Šarinová K."
+  "short": "Šarinová K.",
+  "family": "Šarinová",
+  "given": "Katarína",
+  "key": "sarinova"
  },
  "Urs Schaltegger": {
   "slug": "urs-schaltegger",
-  "short": "Schaltegger U."
+  "short": "Schaltegger U.",
+  "family": "Schaltegger",
+  "given": "Urs",
+  "key": "schaltegger"
  },
  "David Schiller": {
   "slug": "david-schiller",
-  "short": "Schiller D."
+  "short": "Schiller D.",
+  "family": "Schiller",
+  "given": "David",
+  "key": "schiller"
  },
  "Julie Schindlbeck-Belo": {
   "slug": "julie-schindlbeck-belo",
-  "short": "Schindlbeck-Belo J."
+  "short": "Schindlbeck-Belo J.",
+  "family": "Schindlbeck-Belo",
+  "given": "Julie",
+  "key": "schindlbeckbelo"
  },
  "Max W. Schmidt": {
   "slug": "max-w-schmidt",
-  "short": "Schmidt M.W."
+  "short": "Schmidt M.W.",
+  "family": "Schmidt",
+  "given": "Max W.",
+  "key": "schmidt"
  },
  "A. K. Schmitt": {
   "slug": "a-k-schmitt",
-  "short": "Schmitt A.K."
+  "short": "Schmitt A.K.",
+  "family": "Schmitt",
+  "given": "A. K.",
+  "key": "schmitt"
  },
  "Mark D. Schmitz": {
   "slug": "mark-d-schmitz",
-  "short": "Schmitz M.D."
+  "short": "Schmitz M.D.",
+  "family": "Schmitz",
+  "given": "Mark D.",
+  "key": "schmitz"
  },
  "Blair Schoene": {
   "slug": "blair-schoene",
-  "short": "Schoene B."
+  "short": "Schoene B.",
+  "family": "Schoene",
+  "given": "Blair",
+  "key": "schoene"
  },
  "Maria Schönbächler": {
   "slug": "maria-schonbachler",
-  "short": "Schönbächler M."
+  "short": "Schönbächler M.",
+  "family": "Schönbächler",
+  "given": "Maria",
+  "key": "schonbachler"
  },
  "James S. Scoates": {
   "slug": "james-s-scoates",
-  "short": "Scoates J.S."
+  "short": "Scoates J.S.",
+  "family": "Scoates",
+  "given": "James S.",
+  "key": "scoates"
  },
  "David Selby": {
   "slug": "david-selby",
-  "short": "Selby D."
+  "short": "Selby D.",
+  "family": "Selby",
+  "given": "David",
+  "key": "selby"
  },
  "Jacob B. Setera": {
   "slug": "jacob-b-setera",
-  "short": "Setera J.B."
+  "short": "Setera J.B.",
+  "family": "Setera",
+  "given": "Jacob B.",
+  "key": "setera"
  },
  "Abraham Shipandeni": {
   "slug": "abraham-shipandeni",
-  "short": "Shipandeni A."
+  "short": "Shipandeni A.",
+  "family": "Shipandeni",
+  "given": "Abraham",
+  "key": "shipandeni"
  },
  "Carolina Silva": {
   "slug": "carolina-silva",
-  "short": "Silva C."
+  "short": "Silva C.",
+  "family": "Silva",
+  "given": "Carolina",
+  "key": "silva"
  },
  "Jeremia Simon": {
   "slug": "jeremia-simon",
-  "short": "Simon J."
+  "short": "Simon J.",
+  "family": "Simon",
+  "given": "Jeremia",
+  "key": "simon"
  },
  "Silvano Sinigoi": {
   "slug": "silvano-sinigoi",
-  "short": "Sinigoi S."
+  "short": "Sinigoi S.",
+  "family": "Sinigoi",
+  "given": "Silvano",
+  "key": "sinigoi"
  },
  "Ľubomír Sliva": {
   "slug": "lubomir-sliva",
-  "short": "Sliva Ľ."
+  "short": "Sliva Ľ.",
+  "family": "Sliva",
+  "given": "Ľubomír",
+  "key": "sliva"
  },
  "Emily F. Smith": {
   "slug": "emily-f-smith",
-  "short": "Smith E.F."
+  "short": "Smith E.F.",
+  "family": "Smith",
+  "given": "Emily F.",
+  "key": "smith"
  },
  "Michael J. Spicuzza": {
   "slug": "michael-j-spicuzza",
-  "short": "Spicuzza M.J."
+  "short": "Spicuzza M.J.",
+  "family": "Spicuzza",
+  "given": "Michael J.",
+  "key": "spicuzza"
  },
  "Natalia Stamm": {
   "slug": "natalia-stamm",
-  "short": "Stamm N."
+  "short": "Stamm N.",
+  "family": "Stamm",
+  "given": "Natalia",
+  "key": "stamm"
  },
  "Travis Steiner-Leach": {
   "slug": "travis-steiner-leach",
-  "short": "Steiner-Leach T."
+  "short": "Steiner-Leach T.",
+  "family": "Steiner-Leach",
+  "given": "Travis",
+  "key": "steinerleach"
  },
  "Justin V. Strauss": {
   "slug": "justin-v-strauss",
-  "short": "Strauss J.V."
+  "short": "Strauss J.V.",
+  "family": "Strauss",
+  "given": "Justin V.",
+  "key": "strauss"
  },
  "Sanja Šuica": {
   "slug": "sanja-suica",
-  "short": "Šuica S."
+  "short": "Šuica S.",
+  "family": "Šuica",
+  "given": "Sanja",
+  "key": "suica"
  },
  "Yi Sun": {
   "slug": "yi-sun",
-  "short": "Sun Y."
+  "short": "Sun Y.",
+  "family": "Sun",
+  "given": "Yi",
+  "key": "sun"
  },
  "János Szepesi": {
   "slug": "janos-szepesi",
-  "short": "Szepesi J."
+  "short": "Szepesi J.",
+  "family": "Szepesi",
+  "given": "János",
+  "key": "szepesi"
  },
  "Claudio Tapia": {
   "slug": "claudio-tapia",
-  "short": "Tapia C."
+  "short": "Tapia C.",
+  "family": "Tapia",
+  "given": "Claudio",
+  "key": "tapia"
  },
  "Simon Tapster": {
   "slug": "simon-tapster",
-  "short": "Tapster S."
+  "short": "Tapster S.",
+  "family": "Tapster",
+  "given": "Simon",
+  "key": "tapster"
  },
  "Lorenzo Tavazzani": {
   "slug": "lorenzo-tavazzani",
-  "short": "Tavazzani L."
+  "short": "Tavazzani L.",
+  "family": "Tavazzani",
+  "given": "Lorenzo",
+  "key": "tavazzani"
  },
  "Aidan Taylor": {
   "slug": "aidan-taylor",
-  "short": "Taylor A."
+  "short": "Taylor A.",
+  "family": "Taylor",
+  "given": "Aidan",
+  "key": "taylor"
  },
  "Marion Tichomirowa": {
   "slug": "marion-tichomirowa",
-  "short": "Tichomirowa M."
+  "short": "Tichomirowa M.",
+  "family": "Tichomirowa",
+  "given": "Marion",
+  "key": "tichomirowa"
  },
  "P. M. E. Tollan": {
   "slug": "p-m-e-tollan",
-  "short": "Tollan P.M.E."
+  "short": "Tollan P.M.E.",
+  "family": "Tollan",
+  "given": "P. M. E.",
+  "key": "tollan"
  },
  "Andrew J. Tomlinson": {
   "slug": "andrew-j-tomlinson",
-  "short": "Tomlinson A.J."
+  "short": "Tomlinson A.J.",
+  "family": "Tomlinson",
+  "given": "Andrew J.",
+  "key": "tomlinson"
  },
  "Lisard Torró": {
   "slug": "lisard-torro",
-  "short": "Torró L."
+  "short": "Torró L.",
+  "family": "Torró",
+  "given": "Lisard",
+  "key": "torro"
  },
  "C. Forrest Town": {
   "slug": "c-forrest-town",
-  "short": "Town C.F."
+  "short": "Town C.F.",
+  "family": "Town",
+  "given": "C. Forrest",
+  "key": "town"
  },
  "Mirka Trajanova": {
   "slug": "mirka-trajanova",
-  "short": "Trajanova M."
+  "short": "Trajanova M.",
+  "family": "Trajanova",
+  "given": "Mirka",
+  "key": "trajanova"
  },
  "Cristine Trevisan": {
   "slug": "cristine-trevisan",
-  "short": "Trevisan C."
+  "short": "Trevisan C.",
+  "family": "Trevisan",
+  "given": "Cristine",
+  "key": "trevisan"
  },
  "Nina Trinajstić": {
   "slug": "nina-trinajstic",
-  "short": "Trinajstić N."
+  "short": "Trinajstić N.",
+  "family": "Trinajstić",
+  "given": "Nina",
+  "key": "trinajstic"
  },
  "J. Troch": {
   "slug": "j-troch",
-  "short": "Troch J."
+  "short": "Troch J.",
+  "family": "Troch",
+  "given": "J.",
+  "key": "troch"
  },
  "P. Ulmer": {
   "slug": "p-ulmer",
-  "short": "Ulmer P."
+  "short": "Ulmer P.",
+  "family": "Ulmer",
+  "given": "P.",
+  "key": "ulmer"
  },
  "John W. Valley": {
   "slug": "john-w-valley",
-  "short": "Valley J.W."
+  "short": "Valley J.W.",
+  "family": "Valley",
+  "given": "John W.",
+  "key": "valley"
  },
  "Jill A. VanTongeren": {
   "slug": "jill-a-vantongeren",
-  "short": "VanTongeren J.A."
+  "short": "VanTongeren J.A.",
+  "family": "VanTongeren",
+  "given": "Jill A.",
+  "key": "vantongeren"
  },
  "Pieter Vermeesch": {
   "slug": "pieter-vermeesch",
-  "short": "Vermeesch P."
+  "short": "Vermeesch P.",
+  "family": "Vermeesch",
+  "given": "Pieter",
+  "key": "vermeesch"
  },
  "Adrianna L. Virmond": {
   "slug": "adrianna-l-virmond",
-  "short": "Virmond A.L."
+  "short": "Virmond A.L.",
+  "family": "Virmond",
+  "given": "Adrianna L.",
+  "key": "virmond"
  },
  "Albrecht von Quadt": {
   "slug": "albrecht-von-quadt",
-  "short": "von Quadt A."
+  "short": "von Quadt A.",
+  "family": "von Quadt",
+  "given": "Albrecht",
+  "key": "vonquadt"
  },
  "Corey J. Wall": {
   "slug": "corey-j-wall",
-  "short": "Wall C.J."
+  "short": "Wall C.J.",
+  "family": "Wall",
+  "given": "Corey J.",
+  "key": "wall"
  },
  "Kuo-Lung Wang": {
   "slug": "kuo-lung-wang",
-  "short": "Wang K.-L."
+  "short": "Wang K.-L.",
+  "family": "Wang",
+  "given": "Kuo-Lung",
+  "key": "wang"
  },
  "Bhuwadol Wanthanachaisaeng": {
   "slug": "bhuwadol-wanthanachaisaeng",
-  "short": "Wanthanachaisaeng B."
+  "short": "Wanthanachaisaeng B.",
+  "family": "Wanthanachaisaeng",
+  "given": "Bhuwadol",
+  "key": "wanthanachaisaeng"
  },
  "Gary Wilson": {
   "slug": "gary-wilson",
-  "short": "Wilson G."
+  "short": "Wilson G.",
+  "family": "Wilson",
+  "given": "Gary",
+  "key": "wilson"
  },
  "John A. Wolff": {
   "slug": "john-a-wolff",
-  "short": "Wolff J.A."
+  "short": "Wolff J.A.",
+  "family": "Wolff",
+  "given": "John A.",
+  "key": "wolff"
  },
  "Jörn-Frederik Wotzlaw": {
   "slug": "jorn-frederik-wotzlaw",
-  "short": "Wotzlaw J.-F."
+  "short": "Wotzlaw J.-F.",
+  "family": "Wotzlaw",
+  "given": "Jörn-Frederik",
+  "key": "wotzlaw"
  },
  "Fu-Yuan Wu": {
   "slug": "fu-yuan-wu",
-  "short": "Wu F.-Y."
- },
- "Yue-Heng Yang": {
-  "slug": "yue-heng-yang",
-  "short": "Yang Y.-H."
+  "short": "Wu F.-Y.",
+  "family": "Wu",
+  "given": "Fu-Yuan",
+  "key": "wu"
  },
  "Chuan Yang": {
   "slug": "chuan-yang",
-  "short": "Yang C."
+  "short": "Yang C.",
+  "family": "Yang",
+  "given": "Chuan",
+  "key": "yang"
+ },
+ "Yue-Heng Yang": {
+  "slug": "yue-heng-yang",
+  "short": "Yang Y.-H.",
+  "family": "Yang",
+  "given": "Yue-Heng",
+  "key": "yang"
  },
  "Qing-Zhu Yin": {
   "slug": "qing-zhu-yin",
-  "short": "Yin Q.-Z."
+  "short": "Yin Q.-Z.",
+  "family": "Yin",
+  "given": "Qing-Zhu",
+  "key": "yin"
  },
  "Peng Zeng": {
   "slug": "peng-zeng",
-  "short": "Zeng P."
+  "short": "Zeng P.",
+  "family": "Zeng",
+  "given": "Peng",
+  "key": "zeng"
  },
  "Junjun Zhang": {
   "slug": "junjun-zhang",
-  "short": "Zhang J."
+  "short": "Zhang J.",
+  "family": "Zhang",
+  "given": "Junjun",
+  "key": "zhang"
  },
  "Zhe J. Zhang": {
   "slug": "zhe-j-zhang",
-  "short": "Zhang Z.J."
+  "short": "Zhang Z.J.",
+  "family": "Zhang",
+  "given": "Zhe J.",
+  "key": "zhang"
  },
  "Lisa Zieman": {
   "slug": "lisa-zieman",
-  "short": "Zieman L."
+  "short": "Zieman L.",
+  "family": "Zieman",
+  "given": "Lisa",
+  "key": "zieman"
  },
  "Dawid Szymanowski": {
   "slug": "",
   "short": "Szymanowski D.",
-  "owner": true
+  "owner": true,
+  "family": "Szymanowski",
+  "given": "Dawid",
+  "key": "szymanowski"
  },
  "G. Rojas": {
   "slug": "gabriel-rojas",
-  "short": "Rojas G."
+  "short": "Rojas G.",
+  "family": "Rojas",
+  "given": "Gabriel",
+  "key": "rojas"
  }
 }

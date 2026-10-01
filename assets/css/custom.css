@@ -306,3 +306,32 @@ main:focus { outline: none; }
   .site-header, .site-footer, .pub-tabs-wrap, .pub-filters, .search-modal, .skip-link { display: none !important; }
 }
 .container.narrow, .page-head + .container { padding-bottom: 56px; }
+
+/* ---- Publication tiles (Publications page) ---- */
+.pub-list { display: flex; flex-direction: column; gap: 12px; }
+.pub-list .pub-row {
+  padding: 16px 18px; border: 1px solid var(--color-border); border-radius: 8px;
+  background: rgba(255, 255, 255, 0.54); box-shadow: 0 8px 22px rgba(45, 41, 38, 0.043); font-size: 0.95rem;
+}
+.pub-list .pub-row[hidden] { display: none; }
+.pub-badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.pub-badge { display: inline-block; padding: 2px 9px; border: 1px solid var(--color-border); border-radius: 999px; background: #fffdfa; color: #516c5b; font-size: 0.78rem; font-weight: 760; line-height: 1.5; }
+.pub-card-title { font-family: var(--font-sans); font-size: 1.06rem; font-weight: 700; line-height: 1.35; margin: 0 0 4px; }
+.pub-card-title a { color: var(--color-text); text-decoration: none; }
+.pub-card-title a:hover { color: var(--color-link); text-decoration: underline; }
+.pub-row .pub-authors { color: var(--color-text-muted); margin: 0 0 2px; font-size: 0.93rem; }
+.pub-row .pub-authors .owner { color: var(--color-text); }
+.pub-venue { margin: 0; font-size: 0.93rem; }
+.pub-actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.pub-btn {
+  display: inline-flex; align-items: center; padding: 4px 9px; border: 1px solid var(--color-border); border-radius: 6px;
+  background: #fffdfa; color: var(--color-text); font: inherit; font-size: 0.8rem; font-weight: 650; line-height: 1.4;
+  text-decoration: none; cursor: pointer; transition: border-color .18s, color .18s, background-color .18s;
+}
+.pub-btn:hover { border-color: var(--color-accent); color: var(--color-accent); }
+.pub-btn.active, .pub-btn[aria-expanded="true"] { border-color: var(--color-accent); color: var(--color-accent); background: var(--color-surface); }
+.pub-panel { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--color-border); }
+.pub-panel-head { margin: 0 0 6px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-text-muted); }
+.pub-abstract { margin: 0; line-height: 1.6; max-width: 52rem; }
+.pub-cite-text { margin: 0 0 10px; }
+.pub-bibtex { margin: 0 0 10px; padding: 10px 12px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 6px; font-size: 0.78rem; line-height: 1.45; overflow-x: auto; white-space: pre; }
