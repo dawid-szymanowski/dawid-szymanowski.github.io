@@ -1,0 +1,36 @@
+{{- $p := . -}}
+{{- $isReview := or (in ($p.Params.publication_types | default slice) "under_review") (eq $p.Params.status "under_review") -}}
+{{- $parent := cond (eq .Section "talk") "talk" "publication" -}}
+<article class="container narrow pub-single">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ "" | relURL }}">{{ i18n "home" }}</a> / <a href="{{ "publication/" | relURL }}{{ if eq .Section "talk" }}#presentations{{ end }}">{{ i18n "writings" }}</a> / <span>{{ .Title | truncate 60 }}</span></nav>
+  <h1 class="pub-title">{{ .Title }}</h1>
+  <p class="pub-authors">{{ partial "author_line.html" (dict "authors" (.Params.authors | default slice) "max" 0 "link" true "full" true) }}</p>
+  <p class="pub-meta">
+    {{- with .Params.publication }}<span class="venue">{{ . }}</span>{{ end }}
+    {{- if not $isReview }}{{ if eq .Section "talk" }} · {{ .Date.Format "2006" }}{{ else if eq (.Date.Format "01-02") "01-01" }} · {{ .Date.Format "2006" }}{{ else if eq (.Date.Format "02") "01" }} · <time datetime="{{ .Date.Format "2006-01" }}">{{ .Date.Format "Jan 2006" }}</time>{{ else }} · <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>{{ end }}{{ end }}
+    {{- if .Params.invited }} · <span class="tag-invited">{{ i18n "invited" }}</span>{{ end }}
+  </p>
+  {{- with .Resources.GetMatch "featured.*" }}
+  {{- $img := .Fit "360x480" }}
+  <figure class="pub-figure"><img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $p.Title }}">{{ with $p.Params.image_credit }}<figcaption>{{ . }}</figcaption>{{ end }}</figure>
+  {{- end }}
+  {{- with .Params.author_notes }}<p class="pub-note">{{ . }}</p>{{ end }}
+  {{- with .Params.links }}
+  <p class="btn-row">
+    {{- range $i, $l := . }}
+    {{- $url := $l.url -}}
+    {{- if not (findRE `^https?://` $url) }}{{ $url = $url | relURL }}{{ end -}}
+    <a class="btn{{ if gt $i 0 }} secondary{{ end }}" href="{{ $url }}">{{ if eq $l.name "Publisher's Version" }}{{ i18n "publisher_version" }}{{ else }}{{ $l.name }}{{ end }}</a>
+    {{- end }}
+  </p>
+  {{- end }}
+  {{- with .Params.doi }}<p class="pub-doi">DOI: {{ . }}</p>{{ end }}
+  {{- with .Params.abstract }}
+  <section id="abstract" class="abstract">
+    <h2>{{ i18n "abstract" }}</h2>
+    <p>{{ . }}</p>
+  </section>
+  {{- end }}
+  {{- with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  {{- partial "related_finder.html" . -}}
+</article>

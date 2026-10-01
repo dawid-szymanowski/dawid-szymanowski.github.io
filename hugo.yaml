@@ -1,0 +1,96 @@
+baseURL: "https://dawid-szymanowski.github.io/"  # final public https:// URL, MUST end with slash
+title: "Dawid Szymanowski"
+languageCode: en-us
+enableRobotsTXT: true
+disableKinds: [taxonomy, term]  # tags are used for See Also scoring, not as pages
+timeZone: Europe/Zurich
+
+module:
+  imports:
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
+
+outputs:
+  home: [HTML, RSS, JSON]
+  section: [HTML, RSS]
+
+taxonomies:
+  tag: tags
+  category: categories
+  publication_type: publication_types
+  # NOTE: no `author` taxonomy — the People page is built from content/authors/ instead.
+
+permalinks:
+  publication: /publication/:contentbasename/
+  talk: /talk/:contentbasename/
+  software: /software/:contentbasename/
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+minify:
+  tdewolff:
+    html:
+      keepComments: false
+
+params:
+  appearance:
+    theme_day: custom
+    theme_night: custom
+    color_mode: light
+    font: native
+    font_size: L
+  header:
+    navbar:
+      enable: true
+      show_search: true
+      logo:
+        text: "Dawid Szymanowski"
+  features:
+    search:
+      provider: flexsearch  # Blox default; Pagefind is wired in through the overridden search modal
+  extensions:
+    css:
+      - css/custom.css
+
+  # ---- Owner details used across the site ----
+  owner:
+    name: "Dawid Szymanowski"
+    title: "Researcher (Oberassistent)"
+    department: "Institute of Geochemistry and Petrology"
+    institution: "ETH Zürich"
+    email: "dawid.szymanowski@eaps.ethz.ch"
+    photo: "images/dawid-szymanowski.jpg"
+    orcid: "https://orcid.org/0000-0001-9524-5710"
+    scholar: "https://scholar.google.ch/citations?user=w_omhFYAAAAJ&hl=en"
+    address:
+      - "ETH Zürich, Institute of Geochemistry and Petrology"
+      - "NW F81.2, Clausiusstrasse 25"
+      - "8092 Zürich, Switzerland"
+
+  # ---- GaryKing.org/mysite options (from the information form) ----
+  mysite:
+    credit: false     # "Footer credit" box was unchecked
+    discovery: true   # "Invisible marker" box was checked
+
+menu:
+  main:
+    - name: Bio & C.V.
+      url: /bio/
+      weight: 10
+    - name: Writings
+      url: /publication/
+      weight: 20
+    - name: Research Areas
+      url: "/#research-areas"
+      weight: 30
+    - name: People
+      url: /authors/
+      weight: 50
+    - name: Teaching
+      url: /teaching/
+      weight: 60
+    - name: Contact
+      url: /contact/
+      weight: 70

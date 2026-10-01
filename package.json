@@ -1,0 +1,11 @@
+{
+  "name": "dawid-szymanowski-site",
+  "private": true,
+  "scripts": {
+    "build": "hugo --gc --minify && pagefind --site public",
+    "preview": "hugo --gc --minify && pagefind --site public && npx serve public"
+  },
+  "devDependencies": {
+    "pagefind": "^1.4.0"
+  }
+}

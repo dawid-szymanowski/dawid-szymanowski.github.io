@@ -1,0 +1,5 @@
+{{- $items := slice -}}
+{{- range (union (where site.RegularPages "Section" "publication") (where site.RegularPages "Section" "talk")).ByDate.Reverse -}}
+{{- $items = $items | append (dict "title" .Title "url" .Permalink "date" (.Date.Format "2006-01-02") "authors" .Params.authors "venue" .Params.publication "doi" .Params.doi "type" .Params.publication_types) -}}
+{{- end -}}
+{{- dict "name" site.Params.owner.name "institution" site.Params.owner.institution "url" site.BaseURL "works" $items | jsonify (dict "indent" "  ") -}}

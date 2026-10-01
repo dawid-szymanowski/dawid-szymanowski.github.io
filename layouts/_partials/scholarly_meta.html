@@ -1,0 +1,24 @@
+{{- /* Google Scholar citation_* tags + schema.org JSON-LD for publication and talk pages. */ -}}
+{{- if and .IsPage (in (slice "publication" "talk" "software") .Section) (not .Params.private) -}}
+{{- $types := .Params.publication_types | default slice -}}
+{{- $isTalk := or (eq .Section "talk") (in $types "presentation") -}}
+{{- $isReview := or (in $types "under_review") (eq .Params.status "under_review") -}}
+<meta name="citation_title" content="{{ .Title }}">
+{{- range .Params.authors }}
+<meta name="citation_author" content="{{ . }}">
+{{- end }}
+{{- if not $isReview }}<meta name="citation_publication_date" content="{{ .Date.Format "2006/01/02" }}">{{ end }}
+{{- if and (not $isTalk) (not $isReview) (not (in $types "thesis")) }}{{ with .Params.publication }}<meta name="citation_journal_title" content="{{ replaceRE ` \d.*$` "" . }}">{{ end }}{{ end }}
+{{- if in $types "thesis" }}<meta name="citation_dissertation_institution" content="ETH Zürich">{{ end }}
+{{- with .Params.doi }}<meta name="citation_doi" content="{{ . }}">{{ end }}
+{{- range .Params.links }}{{ if and (not (findRE `^https?://` .url)) (findRE `\.pdf$` .url) }}<meta name="citation_pdf_url" content="{{ .url | absURL }}">{{ end }}{{ end }}
+{{- $authors := slice -}}
+{{- range .Params.authors }}{{ $authors = $authors | append (dict "@type" "Person" "name" .) }}{{ end -}}
+{{- $type := cond $isTalk "CreativeWork" (cond (in $types "book") "Book" (cond (in $types "thesis") "Thesis" "ScholarlyArticle")) -}}
+{{- $ld := dict "@context" "https://schema.org" "@type" $type "headline" .Title "name" .Title "author" $authors "url" .Permalink -}}
+{{- if not $isReview }}{{ $ld = merge $ld (dict "datePublished" (.Date.Format "2006-01-02")) }}{{ end -}}
+{{- with .Params.abstract }}{{ $ld = merge $ld (dict "abstract" (. | plainify | htmlUnescape)) }}{{ end -}}
+{{- with .Params.publication }}{{ if $isTalk }}{{ $ld = merge $ld (dict "about" .) }}{{ else }}{{ $ld = merge $ld (dict "isPartOf" (dict "@type" "Periodical" "name" (replaceRE ` \d.*$` "" .))) }}{{ end }}{{ end -}}
+{{- with .Params.doi }}{{ $ld = merge $ld (dict "identifier" (dict "@type" "PropertyValue" "propertyID" "DOI" "value" .) "sameAs" (printf "https://doi.org/%s" .)) }}{{ end }}
+<script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>
+{{- end -}}

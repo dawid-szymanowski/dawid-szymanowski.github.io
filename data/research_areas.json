@@ -1,0 +1,60 @@
+{
+  "areas": [
+    {
+      "key": "magma",
+      "name": "Magma reservoirs and large eruptions",
+      "blurb": "How silicic magma bodies are assembled, stored and remobilised before eruption, read from the age and chemistry of zircon and other accessory minerals — from the Yellowstone–Snake River Plain and the Kneeling Nun Tuff to Toba, Lipari and the Pannonian Basin.",
+      "subcategories": [
+        {"name": "Yellowstone–Snake River Plain", "tags": ["Yellowstone–Snake River Plain", "Heise volcanic field"]},
+        {"name": "Supereruptions and petrochronology", "tags": ["supereruptions", "Kneeling Nun Tuff", "Toba", "petrochronology"]},
+        {"name": "Cumulates and zircon saturation", "tags": ["cumulate melting", "zircon saturation", "zoned tuffs"]},
+        {"name": "Pannonian Basin volcanism", "tags": ["Pannonian Basin"]}
+      ]
+    },
+    {
+      "key": "methods",
+      "name": "High-precision U–Pb geochronology",
+      "blurb": "Developing and testing ID-TIMS methods — new amplifier technology, microsampling, chemical abrasion, interlaboratory reproducibility and community reporting standards — so that dates are precise, accurate and comparable between laboratories.",
+      "subcategories": [
+        {"name": "ID-TIMS methods", "tags": ["ID-TIMS", "mass spectrometry", "amplifiers", "microsampling", "chemical abrasion"]},
+        {"name": "Interlaboratory reproducibility", "tags": ["interlaboratory reproducibility", "EARTHTIME", "data reporting"]},
+        {"name": "Zircon age spectra", "tags": ["zircon age spectra"]}
+      ]
+    },
+    {
+      "key": "refmat",
+      "name": "Reference materials and in situ dating",
+      "blurb": "Characterising reference materials for in situ dating and thermometry, including synthetic and natural calcite for carbonate U–Pb geochronology, zircon standards and tin–tungsten minerals.",
+      "subcategories": [
+        {"name": "Carbonate geochronology", "tags": ["carbonate geochronology"]},
+        {"name": "Zircon reference materials", "tags": ["reference materials", "Ti-in-zircon", "SIMS"]}
+      ]
+    },
+    {
+      "key": "lip",
+      "name": "Large igneous provinces and Earth history",
+      "blurb": "Dating flood basalt provinces and their silicic counterparts — Deccan, Karoo, Columbia River, Paraná-Etendeka and the Atlantic magmatic provinces — and providing time constraints for climate, biological and tectonic events.",
+      "subcategories": [
+        {"name": "Large igneous provinces", "tags": ["large igneous provinces", "Deccan Traps", "Karoo", "Columbia River Basalt", "Paraná-Etendeka", "CAMP", "dike swarms"]},
+        {"name": "Climate and life", "tags": ["paleoclimate", "microfossils", "Miocene"]}
+      ]
+    },
+    {
+      "key": "ore",
+      "name": "Ore deposits and critical metals",
+      "blurb": "Timescales of magmatic-hydrothermal systems that form porphyry copper and tin deposits, and the behaviour of lithium in volcanic rocks as a source for brine deposits.",
+      "subcategories": [
+        {"name": "Porphyry and tin systems", "tags": ["porphyry copper", "tin deposits", "magmatic-hydrothermal"]},
+        {"name": "Lithium", "tags": ["lithium", "brines"]}
+      ]
+    },
+    {
+      "key": "moon",
+      "name": "Lunar and planetary chronology",
+      "blurb": "High-precision dating of Apollo zircons to constrain the solidification of the lunar magma ocean and major impact events on the early Moon.",
+      "subcategories": [
+        {"name": "The Moon", "tags": ["Moon", "lunar magma ocean"]}
+      ]
+    }
+  ]
+}

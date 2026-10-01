@@ -1,0 +1,12 @@
+{{- /* Normalised author keys ("szymanowski d.") excluding the site owner, for fuzzy matching. */ -}}
+{{- $people := site.Data.people -}}
+{{- $out := slice -}}
+{{- range (. | default slice) -}}
+  {{- if ne . site.Params.owner.name -}}
+    {{- $p := index $people . -}}
+    {{- $k := cond (ne $p nil) (index $p "short") . -}}
+    {{- $k = lower (replaceRE `^(\S+(?:\s+\S+)*?)\s+(\p{L}).*$` "$1 $2" $k) -}}
+    {{- $out = $out | append $k -}}
+  {{- end -}}
+{{- end -}}
+{{- return ($out | uniq) -}}

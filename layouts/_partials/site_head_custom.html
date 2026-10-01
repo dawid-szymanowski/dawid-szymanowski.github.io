@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{- $owner := site.Params.owner -}}
+{{- $title := cond .IsHome (printf "%s · %s" site.Title $owner.institution) (printf "%s · %s" .Title site.Title) -}}
+<title>{{ $title }}</title>
+{{- $desc := "" -}}
+{{- if .IsHome -}}{{- $desc = .Params.intro -}}
+{{- else if .Params.abstract -}}{{- $desc = .Params.abstract | plainify | truncate 200 -}}
+{{- else if .Params.summary -}}{{- $desc = .Params.summary -}}
+{{- else -}}{{- $desc = printf "%s — %s, %s" .Title $owner.name $owner.institution -}}{{- end }}
+<meta name="description" content="{{ $desc | plainify | htmlUnescape }}">
+<meta name="author" content="{{ $owner.name }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc | plainify | htmlUnescape }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="{{ cond (eq .Section "publication") "article" "website" }}">
+<meta property="og:image" content="{{ $owner.photo | absURL }}">
+<link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
+<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
+{{- with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ site.Title }}">{{ end }}
+{{- $css := resources.Get "css/custom.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{- $discovery := true }}{{ with site.Params.mysite }}{{ if isset . "discovery" }}{{ $discovery = .discovery }}{{ end }}{{ end }}
+{{- if $discovery }}
+<meta name="generator" content="Created using GaryKing.org/mysite (https://gking.harvard.edu/mysite)">
+{{- if .IsHome }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "Person" "name" $owner.name "jobTitle" $owner.title "email" (printf "mailto:%s" $owner.email) "affiliation" (dict "@type" "Organization" "name" $owner.institution) "url" site.BaseURL "sameAs" (slice $owner.orcid $owner.scholar) "isBasedOn" "https://gking.harvard.edu/mysite" | jsonify | safeJS }}</script>
+{{- end }}
+{{- end }}
+{{- partial "scholarly_meta.html" . -}}

@@ -1,0 +1,6 @@
+# All crawlers, including AI assistants (GPTBot, ClaudeBot, PerplexityBot, …), are welcome.
+# A short machine-readable overview of this site lives at {{ "llms.txt" | absURL }}
+User-agent: *
+Allow: /
+
+Sitemap: {{ "sitemap.xml" | absURL }}

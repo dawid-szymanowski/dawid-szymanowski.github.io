@@ -1,0 +1,19 @@
+{{- $owner := site.Params.owner -}}
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-id">
+      <a class="footer-brand" href="{{ "" | relURL }}">{{ $owner.name }}</a>
+      <p>{{ $owner.title }}, {{ $owner.department }}, {{ $owner.institution }}<br>
+      <a href="mailto:{{ $owner.email }}">{{ $owner.email }}</a></p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <ul>
+        {{- range site.Menus.main }}<li><a href="{{ strings.TrimPrefix "/" .URL | relURL }}">{{ .Name }}</a></li>{{ end }}
+      </ul>
+    </nav>
+  </div>
+  {{- $credit := true }}{{ with site.Params.mysite }}{{ if isset . "credit" }}{{ $credit = .credit }}{{ end }}{{ end }}
+  {{- if $credit }}
+  <p class="footer-credit">Created using <a href="https://garyking.org/mysite">GaryKing.org/mysite</a></p>
+  {{- end }}
+</footer>

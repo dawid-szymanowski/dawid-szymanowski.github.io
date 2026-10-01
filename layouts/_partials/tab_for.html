@@ -1,0 +1,11 @@
+{{- /* Maps a page to its Writings tab id. */ -}}
+{{- $t := .Params.publication_types | default slice -}}
+{{- $tab := "articles" -}}
+{{- if or (in $t "presentation") (eq .Section "talk") }}{{ $tab = "presentations" }}
+{{- else if or (in $t "under_review") (eq .Params.status "under_review") }}{{ $tab = "under-review" }}
+{{- else if in $t "thesis" }}{{ $tab = "thesis" }}
+{{- else if or (in $t "report") (in $t "working_paper") }}{{ $tab = "working-papers" }}
+{{- else if or (in $t "book") (in $t "book_chapter") }}{{ $tab = "book" }}
+{{- else if in $t "software" }}{{ $tab = "software" }}
+{{- else if in $t "data" }}{{ $tab = "data" }}{{ end -}}
+{{- return $tab -}}

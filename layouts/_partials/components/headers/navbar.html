@@ -1,0 +1,22 @@
+{{- $cur := . -}}
+<header class="site-header">
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="{{ "" | relURL }}">{{ site.Params.header.navbar.logo.text | default site.Title }}</a>
+    <div class="nav-right">
+      <ul class="nav-links" id="nav-links">
+        {{- range site.Menus.main }}
+        {{- $url := strings.TrimPrefix "/" .URL -}}
+        {{- $href := $url | relURL -}}
+        {{- $active := and (not (strings.Contains $url "#")) (ne $url "") (strings.HasPrefix $cur.RelPermalink $href) -}}
+        <li><a href="{{ $href }}"{{ if $active }} aria-current="page" class="active"{{ end }}>{{ .Name }}</a></li>
+        {{- end }}
+      </ul>
+      <button type="button" class="icon-btn search-toggle" aria-label="{{ i18n "search" }} (Ctrl+K)" data-search-open>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
+      <button type="button" class="icon-btn nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </nav>
+</header>

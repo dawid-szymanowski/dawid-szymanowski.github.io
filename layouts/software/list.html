@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="container page-head">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ "" | relURL }}">{{ i18n "home" }}</a> / <span>{{ .Title }}</span></nav>
+  <h1>{{ .Title }}</h1>
+  {{- with .Params.summary }}<p class="lede">{{ . }}</p>{{ end }}
+</div>
+<div class="container">
+  <ol class="pub-list">
+    {{- range .Pages.ByDate.Reverse }}<li class="pub-item">{{ partial "citation.html" (dict "page" . "max" 8) }}</li>{{ end }}
+  </ol>
+</div>
+{{ end }}

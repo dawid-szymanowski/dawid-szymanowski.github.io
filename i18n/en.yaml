@@ -1,0 +1,125 @@
+# Centralised labels. Rename a button or label here, never in a template.
+- id: skip_to_content
+  translation: "Skip to content"
+- id: search
+  translation: "Search"
+- id: search_placeholder
+  translation: "Search the site…"
+- id: search_no_results
+  translation: "No results."
+- id: search_fallback
+  translation: "Search this site with Google"
+- id: google_scholar
+  translation: "Google Scholar"
+- id: orcid
+  translation: "ORCID"
+- id: publisher_version
+  translation: "Publisher's Version"
+- id: abstract
+  translation: "Abstract"
+- id: see_also
+  translation: "See also"
+- id: view_all
+  translation: "View all"
+- id: all_writings
+  translation: "All writings"
+- id: recent_publications
+  translation: "Recent publications"
+- id: research_areas
+  translation: "Research areas"
+- id: home
+  translation: "Home"
+- id: writings
+  translation: "Writings"
+- id: people
+  translation: "People"
+- id: results
+  translation: "results"
+- id: of
+  translation: "of"
+- id: reset_filters
+  translation: "Reset filters"
+- id: download_bibtex
+  translation: "Download citations (BibTeX)"
+- id: filter_text
+  translation: "Search writings"
+- id: filter_area
+  translation: "Research area"
+- id: filter_area_all
+  translation: "All areas"
+- id: filter_year
+  translation: "Year"
+- id: sort_by
+  translation: "Sort"
+- id: sort_newest
+  translation: "Newest first"
+- id: sort_oldest
+  translation: "Oldest first"
+- id: sort_title_az
+  translation: "Title A–Z"
+- id: sort_title_za
+  translation: "Title Z–A"
+- id: tab_all
+  translation: "All"
+- id: tab_articles
+  translation: "Articles"
+- id: tab_under_review
+  translation: "Under Review"
+- id: tab_thesis
+  translation: "Thesis"
+- id: tab_presentations
+  translation: "Presentations"
+- id: invited
+  translation: "Invited"
+- id: label_paper
+  translation: "Paper"
+- id: label_presentation
+  translation: "Presentation"
+- id: label_software
+  translation: "Software"
+- id: label_dataset
+  translation: "Dataset"
+- id: label_book
+  translation: "Book"
+- id: label_thesis
+  translation: "Thesis"
+- id: label_patent
+  translation: "Patent"
+- id: label_court_brief
+  translation: "Court Brief"
+- id: under_review
+  translation: "Under review"
+- id: email
+  translation: "Email"
+- id: website
+  translation: "Website"
+- id: joint_works
+  translation: "Work with Dawid"
+- id: students
+  translation: "Students supervised"
+- id: collaborators
+  translation: "Co-authors"
+- id: not_found_title
+  translation: "Page not found"
+- id: not_found_text
+  translation: "The page you were looking for isn’t here. Try searching the site or start from the homepage."
+- id: et_al
+  translation: "et al."
+- id: show_all_authors
+  translation: "show all"
+- id: appointments
+  translation: "Appointments"
+- id: education
+  translation: "Education"
+- id: funding
+  translation: "Grants"
+- id: awards
+  translation: "Honors"
+- id: service
+  translation: "Service"
+- id: societies
+  translation: "Professional societies"
+- id: languages
+  translation: "Languages"
+- id: postal_address
+  translation: "Postal address"

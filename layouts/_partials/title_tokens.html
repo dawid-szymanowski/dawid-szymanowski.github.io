@@ -1,0 +1,6 @@
+{{- $stop := slice "a" "an" "and" "the" "of" "for" "in" "on" "to" "with" "by" "at" "as" "is" "are" "be" "or" "from" "into" "using" "via" "new" "not" "no" "it" "its" "we" "our" "their" "you" "your" "this" "that" "these" "those" "but" "if" "than" "then" "so" "can" "will" "would" "could" "should" "may" "might" "also" "more" "most" "some" "all" "any" "each" "every" "who" "whom" "which" "what" "when" "where" "why" "how" "about" "between" "among" "through" "over" "under" "after" "before" "upon" "across" "per" "vs" "de" "la" "les" "et" "du" -}}
+{{- $out := slice -}}
+{{- range split (replaceRE `[^\p{L}\p{N}]+` " " (lower .)) " " -}}
+  {{- if and (ge (len .) 3) (not (in $stop .)) }}{{ $out = $out | append . }}{{ end -}}
+{{- end -}}
+{{- return ($out | uniq) -}}

@@ -1,0 +1,14 @@
+# Dawid Szymanowski
+
+> Dawid Szymanowski is a researcher (Oberassistent) in the Institute of Geochemistry and Petrology at ETH Zürich. He works on high-precision U–Pb geochronology and zircon petrochronology: the assembly, storage and eruption of large silicic magma reservoirs; ID-TIMS methods and interlaboratory reproducibility; reference materials for in situ (including carbonate) dating; large igneous provinces; ore deposits; and lunar chronology.
+
+## Key pages
+
+- [Bio & C.V.](bio/): career, appointments, grants and honors
+- [Writings](publication/): all journal articles, work under review, the doctoral thesis and conference presentations, with abstracts and DOIs
+- [People](authors/): co-authors and supervised students
+- [Teaching](teaching/): courses and student supervision
+- [Contact](contact/): dawid.szymanowski@eaps.ethz.ch
+- [Machine-readable list of works](index.json)
+
+Profiles: ORCID https://orcid.org/0000-0001-9524-5710 · Google Scholar https://scholar.google.ch/citations?user=w_omhFYAAAAJ

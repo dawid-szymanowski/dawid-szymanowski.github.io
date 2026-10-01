@@ -1,0 +1,96 @@
+{{- /*
+  Automatic "See also" for publication / talk / software pages. Runs at build time; nothing to maintain.
+  Priority 1  : explicit related_papers / related_talks / related_software / related_datasets (+ legacy singular)
+  Priority 1b : see_also front matter ({url,title} external or {section,slug} internal)
+  Priority 1c : dataverse_url (or a Dataverse URL found in the abstract)
+  Priority 2  : siblings sharing a subcategory in data/research_areas.json
+  Priority 3  : scoring backfill: +2 per shared title token, +1 per shared co-author, +2 per shared tag
+*/ -}}
+{{- $p := . -}}
+{{- $pool := union (union (where site.RegularPages "Section" "publication") (where site.RegularPages "Section" "talk")) (where site.RegularPages "Section" "software") -}}
+{{- $rows := slice -}}
+{{- $seen := slice (lower (replaceRE `[^\p{L}\p{N}]` "" $p.Title)) -}}
+{{- $explicit := 0 -}}
+
+{{- /* Priority 1 */ -}}
+{{- $map := dict "related_papers" "publication" "related_talks" "talk" "related_software" "software" "related_datasets" "publication" "related_paper" "publication" "related_dataset" "publication" -}}
+{{- range $field, $sec := $map -}}
+  {{- with index $p.Params $field -}}
+    {{- $slugs := cond (reflect.IsSlice .) . (slice .) -}}
+    {{- range $slugs -}}
+      {{- with site.GetPage (printf "/%s/%s" $sec .) -}}
+        {{- $n := lower (replaceRE `[^\p{L}\p{N}]` "" .Title) -}}
+        {{- if not (in $seen $n) -}}
+          {{- $seen = $seen | append $n -}}
+          {{- $rows = $rows | append (dict "title" .Title "url" .RelPermalink "kind" (partial "kind_label.html" .) "score" 1000 "year" (.Date.Format "2006")) -}}
+          {{- $explicit = add $explicit 1 -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Priority 1b */ -}}
+{{- range $p.Params.see_also -}}
+  {{- if .url -}}
+    {{- $rows = $rows | append (dict "title" (.title | default .url) "url" .url "kind" (.kind | default "Link") "score" 900 "year" "") -}}
+    {{- $explicit = add $explicit 1 -}}
+  {{- else if .slug -}}
+    {{- with site.GetPage (printf "/%s/%s" .section .slug) -}}
+      {{- $rows = $rows | append (dict "title" .Title "url" .RelPermalink "kind" (partial "kind_label.html" .) "score" 900 "year" (.Date.Format "2006")) -}}
+      {{- $seen = $seen | append (lower (replaceRE `[^\p{L}\p{N}]` "" .Title)) -}}
+      {{- $explicit = add $explicit 1 -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Priority 1c */ -}}
+{{- $dv := $p.Params.dataverse_url -}}
+{{- if not $dv }}{{ with findRE `https?://(?:dx\.)?doi\.org/10\.7910/DVN/[A-Z0-9]+|https?://dataverse\.harvard\.edu/[^\s"<)]+` ($p.Params.abstract | default "") 1 }}{{ $dv = index . 0 }}{{ end }}{{ end -}}
+{{- with $dv -}}
+  {{- $rows = $rows | append (dict "title" ($p.Params.dataverse_name | default "Replication data on Harvard Dataverse") "url" . "kind" (i18n "label_dataset") "score" 950 "year" "") -}}
+  {{- $explicit = add $explicit 1 -}}
+{{- end -}}
+
+{{- /* Priority 2 + 3 */ -}}
+{{- $myTok := partial "title_tokens.html" $p.Title -}}
+{{- $myAuth := partial "author_keys.html" $p.Params.authors -}}
+{{- $myTags := apply ($p.Params.tags | default slice) "lower" "." -}}
+{{- $subTags := slice -}}
+{{- range site.Data.research_areas.areas }}{{ range .subcategories }}
+  {{- $st := apply .tags "lower" "." -}}
+  {{- if gt (len (intersect $st $myTags)) 0 }}{{ $subTags = $subTags | append $st }}{{ end -}}
+{{- end }}{{ end -}}
+{{- $threshold := cond (lt $explicit 3) 2 4 -}}
+{{- $isResponse := findRE `^(?i)(response to|reply to|comment on|rejoinder)` $p.Title -}}
+{{- $baseTitle := replaceRE `(?i),?\s*(new|revised|second|third|\d+(st|nd|rd|th))\s+edition$` "" $p.Title -}}
+{{- range $pool -}}
+  {{- if ne .RelPermalink $p.RelPermalink -}}
+    {{- $n := lower (replaceRE `[^\p{L}\p{N}]` "" .Title) -}}
+    {{- if not (in $seen $n) -}}
+      {{- $tok := partial "title_tokens.html" .Title -}}
+      {{- $tags := apply (.Params.tags | default slice) "lower" "." -}}
+      {{- $score := add (mul 2 (len (intersect $myTok $tok))) (add (len (intersect $myAuth (partial "author_keys.html" .Params.authors))) (mul 2 (len (intersect $myTags $tags)))) -}}
+      {{- $sibling := and (gt (len $subTags) 0) (gt (len (intersect $subTags $tags)) 0) -}}
+      {{- if $sibling }}{{ $score = add $score 3 }}{{ end -}}
+      {{- if and $isResponse (ge (len (intersect $myTok $tok)) 2) }}{{ $score = add $score 500 }}{{ end -}}
+      {{- if and (in (.Params.publication_types | default slice) "book") (eq (replaceRE `(?i),?\s*(new|revised|second|third|\d+(st|nd|rd|th))\s+edition$` "" .Title) $baseTitle) }}{{ $score = add $score 500 }}{{ end -}}
+      {{- if or $sibling (ge $score $threshold) -}}
+        {{- $rows = $rows | append (dict "title" .Title "url" .RelPermalink "kind" (partial "kind_label.html" .) "score" $score "year" (.Date.Format "2006")) -}}
+        {{- $seen = $seen | append $n -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $rows = sort (sort $rows "year" "desc") "score" "desc" -}}
+{{- with first 8 $rows }}
+<section class="gk-see-also" aria-labelledby="see-also-h">
+  <h2 id="see-also-h">{{ i18n "see_also" }}</h2>
+  <ul>
+    {{- range . }}
+    <li><span class="kind">[{{ .kind }}]</span> <span><a href="{{ .url }}">{{ .title }}</a>{{ with .year }} <span class="year">({{ . }})</span>{{ end }}</span></li>
+    {{- end }}
+  </ul>
+</section>
+{{- end }}

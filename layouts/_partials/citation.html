@@ -1,0 +1,11 @@
+{{- /* One dense citation line for a page. ctx: dict "page" "max" "label" */ -}}
+{{- $p := .page -}}
+{{- $isReview := or (in ($p.Params.publication_types | default slice) "under_review") (eq $p.Params.status "under_review") -}}
+<span class="cite">
+  {{- partial "author_line.html" (dict "authors" ($p.Params.authors | default slice) "max" (.max | default 6) "link" false) -}}
+  {{- if not $isReview }} ({{ $p.Date.Format "2006" }}).{{ end }}
+  <a class="cite-title" href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>{{ if not (findRE `[.?!]$` $p.Title) }}.{{ end }}
+  {{- with $p.Params.publication }} <span class="venue">{{ . }}</span>{{ if not (findRE `[.)]$` .) }}.{{ end }}{{ end }}
+  {{- if $p.Params.invited }} <span class="tag-invited">{{ i18n "invited" }}</span>{{ end }}
+  {{- if .label }} <span class="kind">[{{ partial "kind_label.html" $p }}]</span>{{ end }}
+</span>

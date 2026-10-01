@@ -1,0 +1,8 @@
+---
+title: "William M. Phillips"
+short_name: "Phillips W.M."
+user_groups: ["Collaborators"]
+superuser: false
+joint_works: 5
+---
+<!-- No external page verified for this person; add `website:` above if you know it. -->

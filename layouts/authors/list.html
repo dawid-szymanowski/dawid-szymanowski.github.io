@@ -1,0 +1,52 @@
+{{ define "main" }}
+{{- if eq .Path "/authors" -}}
+{{- $people := .Sections -}}
+<div class="container page-head">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ "" | relURL }}">{{ i18n "home" }}</a> / <span>{{ .Title }}</span></nav>
+  <h1>{{ .Title }}</h1>
+  {{- with .Params.summary }}<p class="lede">{{ . }}</p>{{ end }}
+</div>
+<div class="container">
+  {{- range slice (dict "g" "Students" "h" (i18n "students")) (dict "g" "Collaborators" "h" (i18n "collaborators")) }}
+  {{- $g := .g -}}{{- $h := .h -}}
+  {{- $members := where $people "Params.user_groups" "intersect" (slice $g) -}}
+  {{- if eq $g "Collaborators" }}{{ $members = sort (sort $members "Title") "Params.joint_works" "desc" }}{{ end -}}
+  {{- with $members }}
+  <section class="people-group" aria-labelledby="g-{{ $g | urlize }}">
+    <h2 id="g-{{ $g | urlize }}">{{ $h }}</h2>
+    <ul class="people-grid">
+      {{- range . }}
+      {{- $words := split (replaceRE `[^\p{L}\s-]` "" .Title) " " -}}
+      {{- $mono := printf "%s%s" (substr (index $words 0) 0 1) (substr (index $words (sub (len $words) 1)) 0 1) | upper -}}
+      <li class="person-card">
+        <span class="monogram" aria-hidden="true">{{ $mono }}</span>
+        <span class="person-text">
+          <a class="person-name" href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{- with .Params.role }}<span class="person-role">{{ . }}</span>{{ end }}
+          {{- with .Params.website }}<a class="person-ext" href="{{ . }}" rel="noopener">{{ i18n "website" }} ↗</a>{{ end }}
+        </span>
+      </li>
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+  {{- end }}
+</div>
+{{- else -}}
+{{- $name := .Title -}}
+{{- $works := where (union (where site.RegularPages "Section" "publication") (where site.RegularPages "Section" "talk")) "Params.authors" "intersect" (slice $name) -}}
+<article class="container narrow">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ "" | relURL }}">{{ i18n "home" }}</a> / <a href="{{ "authors/" | relURL }}">{{ i18n "people" }}</a> / <span>{{ .Title }}</span></nav>
+  <h1>{{ .Title }}</h1>
+  {{- with .Params.role }}<p class="hero-role">{{ . }}</p>{{ end }}
+  {{- with .Params.website }}<p><a class="btn secondary" href="{{ . }}" rel="noopener">{{ i18n "website" }} ↗</a></p>{{ end }}
+  <div class="prose">{{ .Content }}</div>
+  {{- with $works }}
+  <h2>{{ i18n "joint_works" }}</h2>
+  <ul class="cite-list">
+    {{- range .ByDate.Reverse }}<li>{{ partial "citation.html" (dict "page" . "max" 6 "label" true) }}</li>{{ end }}
+  </ul>
+  {{- end }}
+</article>
+{{- end -}}
+{{ end }}

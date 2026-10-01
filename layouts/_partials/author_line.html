@@ -1,0 +1,28 @@
+{{- /* Renders an author list. ctx: dict "authors" slice, "max" int (0 = all), "link" bool. Owner in bold. */ -}}
+{{- $people := site.Data.people -}}
+{{- $max := .max | default 0 -}}
+{{- $link := .link -}}
+{{- $n := len .authors -}}
+{{- $out := slice -}}
+{{- range $i, $a := .authors -}}
+  {{- $p := index $people $a -}}
+  {{- $label := cond (and (ne $p nil) (not $.full)) (index $p "short") $a -}}
+  {{- $html := "" -}}
+  {{- if and $p (index $p "owner") -}}
+    {{- $html = printf `<strong class="owner">%s</strong>` $label -}}
+  {{- else if and $p $link (index $p "slug") -}}
+    {{- $html = printf `<a class="author-link" href="%s">%s</a>` (printf "authors/%s/" (index $p "slug") | relURL) $label -}}
+  {{- else -}}
+    {{- $html = $label -}}
+  {{- end -}}
+  {{- $out = $out | append $html -}}
+{{- end -}}
+{{- if and (gt $max 0) (gt $n (add $max 1)) -}}
+  {{- $owner_idx := -1 -}}
+  {{- range $i, $a := .authors }}{{ if eq $a site.Params.owner.name }}{{ $owner_idx = $i }}{{ end }}{{ end -}}
+  {{- $first := first $max $out -}}
+  {{- $rest := after $max $out -}}
+  <span class="authors">{{ delimit $first ", " | safeHTML }}<span class="authors-rest" hidden>, {{ delimit $rest ", " | safeHTML }}</span> <button type="button" class="more-btn" aria-expanded="false">{{ if ge $owner_idx $max }}… <strong class="owner">{{ (index $people site.Params.owner.name).short }}</strong> … {{ end }}+{{ len $rest }} more</button></span>
+{{- else -}}
+  <span class="authors">{{ delimit $out ", " | safeHTML }}</span>
+{{- end -}}
