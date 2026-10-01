@@ -1651,18 +1651,18 @@
   "given": "Fu-Yuan",
   "key": "wu"
  },
- "Yue-Heng Yang": {
-  "slug": "yue-heng-yang",
-  "short": "Yang Y.-H.",
-  "family": "Yang",
-  "given": "Yue-Heng",
-  "key": "yang"
- },
  "Chuan Yang": {
   "slug": "chuan-yang",
   "short": "Yang C.",
   "family": "Yang",
   "given": "Chuan",
+  "key": "yang"
+ },
+ "Yue-Heng Yang": {
+  "slug": "yue-heng-yang",
+  "short": "Yang Y.-H.",
+  "family": "Yang",
+  "given": "Yue-Heng",
   "key": "yang"
  },
  "Qing-Zhu Yin": {

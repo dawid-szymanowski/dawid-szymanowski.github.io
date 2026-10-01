@@ -1,7 +1,7 @@
 # Non-exclusive keywords per publication folder (slug). Shown as chips and used as filters.
 # Updated from Dawid's edited spreadsheet (publication-keywords.xlsx), 2026-10-01.
 # Vocabulary order = display order in the Keywords filter.
-VOCAB = ["Zircon", "ID-TIMS", "LA-ICPMS", "Carbonate", "LIP", "Moon", "Earth history", "Reference material", "Magma reservoir", "Large eruption", "Caldera", "Ore deposit", "Pluton", "Analytical methods", "Hf isotopes", "Lithium", "Paleoclimate", "Yellowstone–Snake River Plain", "Pannonian Basin"]
+VOCAB = ["Zircon", "ID-TIMS", "LA-ICPMS", "Carbonate", "LIP", "Moon", "Earth history", "Reference material", "Magma reservoir", "Large eruption", "Caldera", "Ore deposit", "Pluton", "Analytical methods", "Hf isotopes", "Lithium", "Paleoclimate", "Yellowstone–Snake River Plain", "Pannonian Basin", "Review"]
 
 KEYWORDS = {
     "14-04-ma-hrabovec-tuff-megabed-subaqueous-deposit": ["Zircon", "ID-TIMS", "LA-ICPMS", "Large eruption", "Pannonian Basin"],
@@ -11,7 +11,7 @@ KEYWORDS = {
     "completion-lunar-magma-ocean-solidification-4-43-ga": ["Zircon", "ID-TIMS", "Moon", "Hf isotopes"],
     "constraining-timescales-mafic-magmatism-central-karoo-large-igneous": ["Zircon", "ID-TIMS", "LIP", "Earth history", "Magma reservoir"],
     "controls-zircon-age-distributions-volcanic-porphyry-plutonic-rocks": ["Zircon", "ID-TIMS", "Magma reservoir", "Large eruption", "Ore deposit", "Pluton", "Analytical methods"],
-    "cumulate-recycling-igneous-systems-volcanic-record": ["LA-ICPMS", "Magma reservoir", "Large eruption"],
+    "cumulate-recycling-igneous-systems-volcanic-record": ["LA-ICPMS", "Magma reservoir", "Large eruption", "Review"],
     "eruption-history-columbia-river-basalt-group-constrained-high": ["Zircon", "ID-TIMS", "LIP", "Earth history", "Magma reservoir", "Large eruption", "Hf isotopes"],
     "europium-barium-enrichments-compositionally-zoned-felsic-tuffs-smoking": ["LA-ICPMS", "Magma reservoir", "Large eruption"],
     "evaluating-potential-rhyolitic-glass-lithium-source-brine-deposits": ["LA-ICPMS", "Magma reservoir", "Large eruption", "Ore deposit", "Lithium", "Yellowstone–Snake River Plain"],
