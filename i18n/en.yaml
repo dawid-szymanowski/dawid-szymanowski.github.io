@@ -22,7 +22,7 @@
 - id: view_all
   translation: "View all"
 - id: all_writings
-  translation: "All writings"
+  translation: "All publications"
 - id: recent_publications
   translation: "Recent publications"
 - id: research_areas
@@ -30,7 +30,7 @@
 - id: home
   translation: "Home"
 - id: writings
-  translation: "Writings"
+  translation: "Publications"
 - id: people
   translation: "People"
 - id: results
@@ -42,7 +42,7 @@
 - id: download_bibtex
   translation: "Download citations (BibTeX)"
 - id: filter_text
-  translation: "Search writings"
+  translation: "Search publications"
 - id: filter_area
   translation: "Research area"
 - id: filter_area_all
@@ -107,19 +107,5 @@
   translation: "et al."
 - id: show_all_authors
   translation: "show all"
-- id: appointments
-  translation: "Appointments"
-- id: education
-  translation: "Education"
-- id: funding
-  translation: "Grants"
-- id: awards
-  translation: "Honors"
-- id: service
-  translation: "Service"
-- id: societies
-  translation: "Professional societies"
-- id: languages
-  translation: "Languages"
 - id: postal_address
   translation: "Postal address"

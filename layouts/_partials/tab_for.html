@@ -1,4 +1,4 @@
-{{- /* Maps a page to its Writings tab id. */ -}}
+{{- /* Maps a page to its Publications tab id. */ -}}
 {{- $t := .Params.publication_types | default slice -}}
 {{- $tab := "articles" -}}
 {{- if or (in $t "presentation") (eq .Section "talk") }}{{ $tab = "presentations" }}

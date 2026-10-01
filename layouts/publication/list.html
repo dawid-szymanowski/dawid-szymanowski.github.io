@@ -25,7 +25,7 @@
 </div>
 
 <div class="pub-tabs-wrap">
-  <nav class="container pub-tabs" role="tablist" aria-label="Writing types">
+  <nav class="container pub-tabs" role="tablist" aria-label="Publication types">
     {{- range $tabsDef }}
     {{- if or (eq .id "all") (in $present .id) }}
     <button class="tab-btn{{ if eq .id "all" }} active{{ end }}" type="button" role="tab" data-tab="{{ .id }}" aria-selected="{{ cond (eq .id "all") "true" "false" }}">{{ .label }}</button>

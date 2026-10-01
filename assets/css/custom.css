@@ -150,7 +150,7 @@ main:focus { outline: none; }
 .page-head .breadcrumb { margin-top: 0; }
 .breadcrumb a { color: var(--color-text-muted); }
 
-/* ---- Writings page ---- */
+/* ---- Publications page ---- */
 .pub-tabs-wrap { position: sticky; top: var(--nav-h); z-index: 20; background: var(--color-bg); border-bottom: 1px solid var(--color-border); box-shadow: 0 6px 10px -10px rgba(29, 26, 23, 0.35); }
 .pub-tabs { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; }
 .pub-tabs::-webkit-scrollbar { display: none; }
@@ -212,7 +212,7 @@ main:focus { outline: none; }
 .prose ul { padding-left: 1.2em; }
 .prose li { margin-bottom: 0.4em; }
 
-/* ---- Bio & C.V. ---- */
+/* ---- Bio ---- */
 .bio-head { display: flex; gap: 28px; align-items: center; margin: 14px 0 22px; }
 .bio-photo { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; flex: 0 0 140px; }
 .bio-head h1 { margin-top: 0; }

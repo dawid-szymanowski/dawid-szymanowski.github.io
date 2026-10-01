@@ -1,5 +1,5 @@
 ---
-title: "Bio & C.V."
+title: "Bio"
 ---
 <!-- DRAFT for Dawid to review: the form's "Full bio" field was a placeholder, so this narrative
      was drafted from the C.V. Replace it with your own text whenever you like. -->

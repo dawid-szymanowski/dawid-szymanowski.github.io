@@ -1,3 +1,3 @@
 ---
-title: "Writings"
+title: "Publications"
 ---

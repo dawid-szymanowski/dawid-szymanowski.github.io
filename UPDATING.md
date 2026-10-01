@@ -8,7 +8,6 @@ Everything on the site is plain text in this repository. Edit a file on GitHub (
 |---|---|
 | Homepage intro (the short paragraph under your name) | `content/_index.md` → the `intro:` line |
 | Bio narrative | `content/bio/index.md` |
-| Appointments, education, grants, honors, service, languages | `data/cv.yaml` |
 | Photo | replace `static/images/dawid-szymanowski.jpg` (square, ~640×640) |
 | Teaching | `content/teaching/index.md` |
 | Email, title, ORCID, Scholar, postal address | `hugo.yaml` → `params.owner` |
@@ -38,7 +37,7 @@ tags: ["Lipari", "rhyolite", "zircon"]
 ---
 ```
 
-3. Commit. The paper appears on the Writings page, the homepage (if recent), the matching research area, every co-author's People page, and "See also" links are worked out automatically.
+3. Commit. The paper appears on the Publications page, the homepage (if recent), the matching research area, every co-author's People page, and "See also" links are worked out automatically.
 
 Tips:
 - Write author names exactly as they appear on other papers (e.g. "Ben S. Ellis", "Jörn-Frederik Wotzlaw") so they link to the same person.

@@ -4,8 +4,8 @@
 
 ## Key pages
 
-- [Bio & C.V.](bio/): career, appointments, grants and honors
-- [Writings](publication/): all journal articles, work under review, the doctoral thesis and conference presentations, with abstracts and DOIs
+- [Bio](bio/): career and research interests
+- [Publications](publication/): all journal articles, work under review, the doctoral thesis and conference presentations, with abstracts and DOIs
 - [People](authors/): co-authors and supervised students
 - [Teaching](teaching/): courses and student supervision
 - [Contact](contact/): dawid.szymanowski@eaps.ethz.ch
