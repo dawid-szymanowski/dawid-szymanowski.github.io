@@ -64,6 +64,7 @@ params:
     photo: "images/dawid-szymanowski.jpg"
     orcid: "https://orcid.org/0000-0001-9524-5710"
     scholar: "https://scholar.google.ch/citations?user=w_omhFYAAAAJ&hl=en"
+    bluesky: "dawid.eurosky.social"
     address:
       - "ETH Zurich"
       - "Institute of Geochemistry and Petrology"

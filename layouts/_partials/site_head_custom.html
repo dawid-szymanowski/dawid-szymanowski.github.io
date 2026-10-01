@@ -26,7 +26,7 @@
 {{- if $discovery }}
 <meta name="generator" content="Created using GaryKing.org/mysite (https://gking.harvard.edu/mysite)">
 {{- if .IsHome }}
-<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "Person" "name" $owner.name "jobTitle" $owner.title "email" (printf "mailto:%s" $owner.email) "affiliation" (dict "@type" "Organization" "name" $owner.institution) "url" site.BaseURL "sameAs" (slice $owner.orcid $owner.scholar) "isBasedOn" "https://gking.harvard.edu/mysite" | jsonify | safeJS }}</script>
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "Person" "name" $owner.name "jobTitle" $owner.title "email" (printf "mailto:%s" $owner.email) "affiliation" (dict "@type" "Organization" "name" $owner.institution) "url" site.BaseURL "sameAs" (slice $owner.orcid $owner.scholar (printf "https://bsky.app/profile/%s" $owner.bluesky)) "isBasedOn" "https://gking.harvard.edu/mysite" | jsonify | safeJS }}</script>
 {{- end }}
 {{- end }}
 {{- partial "scholarly_meta.html" . -}}
