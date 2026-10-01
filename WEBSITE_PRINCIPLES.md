@@ -18,8 +18,7 @@ A playbook for anyone (human or AI) maintaining this site. Read before changing 
 
 ## Content model
 
-- `content/publication/<slug>/index.md` — articles (`journal_article`), work in review (`under_review`), thesis (`thesis`).
-- `content/talk/<slug>/index.md` — first-authored conference presentations (`presentation`); C.V. gives only years, so `date` is Jan 1 and `weight` keeps C.V. order within a year.
+- `content/publication/<slug>/index.md` — articles (`journal_article`) and preprints under review (`under_review`). Work under review without a public preprint, the thesis and conference presentations are deliberately not listed.
 - `content/authors/<slug>/_index.md` — one profile per co-author or supervised student (`user_groups`: Students / Collaborators; optional `role`, `website`). `data/people.json` maps each full author name to its slug and short citation form ("Szymanowski D."); the owner entry has `owner: true` (rendered bold, not linked).
 - `data/research_areas.json` — the six research areas (key, name, blurb) and subcategories (tag groups used by See Also). Pages opt in with `research_areas: [key, …]`.
 - `tools/` — the one-off generator used for the initial build from the C.V. Do not re-run it (it rewrites content) unless starting over.
@@ -28,7 +27,7 @@ A playbook for anyone (human or AI) maintaining this site. Read before changing 
 
 - `baseof.html` — shell: skip link, navbar, `<main data-pagefind-body>`, footer, search modal.
 - `home.html` and `landing/list.html` — homepage: hero (photo left, text right; stacked ≤ 640 px), research-area accordions (`<details>`, 5 recent articles each + "View all" link to the filtered Publications page), recent publications.
-- `publication/list.html` — Publications page: server-rendered dense list of publications **and** talks (all entries in the HTML), sticky tabs (only tabs with content), sidebar filters (text, area, year), sort, live count, BibTeX export of visible entries, hash state (`#tab?area=…&years=…&q=…&sort=…`, pushState for tab/filter clicks so Back works).
+- `publication/list.html` — Publications page: server-rendered dense list of publications (and talks, if a `content/talk/` section is ever added) (all entries in the HTML), sticky tabs (only tabs with content), sidebar filters (text, area, year), sort, live count, BibTeX export of visible entries, hash state (`#tab?area=…&years=…&q=…&sort=…`, pushState for tab/filter clicks so Back works).
 - `_partials/pub_single_body.html` — single page for publications/talks: breadcrumb, full author names (linked to People), venue/date, link buttons, abstract (`#abstract`), See Also. Never shows the internal type label.
 - `_partials/related_finder.html` — See Also, computed at build time: explicit `related_*` → `see_also` → Dataverse → subcategory siblings → scoring (+2 title token, +1 co-author, +2 tag; threshold 4, or 2 with < 3 explicit picks), dedup by normalised title, cap 8.
 - `_partials/scholarly_meta.html` — `citation_*` tags + `ScholarlyArticle`/`CreativeWork` JSON-LD. `site_head_custom.html` adds the homepage `Person` JSON-LD and the generator meta tag (both gated by `params.mysite.discovery`).

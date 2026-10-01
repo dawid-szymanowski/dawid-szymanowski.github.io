@@ -25,7 +25,7 @@ Everything on the site is plain text in this repository. Edit a file on GitHub (
 title: "Evolution of rhyolite melt production on Lipari"
 date: 2027-03-15
 authors: ["Dawid Szymanowski", "Francesca Forni", "Gabriel Rojas", "Olivier Bachmann"]
-publication_types: ["journal_article"]     # or "under_review", "thesis"
+publication_types: ["journal_article"]     # or "under_review" (preprints)
 publication: "Journal of Petrology 68, egaa001"
 doi: "10.1093/petrology/egaa001"
 abstract: "Paste the abstract here."
@@ -41,28 +41,9 @@ tags: ["Lipari", "rhyolite", "zircon"]
 
 Tips:
 - Write author names exactly as they appear on other papers (e.g. "Ben S. Ellis", "Jörn-Frederik Wotzlaw") so they link to the same person.
-- A paper under review: use `publication_types: ["under_review"]`, set `publication: "In review at Geology"`, and leave out `doi`. When it is published, change the type to `journal_article` and fill in the venue and DOI — keep the same folder.
+- A preprint under review: use `publication_types: ["under_review"]`, set `publication: "In review at Geology (preprint on EGUsphere)"`, and link the preprint DOI with `name: "Preprint"`. When it is published, change the type to `journal_article` and fill in the venue and DOI — keep the same folder.
 - To host a PDF yourself, put it in `static/files/` and add a link with `url: "files/your-file.pdf"` (no leading slash).
 - To force particular "See also" entries, add `related_papers: ["folder-name-of-other-paper"]`.
-
-## Add a presentation
-
-Create `content/talk/<slug>/index.md`:
-
-```yaml
----
-title: "Talk title"
-date: 2027-01-01          # year is what is displayed
-authors: ["Dawid Szymanowski", "Lorenzo Tavazzani"]
-publication_types: ["presentation"]
-publication: "EGU General Assembly, Vienna"
-event: "EGU General Assembly, Vienna"
-invited: false
-research_areas: ["refmat"]
-tags: ["reference materials"]
-weight: 1                 # 1 = listed first within its year
----
-```
 
 ## People page — please review
 

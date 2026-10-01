@@ -104,7 +104,7 @@ def pub_md(p, slug, ptype, venue_str, date, weight=None):
     if p.get("abstract"): fm.append(f"abstract: {yq(p['abstract'])}")
     links = []
     if p.get("doi"):
-        links.append(("Publisher's Version", "https://doi.org/" + p["doi"]))
+        links.append(("Preprint" if p.get("status") == "under_review" else "Publisher's Version", "https://doi.org/" + p["doi"]))
     for name, url in p.get("press", []):
         links.append((name, url))
     if links:
@@ -127,10 +127,8 @@ for p in PUBS:
     write(f"{C}/publication/{slug}/index.md", pub_md(p, slug, "journal_article", v, p["date"]))
     for a in p["authors"]: all_people[a] = all_people.get(a, 0) + 1
 
-slug = uniq(slugify(THESIS["title"]))
-write(f"{C}/publication/{slug}/index.md", pub_md(THESIS, slug, "thesis", THESIS["venue"], THESIS["date"]))
 
-for i, p in enumerate(UNDER_REVIEW):
+for i, p in enumerate([q for q in UNDER_REVIEW if q.get("doi")]):
     slug = uniq(p["slug"])
     q = dict(p); q["status"] = "under_review"
     write(f"{C}/publication/{slug}/index.md", pub_md(q, slug, "under_review", p["venue"], p.get("date", "2026-09-01")))
@@ -144,7 +142,7 @@ title: "Writings"
 used.clear()
 # ---- talks (first-authored presentations from the C.V.; CV gives year only) ----
 n = len(TALKS)
-for i, (date, title, authors, event, invited, areas) in enumerate(TALKS):
+for i, (date, title, authors, event, invited, areas) in enumerate([]):
     slug = uniq(slugify(title))
     year = date[:4]
     fm = ["---", f"title: {yq(title)}", f"date: {year}-01-01", f"authors: {ylist(authors)}",
@@ -154,7 +152,7 @@ for i, (date, title, authors, event, invited, areas) in enumerate(TALKS):
     write(f"{C}/talk/{slug}/index.md", "\n".join(fm))
     for a in authors: all_people[a] = all_people.get(a, 0) + 1
 
-write(f"{C}/talk/_index.md", '---\ntitle: "Presentations"\n---\n')
+
 
 # ---- people ----
 STUDENTS = [  # from the C.V. "Teaching and supervision" section
@@ -188,7 +186,7 @@ student_names = [s for s, _ in STUDENTS]
 all_people.pop(OWNER, None)
 write(f"{C}/authors/_index.md", """---
 title: "People"
-summary: "Dawid’s research is highly collaborative. These are the students he has supervised and the colleagues he has published and presented with."
+summary: "Dawid’s research is highly collaborative. These are the students he has supervised and the colleagues he has published with."
 ---
 """)
 for name in sorted(set(list(all_people) + student_names), key=lambda x: ascii_fold(split_name(x)[0]).lower()):
