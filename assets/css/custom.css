@@ -353,3 +353,18 @@ sup, sub { line-height: 0; font-size: 0.72em; }
 .kw-box .check span:first-of-type { flex: 1 1 auto; }
 .kw-n { color: var(--color-text-muted); font-size: 0.8rem; font-variant-numeric: tabular-nums; }
 @media (max-width: 960px) { .pub-filters .f-keywords { grid-column: 1 / -1; } .kw-box { max-height: 150px; } }
+
+/* Bio page: text column + profile sidebar */
+.bio-layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 48px; align-items: start; padding-top: 4px; padding-bottom: 56px; }
+.bio-main h1 { margin-top: 0.3em; }
+.bio-sidebar { padding-top: 34px; }
+.bio-sidebar-photo { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px; box-shadow: 0 8px 22px rgba(45, 41, 38, 0.1); }
+.bio-sidebar section { border-top: 1px solid var(--color-border); margin-top: 16px; padding-top: 12px; }
+.bio-sidebar .side-label { font-family: var(--font-sans); font-size: 0.78rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-muted); margin: 0 0 6px; }
+.bio-sidebar ul { list-style: none; margin: 0; padding: 0; font-size: 0.95rem; line-height: 1.5; }
+.bio-sidebar li { margin: 0 0 3px; }
+.bio-sidebar a { font-weight: 600; }
+@media (max-width: 860px) {
+  .bio-layout { grid-template-columns: 1fr; gap: 8px; }
+  .bio-sidebar { padding-top: 0; max-width: 480px; }
+}

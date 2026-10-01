@@ -121,3 +121,9 @@
   translation: "Preprint"
 - id: filter_keywords
   translation: "Keywords"
+- id: contact
+  translation: "Contact"
+- id: education
+  translation: "Education"
+- id: employment
+  translation: "Employment"

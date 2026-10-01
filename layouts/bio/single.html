@@ -1,19 +1,32 @@
 {{ define "main" }}
 {{- $owner := site.Params.owner -}}
-<article class="container narrow bio">
-  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ "" | relURL }}">{{ i18n "home" }}</a> / <span>{{ .Title }}</span></nav>
-  <div class="bio-head">
-    <img class="bio-photo" src="{{ $owner.photo | relURL }}" width="140" height="140" alt="Portrait of {{ $owner.name }}, {{ $owner.institution }}">
-    <div>
-      <h1>{{ .Title }}</h1>
-      <p class="hero-role">{{ $owner.title }}, {{ $owner.institution }}</p>
-      <p class="btn-row">
-        <a class="btn" href="{{ $owner.scholar }}">{{ i18n "google_scholar" }}</a>
-        <a class="btn secondary" href="{{ $owner.orcid }}">{{ i18n "orcid" }}</a>
-      </p>
-    </div>
-  </div>
-  <div class="prose">{{ .Content }}</div>
-  <p class="more"><a class="text-link" href="{{ "publication/" | relURL }}">{{ i18n "all_writings" }} →</a></p>
-</article>
+{{- $bio := site.Data.bio -}}
+<div class="container bio-layout">
+  <article class="bio-main">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ "" | relURL }}">{{ i18n "home" }}</a> / <span>{{ .Title }}</span></nav>
+    <h1>{{ .Title }}</h1>
+    <div class="prose">{{ .Content }}</div>
+    <p class="more"><a class="text-link" href="{{ "publication/" | relURL }}">{{ i18n "all_writings" }} →</a></p>
+  </article>
+  <aside class="bio-sidebar" aria-label="Profile">
+    <img class="bio-sidebar-photo" src="{{ "images/dawid-szymanowski-bio.jpg" | relURL }}" width="800" height="600" alt="Portrait of {{ $owner.name }}, {{ $owner.institution }}">
+    <section>
+      <h2 class="side-label">{{ i18n "contact" }}</h2>
+      <ul>
+        <li><a href="mailto:{{ $owner.email }}">{{ $owner.email }}</a></li>
+        <li><a href="{{ $owner.scholar }}">{{ i18n "google_scholar" }}</a></li>
+        <li><a href="{{ $owner.orcid }}">{{ i18n "orcid" }}</a></li>
+        {{- with $owner.bluesky }}<li><a href="https://bsky.app/profile/{{ . }}">Bluesky</a></li>{{ end }}
+      </ul>
+    </section>
+    <section>
+      <h2 class="side-label">{{ i18n "education" }}</h2>
+      <ul>{{ range $bio.education }}<li>{{ . }}</li>{{ end }}</ul>
+    </section>
+    <section>
+      <h2 class="side-label">{{ i18n "employment" }}</h2>
+      <ul>{{ range $bio.employment }}<li>{{ . }}</li>{{ end }}</ul>
+    </section>
+  </aside>
+</div>
 {{ end }}
