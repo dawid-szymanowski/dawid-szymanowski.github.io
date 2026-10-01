@@ -38,7 +38,7 @@ A playbook for anyone (human or AI) maintaining this site. Read before changing 
 - Layout modelled on brandonstewart.org. Colour scheme: white background (`#ffffff`), light blue-grey bands and sidebar (`#f3f6fa`), ink text, ETH blue accent `#215caf` (links, buttons, active tab, journal names, favicon), serif display headings (Charter/Georgia stack) over the native sans body, navy footer (`#14213a`).
 - All colours are tokens on `:root` at the top of `assets/css/custom.css`; change the scheme there. The favicon PNG/ICO files in `static/` use the accent colour and need regenerating if it changes.
 - Dense citation lines, hairline separators, no card grids for writings. Primary actions = filled/outlined buttons; inline navigation = text links with →.
-- Always light mode; focus outlines in light blue; `prefers-reduced-motion` respected.
+- Light by default, with a dark scheme switched by the sun/moon button in the header (`html[data-scheme="dark"]`, choice remembered in the visitor's browser). Dark values are the second token block in `custom.css`; no colour is hard-coded outside the two token blocks except the white footer brand. Focus outlines in light blue; `prefers-reduced-motion` respected.
 
 ## Editorial rules
 

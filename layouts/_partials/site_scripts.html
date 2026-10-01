@@ -5,6 +5,15 @@
     var open = l.classList.toggle('is-open'); t.setAttribute('aria-expanded', open);
   });
   if (l) l.addEventListener('click', function (e) { if (e.target.tagName === 'A') { l.classList.remove('is-open'); t && t.setAttribute('aria-expanded', 'false'); } });
+  var st = document.querySelector('.scheme-toggle'), root = document.documentElement;
+  function label() { if (st) st.setAttribute('aria-label', root.getAttribute('data-scheme') === 'dark' ? st.dataset.labelLight : st.dataset.labelDark); }
+  label();
+  if (st) st.addEventListener('click', function () {
+    var next = root.getAttribute('data-scheme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-scheme', next);
+    try { localStorage.setItem('scheme', next); } catch (e) {}
+    label();
+  });
   document.addEventListener('click', function (e) {
     var b = e.target.closest('.more-btn'); if (!b) return;
     var rest = b.parentNode.querySelector('.authors-rest'); if (rest) rest.hidden = false;

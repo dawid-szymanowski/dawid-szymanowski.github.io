@@ -127,3 +127,7 @@
   translation: "Education"
 - id: employment
   translation: "Employment"
+- id: scheme_to_dark
+  translation: "Switch to dark mode"
+- id: scheme_to_light
+  translation: "Switch to light mode"

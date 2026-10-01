@@ -1,5 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{var s=localStorage.getItem('scheme');if(s==='dark'||s==='light')document.documentElement.setAttribute('data-scheme',s)}catch(e){}</script>
 {{- $owner := site.Params.owner -}}
 {{- $title := cond .IsHome (printf "%s · %s" site.Title $owner.institution) (printf "%s · %s" .Title site.Title) -}}
 <title>{{ $title }}</title>
