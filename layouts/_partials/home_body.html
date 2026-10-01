@@ -8,7 +8,7 @@
     <div class="hero-text">
       <h1>{{ $owner.name }}</h1>
       <p class="hero-role">{{ $owner.title }}, {{ $owner.institution }}</p>
-      <p class="hero-intro">{{ .Params.intro }}</p>
+      <p class="hero-intro">{{ .Params.intro | markdownify }}</p>
       <p class="btn-row">
         <a class="btn" href="mailto:{{ $owner.email }}">{{ $owner.email }}</a>
         <a class="btn secondary" href="{{ $owner.scholar }}">{{ i18n "google_scholar" }}</a>

@@ -4,7 +4,7 @@
 {{- $title := cond .IsHome (printf "%s · %s" site.Title $owner.institution) (printf "%s · %s" .Title site.Title) -}}
 <title>{{ $title }}</title>
 {{- $desc := "" -}}
-{{- if .IsHome -}}{{- $desc = .Params.intro -}}
+{{- if .IsHome -}}{{- $desc = .Params.intro | markdownify -}}
 {{- else if .Params.abstract -}}{{- $desc = .Params.abstract | plainify | truncate 200 -}}
 {{- else if .Params.summary -}}{{- $desc = .Params.summary -}}
 {{- else -}}{{- $desc = printf "%s — %s, %s" .Title $owner.name $owner.institution -}}{{- end }}
