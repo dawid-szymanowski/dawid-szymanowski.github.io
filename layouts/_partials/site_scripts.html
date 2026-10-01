@@ -14,6 +14,16 @@
     try { localStorage.setItem('scheme', next); } catch (e) {}
     label();
   });
+  /* Follow the visitor's system setting until they pick a scheme with the button. */
+  if (window.matchMedia) {
+    var mq = matchMedia('(prefers-color-scheme: dark)');
+    var follow = function (e) {
+      var saved = null; try { saved = localStorage.getItem('scheme'); } catch (err) {}
+      if (saved === 'dark' || saved === 'light') return;
+      root.setAttribute('data-scheme', e.matches ? 'dark' : 'light'); label();
+    };
+    if (mq.addEventListener) mq.addEventListener('change', follow); else if (mq.addListener) mq.addListener(follow);
+  }
   document.addEventListener('click', function (e) {
     var b = e.target.closest('.more-btn'); if (!b) return;
     var rest = b.parentNode.querySelector('.authors-rest'); if (rest) rest.hidden = false;
