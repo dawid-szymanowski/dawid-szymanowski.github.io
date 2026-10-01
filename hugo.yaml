@@ -73,6 +73,10 @@ params:
       - "Clausiusstrasse 25"
       - "8092 Zurich, Switzerland"
 
+  # ---- Google Analytics (GA4). Leave the ID empty to switch tracking off. ----
+  analytics:
+    google_id: "G-GSGRH3GZFP"
+
   # ---- GaryKing.org/mysite options (from the information form) ----
   mysite:
     credit: false     # "Footer credit" box was unchecked
