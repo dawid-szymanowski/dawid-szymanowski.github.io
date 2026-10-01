@@ -18,7 +18,7 @@
     {{- $names = $names | append (printf "%s, %s" (index (last 1 $parts) 0) (delimit (first (sub (len $parts) 1) $parts) " ")) -}}
   {{- end -}}
 {{- end -}}
-{{- $journal := replaceRE `\s+\d.*$` "" ($p.Params.publication | default "") -}}
+{{- $journal := replaceRE `(,\s|\s+\d).*$` "" ($p.Params.publication | default "") -}}
 {{- $out := slice (printf "  title = {%s}" $p.Title) (printf "  author = {%s}" (delimit $names " and ")) (printf "  year = {%s}" ($p.Date.Format "2006")) -}}
 {{- if $isReview -}}
   {{- $out = $out | append (printf "  note = {%s}" $p.Params.publication) -}}
