@@ -35,10 +35,10 @@ A playbook for anyone (human or AI) maintaining this site. Read before changing 
 
 ## Design
 
-- Visual model: brandonstewart.org — warm cream background (`#fdfaf4`), banded sections (`#f6efe5`), ink text, burnt-umber accent `#a84b0e` (buttons, active tab, favicon), serif display headings (Charter/Georgia stack) over the native sans body, dark footer.
-- ETH blue (`#215caf`) appears only as the link hover colour.
+- Layout modelled on brandonstewart.org. Colour scheme: white background (`#ffffff`), light blue-grey bands and sidebar (`#f3f6fa`), ink text, ETH blue accent `#215caf` (links, buttons, active tab, journal names, favicon), serif display headings (Charter/Georgia stack) over the native sans body, navy footer (`#14213a`).
+- All colours are tokens on `:root` at the top of `assets/css/custom.css`; change the scheme there. The favicon PNG/ICO files in `static/` use the accent colour and need regenerating if it changes.
 - Dense citation lines, hairline separators, no card grids for writings. Primary actions = filled/outlined buttons; inline navigation = text links with →.
-- Always light mode; focus outlines in warm gold; `prefers-reduced-motion` respected.
+- Always light mode; focus outlines in light blue; `prefers-reduced-motion` respected.
 
 ## Editorial rules
 
