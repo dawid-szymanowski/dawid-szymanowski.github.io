@@ -783,18 +783,18 @@
   "given": "Oscar",
   "key": "laurent"
  },
- "Daniel W. J. Lee": {
-  "slug": "daniel-w-j-lee",
-  "short": "Lee D.W.J.",
-  "family": "Lee",
-  "given": "Daniel W. J.",
-  "key": "lee"
- },
  "Hao-Yang Lee": {
   "slug": "hao-yang-lee",
   "short": "Lee H.-Y.",
   "family": "Lee",
   "given": "Hao-Yang",
+  "key": "lee"
+ },
+ "Daniel W. J. Lee": {
+  "slug": "daniel-w-j-lee",
+  "short": "Lee D.W.J.",
+  "family": "Lee",
+  "given": "Daniel W. J.",
   "key": "lee"
  },
  "Marcelo Leppe": {
@@ -1679,18 +1679,18 @@
   "given": "Peng",
   "key": "zeng"
  },
- "Junjun Zhang": {
-  "slug": "junjun-zhang",
-  "short": "Zhang J.",
-  "family": "Zhang",
-  "given": "Junjun",
-  "key": "zhang"
- },
  "Zhe J. Zhang": {
   "slug": "zhe-j-zhang",
   "short": "Zhang Z.J.",
   "family": "Zhang",
   "given": "Zhe J.",
+  "key": "zhang"
+ },
+ "Junjun Zhang": {
+  "slug": "junjun-zhang",
+  "short": "Zhang J.",
+  "family": "Zhang",
+  "given": "Junjun",
   "key": "zhang"
  },
  "Lisa Zieman": {
