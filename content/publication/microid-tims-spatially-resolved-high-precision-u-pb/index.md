@@ -9,6 +9,8 @@ abstract: "We present a novel methodology for spatially resolved high-precision 
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.5194/gchron-6-621-2024"
+  - name: "PDF"
+    url: "files/microid-tims-spatially-resolved-high-precision-u-pb.pdf"
 research_areas: ["methods"]
 tags: ["ID-TIMS", "microsampling", "zircon", "U–Pb geochronology"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Analytical methods"]

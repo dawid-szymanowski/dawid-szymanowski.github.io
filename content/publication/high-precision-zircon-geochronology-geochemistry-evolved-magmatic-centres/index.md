@@ -9,6 +9,8 @@ abstract: "In the African section of the Paraná-Etendeka Large Igneous Province
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1016/j.lithos.2024.107651"
+  - name: "PDF"
+    url: "files/high-precision-zircon-geochronology-geochemistry-evolved-magmatic-centres.pdf"
 research_areas: ["lip"]
 tags: ["large igneous provinces", "Paraná-Etendeka", "Namibia", "zircon"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "LIP", "Pluton"]

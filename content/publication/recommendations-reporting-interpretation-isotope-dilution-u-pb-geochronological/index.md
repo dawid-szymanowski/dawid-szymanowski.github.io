@@ -9,6 +9,8 @@ abstract: "U-Pb geochronology by isotope dilution–thermal ionization mass spec
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1130/b37321.1"
+  - name: "PDF"
+    url: "files/recommendations-reporting-interpretation-isotope-dilution-u-pb-geochronological.pdf"
 research_areas: ["methods"]
 tags: ["ID-TIMS", "data reporting", "EARTHTIME", "U–Pb geochronology"]
 keywords: ["Zircon", "ID-TIMS", "Analytical methods"]

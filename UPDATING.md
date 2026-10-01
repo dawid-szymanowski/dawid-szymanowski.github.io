@@ -43,7 +43,7 @@ keywords: ["Zircon", "ID-TIMS", "Magma reservoir"]   # pick from the list in dat
 Tips:
 - Write author names exactly as they appear on other papers (e.g. "Ben S. Ellis", "Jörn-Frederik Wotzlaw") so they link to the same person.
 - A preprint under review: use `publication_types: ["under_review"]`, set `publication: "In review at Geology (preprint on EGUsphere)"`, and link the preprint DOI with `name: "Preprint"`. When it is published, change the type to `journal_article` and fill in the venue and DOI — keep the same folder.
-- To host a PDF yourself, put it in `static/files/` and add a link with `url: "files/your-file.pdf"` (no leading slash).
+- To add a PDF button: put the file in `static/files/`, named like the paper's folder (e.g. `static/files/lipari-rhyolite-melt-production.pdf`), and add a link to the paper's `links:` with `name: "PDF"` and `url: "files/lipari-rhyolite-melt-production.pdf"` (no leading slash). Only do this for papers whose licence allows it (open access under a Creative Commons licence); for other papers leave the button off.
 - To force particular "See also" entries, add `related_papers: ["folder-name-of-other-paper"]`.
 
 ## Preview before publishing (optional)

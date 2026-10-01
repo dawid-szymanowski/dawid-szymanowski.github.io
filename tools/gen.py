@@ -120,6 +120,9 @@ def pub_md(p, slug, ptype, venue_str, date, weight=None):
     links = []
     if p.get("doi"):
         links.append(("Preprint" if p.get("status") == "under_review" else "Publisher's Version", "https://doi.org/" + p["doi"]))
+    # A PDF button appears when static/files/<folder name>.pdf exists (open-access papers only).
+    if os.path.exists(os.path.join(SITE, "static", "files", slug + ".pdf")):
+        links.append(("PDF", f"files/{slug}.pdf"))
     for name, url in p.get("press", []):
         links.append((name, url))
     if links:

@@ -9,6 +9,8 @@ abstract: "To reflect magmatic conditions, volcanic rocks must retain their comp
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1038/s41467-018-05688-2"
+  - name: "PDF"
+    url: "files/post-eruptive-mobility-lithium-volcanic-rocks.pdf"
 research_areas: ["ore", "magma"]
 tags: ["lithium", "ignimbrite", "diffusion", "Yellowstone–Snake River Plain"]
 keywords: ["Lithium", "Yellowstone–Snake River Plain"]

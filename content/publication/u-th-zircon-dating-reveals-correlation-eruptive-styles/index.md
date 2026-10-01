@@ -9,6 +9,8 @@ abstract: "Water-rich silicic magmas are capable of erupting effusively and expl
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1016/j.chemgeo.2020.119830"
+  - name: "PDF"
+    url: "files/u-th-zircon-dating-reveals-correlation-eruptive-styles.pdf"
 research_areas: ["magma"]
 tags: ["U–Th dating", "zircon", "explosive eruptions", "Greece"]
 keywords: ["Zircon", "LA-ICPMS", "Magma reservoir", "Caldera"]

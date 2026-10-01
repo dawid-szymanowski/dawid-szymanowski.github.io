@@ -9,6 +9,8 @@ abstract: "Here, we document a detailed characterisation of two zircon gemstones
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1111/ggr.12239"
+  - name: "PDF"
+    url: "files/gz7-gz8-two-zircon-reference-materials-sims-u.pdf"
 research_areas: ["refmat"]
 tags: ["reference materials", "zircon", "SIMS", "Ti-in-zircon"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Reference material"]

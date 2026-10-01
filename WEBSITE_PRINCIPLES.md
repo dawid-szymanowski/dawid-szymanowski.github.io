@@ -19,6 +19,7 @@ A playbook for anyone (human or AI) maintaining this site. Read before changing 
 ## Content model
 
 - `content/publication/<slug>/index.md` — articles (`journal_article`) and preprints under review (`under_review`). Work under review without a public preprint, the thesis and conference presentations are deliberately not listed.
+- `static/files/<slug>.pdf` — publisher PDFs, hosted only for papers published open access under a Creative Commons licence (the owner decides which). A paper gets its PDF button from a `links:` entry named "PDF"; local PDF links also produce the `citation_pdf_url` tag for Google Scholar.
 - `data/people.json` maps each full author name to its short citation form and BibTeX family name; the owner entry has `owner: true` (rendered bold).
 - `data/research_areas.json` — the six research areas (key, name, blurb) and subcategories (tag groups used by See Also). Pages opt in with `research_areas: [key, …]`.
 - `tools/` — the one-off generator used for the initial build from the C.V. Do not re-run it (it rewrites content) unless starting over.

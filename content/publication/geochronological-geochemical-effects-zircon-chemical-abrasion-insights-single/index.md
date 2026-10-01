@@ -9,6 +9,8 @@ abstract: "Chemical abrasion in hydrofluoric acid (HF) is routinely applied to z
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.5194/gchron-6-1-2024"
+  - name: "PDF"
+    url: "files/geochronological-geochemical-effects-zircon-chemical-abrasion-insights-single.pdf"
 research_areas: ["methods"]
 tags: ["chemical abrasion", "ID-TIMS", "zircon", "Pb loss"]
 keywords: ["Zircon", "ID-TIMS", "Analytical methods"]

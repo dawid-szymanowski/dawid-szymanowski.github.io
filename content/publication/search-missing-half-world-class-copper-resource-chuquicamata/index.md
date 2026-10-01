@@ -9,6 +9,8 @@ abstract: "Orebodies may be dismembered by post-ore faulting, and partial burial
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.5382/econgeo.5237"
+  - name: "PDF"
+    url: "files/search-missing-half-world-class-copper-resource-chuquicamata.pdf"
 research_areas: ["ore"]
 tags: ["porphyry copper", "zircon", "molybdenite", "Chile"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Ore deposit", "Pluton"]

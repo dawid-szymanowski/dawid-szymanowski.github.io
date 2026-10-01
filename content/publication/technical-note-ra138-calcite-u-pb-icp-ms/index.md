@@ -9,6 +9,8 @@ abstract: "A promising primary reference material for U–Pb laser ablation indu
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.5194/gchron-6-465-2024"
+  - name: "PDF"
+    url: "files/technical-note-ra138-calcite-u-pb-icp-ms.pdf"
 research_areas: ["refmat"]
 tags: ["carbonate geochronology", "reference materials", "LA-ICP-MS", "U–Pb geochronology"]
 keywords: ["ID-TIMS", "LA-ICPMS", "Carbonate", "Reference material"]

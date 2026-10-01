@@ -9,6 +9,8 @@ abstract: "The extinction of woody vegetation in Antarctica remains difficult to
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1038/s43247-025-02921-x"
+  - name: "PDF"
+    url: "files/neogene-plant-macrofossils-west-antarctica-reveal-persistence-nothofagaceae.pdf"
 research_areas: ["lip"]
 tags: ["Antarctica", "paleoclimate", "Miocene", "geochronology"]
 keywords: ["Zircon", "LA-ICPMS", "Earth history", "Paleoclimate"]

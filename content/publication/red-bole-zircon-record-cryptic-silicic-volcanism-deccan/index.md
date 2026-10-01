@@ -9,6 +9,8 @@ abstract: "Silicic magmas within large igneous provinces (LIPs) are understudied
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1130/G49613.1"
+  - name: "PDF"
+    url: "files/red-bole-zircon-record-cryptic-silicic-volcanism-deccan.pdf"
 research_areas: ["lip"]
 tags: ["large igneous provinces", "Deccan Traps", "zircon", "silicic magmatism"]
 keywords: ["Zircon", "ID-TIMS", "LIP", "Magma reservoir", "Large eruption", "Hf isotopes"]

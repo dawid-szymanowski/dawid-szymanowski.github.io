@@ -9,6 +9,8 @@ abstract: "The distribution of zircon crystallisation ages in igneous rocks has 
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.5194/gchron-7-15-2025"
+  - name: "PDF"
+    url: "files/controls-zircon-age-distributions-volcanic-porphyry-plutonic-rocks.pdf"
 research_areas: ["methods", "magma"]
 tags: ["zircon age spectra", "CA-ID-TIMS", "magma reservoirs", "porphyry copper"]
 keywords: ["Zircon", "ID-TIMS", "Magma reservoir", "Large eruption", "Ore deposit", "Pluton", "Analytical methods"]

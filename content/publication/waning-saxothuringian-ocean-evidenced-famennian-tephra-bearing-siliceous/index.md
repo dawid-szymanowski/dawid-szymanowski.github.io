@@ -9,6 +9,8 @@ abstract: "A tephra-rich cherty-clayey Famennian succession within the major Brz
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1130/B35971.1"
+  - name: "PDF"
+    url: "files/waning-saxothuringian-ocean-evidenced-famennian-tephra-bearing-siliceous.pdf"
 research_areas: ["lip"]
 tags: ["Devonian", "tephra", "Poland", "Variscan orogeny"]
 keywords: ["Zircon", "LA-ICPMS", "Earth history"]

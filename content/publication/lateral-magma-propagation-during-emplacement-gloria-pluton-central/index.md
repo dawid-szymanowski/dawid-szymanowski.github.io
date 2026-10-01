@@ -9,6 +9,8 @@ abstract: "La Gloria Pluton (LGP) in central Chile is a shallow, north-northwest
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1130/g45361.1"
+  - name: "PDF"
+    url: "files/lateral-magma-propagation-during-emplacement-gloria-pluton-central.pdf"
 research_areas: ["magma"]
 tags: ["plutons", "magma emplacement", "Chile", "zircon"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Pluton"]

@@ -9,6 +9,8 @@ abstract: "Dense, glassy pyroclasts found in products of explosive eruptions are
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1007/s00445-021-01448-1"
+  - name: "PDF"
+    url: "files/obsidian-pyroclasts-yellowstone-snake-river-plain-ignimbrites-dominantly.pdf"
 research_areas: ["magma"]
 tags: ["Yellowstone–Snake River Plain", "ignimbrite", "obsidian", "volcanic conduits"]
 keywords: ["LA-ICPMS", "Magma reservoir", "Large eruption", "Yellowstone–Snake River Plain"]

@@ -22,7 +22,8 @@
   {{- if $p.Params.abstract }}<button class="pub-btn" type="button" data-panel="abstract" aria-expanded="false" aria-controls="{{ $id }}-abstract">{{ i18n "abstract" }}</button>{{ end }}
   <button class="pub-btn" type="button" data-panel="citation" aria-expanded="false" aria-controls="{{ $id }}-citation">{{ i18n "citation" }}</button>
   {{- range $p.Params.links }}
-  <a class="pub-btn" href="{{ .url }}" rel="noopener">{{ if eq .name "Publisher's Version" }}{{ i18n "publisher_version" }}{{ else }}{{ .name }}{{ end }}</a>
+  {{- $url := .url }}{{ if not (findRE `^https?://` $url) }}{{ $url = $url | relURL }}{{ end }}
+  <a class="pub-btn" href="{{ $url }}" rel="noopener">{{ if eq .name "Publisher's Version" }}{{ i18n "publisher_version" }}{{ else }}{{ .name }}{{ end }}</a>
   {{- end }}
 </div>
 {{- with $p.Params.abstract }}

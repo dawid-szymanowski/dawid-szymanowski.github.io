@@ -9,6 +9,8 @@ abstract: "This study reports new geochemical and geochronological data for the 
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1016/j.gsf.2026.102306"
+  - name: "PDF"
+    url: "files/transminas-pirenopolis-dike-swarms-evidence-central-south-atlantic.pdf"
 research_areas: ["lip"]
 tags: ["large igneous provinces", "dike swarms", "South America", "CAMP"]
 keywords: ["LA-ICPMS", "LIP", "Earth history"]

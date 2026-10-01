@@ -9,6 +9,8 @@ abstract: "The emplacement history and thermal evolution of subvolcanic magma re
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1016/j.epsl.2023.118432"
+  - name: "PDF"
+    url: "files/high-precision-zircon-age-spectra-record-dynamics-evolution.pdf"
 research_areas: ["magma"]
 tags: ["zircon age spectra", "magma reservoirs", "ID-TIMS", "Southern Alps"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Magma reservoir", "Large eruption", "Caldera", "Pluton"]

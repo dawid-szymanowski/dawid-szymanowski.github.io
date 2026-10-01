@@ -9,6 +9,8 @@ abstract: "The Moon has had a complex history, with evidence of its primary crus
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1126/sciadv.adn9871"
+  - name: "PDF"
+    url: "files/high-precision-u-pb-zircon-dating-identifies-major.pdf"
   - name: "ETH news (EN)"
     url: "https://eaps.ethz.ch/en/news/archive/2024/07/zircon-crystals-serve-timestamps-impact-events-moon.html"
   - name: "ETH news (DE)"

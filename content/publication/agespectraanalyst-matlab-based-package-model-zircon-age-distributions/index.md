@@ -9,6 +9,8 @@ abstract: "In the last decade, improvements in the analytical precision achievab
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1016/j.mex.2023.102406"
+  - name: "PDF"
+    url: "files/agespectraanalyst-matlab-based-package-model-zircon-age-distributions.pdf"
 research_areas: ["magma", "methods"]
 tags: ["zircon age spectra", "software", "modelling", "magma reservoirs"]
 keywords: ["Zircon", "ID-TIMS", "Magma reservoir", "Analytical methods"]

@@ -9,6 +9,8 @@ abstract: "Zircon dating is commonly used to quantify timescales of magmatic pro
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1130/G47405.1"
+  - name: "PDF"
+    url: "files/modulation-zircon-solubility-crystal-melt-dynamics.pdf"
 research_areas: ["magma"]
 tags: ["zircon saturation", "cumulate melting", "magma reservoirs"]
 keywords: ["Zircon", "Magma reservoir"]

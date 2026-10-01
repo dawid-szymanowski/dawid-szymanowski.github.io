@@ -9,6 +9,8 @@ abstract: "The thermal and compositional structure of arcs influence magmatic di
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1130/G50973.1"
+  - name: "PDF"
+    url: "files/sink-sink-thermal-density-structure-modern-northern-andean.pdf"
 research_areas: ["magma"]
 tags: ["arcs", "xenoliths", "lower crust", "Andes"]
 keywords: ["Zircon", "ID-TIMS"]

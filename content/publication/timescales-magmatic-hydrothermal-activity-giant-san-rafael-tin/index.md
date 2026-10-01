@@ -9,6 +9,8 @@ abstract: "Recent research suggests that protracted magmatic activity may play a
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1016/j.epsl.2025.119624"
+  - name: "PDF"
+    url: "files/timescales-magmatic-hydrothermal-activity-giant-san-rafael-tin.pdf"
 research_areas: ["ore"]
 tags: ["tin deposits", "zircon", "magmatic-hydrothermal", "Peru"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Magma reservoir", "Ore deposit"]

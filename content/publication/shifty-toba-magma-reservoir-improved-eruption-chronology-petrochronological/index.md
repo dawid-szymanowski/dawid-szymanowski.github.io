@@ -9,6 +9,8 @@ abstract: "Polycyclic caldera complexes hold clues to understanding why some mag
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1016/j.epsl.2023.118408"
+  - name: "PDF"
+    url: "files/shifty-toba-magma-reservoir-improved-eruption-chronology-petrochronological.pdf"
 research_areas: ["magma"]
 tags: ["Toba", "supereruptions", "petrochronology", "magma reservoirs", "zircon"]
 keywords: ["Zircon", "ID-TIMS", "Magma reservoir", "Large eruption", "Caldera", "Hf isotopes"]

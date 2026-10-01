@@ -9,6 +9,8 @@ abstract: "The northwestern Namibian section of the Cretaceous Paraná-Etendeka 
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1093/petrology/egaf050"
+  - name: "PDF"
+    url: "files/pluton-formation-volcanic-plutonic-connection-large-igneous-provinces.pdf"
 research_areas: ["lip", "magma"]
 tags: ["large igneous provinces", "Paraná-Etendeka", "plutons", "Namibia", "zircon"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "LIP", "Magma reservoir", "Large eruption", "Pluton", "Hf isotopes"]

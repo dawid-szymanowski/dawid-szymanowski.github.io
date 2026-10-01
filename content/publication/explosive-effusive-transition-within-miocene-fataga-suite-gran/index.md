@@ -9,6 +9,8 @@ abstract: "Many volcanoes show transitions between explosive and effusive erupti
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1016/j.chemgeo.2022.121242"
+  - name: "PDF"
+    url: "files/explosive-effusive-transition-within-miocene-fataga-suite-gran.pdf"
 research_areas: ["magma"]
 tags: ["explosive eruptions", "Gran Canaria", "volcanic rocks"]
 keywords: ["LA-ICPMS", "Magma reservoir", "Large eruption"]

@@ -9,6 +9,8 @@ abstract: "Understanding the transfer of carbon between Earth’s surface reserv
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1016/j.epsl.2023.118343"
+  - name: "PDF"
+    url: "files/timing-tempo-organic-carbon-burial-monterey-formation-santa.pdf"
 research_areas: ["lip"]
 tags: ["Miocene", "paleoclimate", "Monterey Formation", "U–Pb geochronology"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Earth history", "Paleoclimate"]
