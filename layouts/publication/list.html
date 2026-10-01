@@ -41,11 +41,6 @@
     <label class="f-label" for="f-q">{{ i18n "filter_text" }}</label>
     <input id="f-q" type="search" placeholder="Title, author, venue…" autocomplete="off">
 
-    <label class="f-label" for="f-area">{{ i18n "filter_area" }}</label>
-    <select id="f-area">
-      <option value="">{{ i18n "filter_area_all" }}</option>
-      {{- range site.Data.research_areas.areas }}<option value="{{ .key }}">{{ .name }}</option>{{ end }}
-    </select>
 
     <fieldset class="f-keywords">
       <legend class="f-label">{{ i18n "filter_keywords" }}</legend>
@@ -102,7 +97,7 @@
   var list = document.getElementById('pub-list');
   var items = Array.prototype.slice.call(list.querySelectorAll('.pub-item'));
   var tabs = document.querySelectorAll('.tab-btn');
-  var q = document.getElementById('f-q'), area = document.getElementById('f-area'), sort = document.getElementById('f-sort');
+  var q = document.getElementById('f-q'), sort = document.getElementById('f-sort');
   var yearBoxes = document.querySelectorAll('input[name="year"]');
   var countEl = document.getElementById('count-visible');
   var validTabs = Array.prototype.map.call(tabs, function (b) { return b.dataset.tab; });
@@ -126,7 +121,6 @@
   function writeHash(push) {
     var extra = [];
     if (state.q) extra.push('q=' + encodeURIComponent(state.q));
-    if (state.area) extra.push('area=' + state.area);
     if (state.years.length) extra.push('years=' + state.years.join(','));
     if (state.sort !== 'newest') extra.push('sort=' + state.sort);
     if (state.kws.length) extra.push('kw=' + state.kws.map(encodeURIComponent).join(','));
@@ -135,7 +129,7 @@
     if (push) history.pushState(null, '', h); else history.replaceState(null, '', h);
   }
   function syncControls() {
-    q.value = state.q; area.value = state.area; sort.value = state.sort;
+    q.value = state.q; sort.value = state.sort;
     yearBoxes.forEach(function (b) { b.checked = state.years.indexOf(b.value) > -1; });
     kwBoxes.forEach(function (b) { b.checked = state.kws.indexOf(b.value) > -1; });
     list.querySelectorAll('.pub-kw').forEach(function (c) { var on = state.kws.indexOf(c.dataset.kw) > -1; c.classList.toggle('active', on); c.setAttribute('aria-pressed', on ? 'true' : 'false'); });
@@ -149,7 +143,6 @@
     items.forEach(function (it) {
       var d = it.dataset;
       var show = (state.tab === 'all' || d.tab === state.tab)
-        && (!state.area || (' ' + d.areas + ' ').indexOf(' ' + state.area + ' ') > -1)
         && (!state.years.length || state.years.indexOf(d.year) > -1)
         && state.kws.every(function (k) { return d.kw.indexOf('|' + k + '|') > -1; })
         && terms.every(function (t) { return d.search.indexOf(t) > -1; });
@@ -168,7 +161,6 @@
 
   tabs.forEach(function (btn) { btn.addEventListener('click', function () { state.tab = btn.dataset.tab; update(true); }); });
   q.addEventListener('input', function () { state.q = q.value.trim(); update(false); });
-  area.addEventListener('change', function () { state.area = area.value; update(true); });
   sort.addEventListener('change', function () { state.sort = sort.value; update(false); });
   yearBoxes.forEach(function (b) { b.addEventListener('change', function () {
     state.years = Array.prototype.filter.call(yearBoxes, function (x) { return x.checked; }).map(function (x) { return x.value; });

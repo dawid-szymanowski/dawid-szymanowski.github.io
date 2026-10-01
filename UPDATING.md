@@ -10,7 +10,6 @@ Everything on the site is plain text in this repository. Edit a file on GitHub (
 | Bio narrative | `content/bio/index.md` |
 | Photo | replace `static/images/dawid-szymanowski.jpg` (square, ~640×640) |
 | Email, title, ORCID, Scholar, postal address | `hugo.yaml` → `params.owner` |
-| Research-area names and descriptions | `data/research_areas.json` |
 | Keyword list (filter order) | `data/keywords.json` |
 | Menu items | `hugo.yaml` → `menu.main` |
 | Button and label wording | `i18n/en.yaml` |

@@ -6,7 +6,7 @@
     <img class="bio-photo" src="{{ $owner.photo | relURL }}" width="140" height="140" alt="Portrait of {{ $owner.name }}, {{ $owner.institution }}">
     <div>
       <h1>{{ .Title }}</h1>
-      <p class="hero-role">{{ $owner.title }}, {{ $owner.department }}, {{ $owner.institution }}</p>
+      <p class="hero-role">{{ $owner.title }}, {{ $owner.institution }}</p>
       <p class="btn-row">
         <a class="btn" href="{{ $owner.scholar }}">{{ i18n "google_scholar" }}</a>
         <a class="btn secondary" href="{{ $owner.orcid }}">{{ i18n "orcid" }}</a>
