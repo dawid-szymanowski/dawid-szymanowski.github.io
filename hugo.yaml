@@ -65,9 +65,12 @@ params:
     orcid: "https://orcid.org/0000-0001-9524-5710"
     scholar: "https://scholar.google.ch/citations?user=w_omhFYAAAAJ&hl=en"
     address:
-      - "ETH Zürich, Institute of Geochemistry and Petrology"
-      - "NW F81.2, Clausiusstrasse 25"
-      - "8092 Zürich, Switzerland"
+      - "ETH Zurich"
+      - "Institute of Geochemistry and Petrology"
+      - "Department of Earth and Planetary Sciences"
+      - "NW F 81.2"
+      - "Clausiusstrasse 25"
+      - "8092 Zurich, Switzerland"
 
   # ---- GaryKing.org/mysite options (from the information form) ----
   mysite:
