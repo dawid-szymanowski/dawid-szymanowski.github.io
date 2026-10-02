@@ -783,18 +783,18 @@
   "given": "Oscar",
   "key": "laurent"
  },
- "Daniel W. J. Lee": {
-  "slug": "daniel-w-j-lee",
-  "short": "Lee D.W.J.",
-  "family": "Lee",
-  "given": "Daniel W. J.",
-  "key": "lee"
- },
  "Hao-Yang Lee": {
   "slug": "hao-yang-lee",
   "short": "Lee H.-Y.",
   "family": "Lee",
   "given": "Hao-Yang",
+  "key": "lee"
+ },
+ "Daniel W. J. Lee": {
+  "slug": "daniel-w-j-lee",
+  "short": "Lee D.W.J.",
+  "family": "Lee",
+  "given": "Daniel W. J.",
   "key": "lee"
  },
  "Marcelo Leppe": {
@@ -993,18 +993,18 @@
   "given": "T.",
   "key": "muedi"
  },
- "Samuel Müller": {
-  "slug": "samuel-muller",
-  "short": "Müller S.",
-  "family": "Müller",
-  "given": "Samuel",
-  "key": "muller"
- },
  "Inigo A. Müller": {
   "slug": "inigo-a-muller",
   "short": "Müller I.A.",
   "family": "Müller",
   "given": "Inigo A.",
+  "key": "muller"
+ },
+ "Samuel Müller": {
+  "slug": "samuel-muller",
+  "short": "Müller S.",
+  "family": "Müller",
+  "given": "Samuel",
   "key": "muller"
  },
  "Joshua Murray": {

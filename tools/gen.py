@@ -85,6 +85,7 @@ def ylist(xs):
     return "[" + ", ".join(yq(x) for x in xs) + "]"
 
 def venue(p):
+    if p.get("venue"): return p["venue"]   # explicit venue line, e.g. "Journal, early view"
     v = p.get("journal", "")
     if p.get("vol"): v += f" {p['vol']}"
     if p.get("issue"): v += f"({p['issue']})"
