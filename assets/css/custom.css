@@ -32,6 +32,7 @@
   --color-badge-text: #47597a;
   --color-border-strong: #c3cddd;
   --shadow-rgb: 20, 30, 50;
+  --color-figure-bg: #ffffff;    /* behind paper figures (kept white in dark mode too) */
   --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-serif: Charter, "Bitstream Charter", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
   --nav-h: 64px;
@@ -70,6 +71,7 @@
   --color-badge-text: #a9b8cf;
   --color-border-strong: #3a4a61;
   --shadow-rgb: 0, 0, 0;
+  --color-figure-bg: #ffffff;
   color-scheme: dark;
 }
 
@@ -422,4 +424,29 @@ sup, sub { line-height: 0; font-size: 0.72em; }
 @media (max-width: 860px) {
   .bio-layout { grid-template-columns: 1fr; gap: 8px; }
   .bio-sidebar { padding-top: 0; max-width: 480px; }
+}
+
+/* Homepage: featured publications (three cards, each with one figure from the paper) */
+.feat-grid { list-style: none; margin: 20px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.feat-card { position: relative; display: flex; flex-direction: column; background: var(--color-card-bg); border: 1px solid var(--color-border); border-radius: 8px; overflow: hidden; box-shadow: 0 8px 22px rgba(var(--shadow-rgb), 0.05); transition: border-color .18s, box-shadow .18s; }
+.feat-card:hover { border-color: var(--color-border-strong); box-shadow: 0 10px 26px rgba(var(--shadow-rgb), 0.11); }
+.feat-figure { position: relative; aspect-ratio: 4 / 3; background: var(--color-figure-bg); border-bottom: 1px solid var(--color-border); }
+.feat-figure img { position: absolute; inset: 12px; width: calc(100% - 24px); height: calc(100% - 24px); object-fit: contain; }
+.feat-body { padding: 14px 16px 17px; }
+.feat-title { font-family: var(--font-sans); font-size: 1.02rem; font-weight: 700; line-height: 1.35; margin: 0 0 6px; letter-spacing: 0; }
+.feat-title a { color: var(--color-text); text-decoration: none; }
+.feat-title a::after { content: ""; position: absolute; inset: 0; }   /* whole card is clickable */
+.feat-card:hover .feat-title a { color: var(--color-link); }
+.feat-venue { margin: 0 0 7px; font-size: 0.9rem; color: var(--color-text-muted); }
+.feat-summary { margin: 0; font-size: 0.92rem; line-height: 1.5; }
+@media (max-width: 900px) {
+  .feat-grid { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .feat-card { flex-direction: row; }
+  .feat-figure { flex: 0 0 38%; aspect-ratio: auto; min-height: 170px; border-bottom: 0; border-right: 1px solid var(--color-border); }
+  .feat-body { flex: 1 1 auto; min-width: 0; align-self: center; }
+}
+@media (max-width: 560px) {
+  .feat-card { flex-direction: column; }
+  .feat-figure { flex: none; aspect-ratio: 4 / 3; min-height: 0; border-right: 0; border-bottom: 1px solid var(--color-border); }
+  .feat-body { align-self: stretch; }
 }

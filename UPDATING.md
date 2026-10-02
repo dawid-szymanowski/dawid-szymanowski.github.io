@@ -7,6 +7,7 @@ Everything on the site is plain text in this repository. Edit a file on GitHub (
 | To change… | Edit this |
 |---|---|
 | Homepage intro (the short paragraph under your name) | `content/_index.md` → the `intro:` line |
+| Featured publications on the homepage (which three, their one-line summaries) | `content/_index.md` → `featured:`; each figure is `static/images/featured/<paper folder name>.jpg` |
 | Bio narrative | `content/bio/index.md` |
 | Bio sidebar: Education and Employment | `data/bio.yaml` |
 | Photo | replace `static/images/dawid-szymanowski.jpg` (square, ~640×640); the Bio page uses `static/images/dawid-szymanowski-bio.jpg` (square, ~800×800) |

@@ -18,6 +18,37 @@
 </section>
 
 
+{{- with .Params.featured }}
+<section class="section-band" aria-labelledby="featured">
+  <div class="container">
+    <p class="eyebrow">Highlights</p>
+    <h2 id="featured">{{ i18n "featured_publications" }}</h2>
+    <ul class="feat-grid">
+      {{- range first 3 . }}
+      {{- $f := . }}
+      {{- with site.GetPage (printf "/publication/%s" $f.slug) }}
+      {{- $types := .Params.publication_types | default slice }}
+      {{- $isReview := or (in $types "under_review") (eq .Params.status "under_review") }}
+      {{- $img := printf "images/featured/%s.jpg" $f.slug }}
+      {{- $year := .Date.Format "2006" }}
+      <li class="feat-card">
+        {{- if fileExists (printf "static/%s" $img) }}
+        {{- $cfg := imageConfig (printf "static/%s" $img) }}
+        <div class="feat-figure"><img src="{{ $img | relURL }}" width="{{ $cfg.Width }}" height="{{ $cfg.Height }}" alt="Key figure from the paper: {{ .Title }}" loading="lazy"></div>
+        {{- end }}
+        <div class="feat-body">
+          <h3 class="feat-title"><a href="{{ .RelPermalink }}">{{ partial "chem.html" .Title }}</a></h3>
+          {{- with .Params.publication }}<p class="feat-venue"><em class="journal">{{ replaceRE `(,\s|\s+\d).*$` "" . }}</em>{{ if $isReview }}{{ with findRE `(,\s|\s+\d).*$` . 1 }}{{ index . 0 }}{{ end }}{{ else }}, {{ $year }}{{ end }}</p>{{ end }}
+          {{- with $f.summary }}<p class="feat-summary">{{ . }}</p>{{ end }}
+        </div>
+      </li>
+      {{- end }}
+      {{- end }}
+    </ul>
+  </div>
+</section>
+{{- end }}
+
 <section class="section-plain" aria-labelledby="recent">
   <div class="container">
     <p class="eyebrow">Latest</p>

@@ -27,7 +27,7 @@ A playbook for anyone (human or AI) maintaining this site. Read before changing 
 ## Templates (layouts/)
 
 - `baseof.html` — shell: skip link, navbar, `<main data-pagefind-body>`, footer, search modal.
-- `home.html` and `landing/list.html` — homepage: hero (photo left, text right; stacked ≤ 640 px), recent publications.
+- `home.html` and `landing/list.html` — homepage: hero (photo left, text right; stacked ≤ 640 px), up to three featured publications (cards with one figure each, from `featured:` in `content/_index.md` and `static/images/featured/`), then recent publications.
 - `publication/list.html` — Publications page: server-rendered dense list of publications (and talks, if a `content/talk/` section is ever added) (all entries in the HTML), sticky tabs (only tabs with content), sidebar filters (text, area, year), sort, live count, BibTeX export of visible entries, hash state (`#tab?area=…&years=…&q=…&sort=…`, pushState for tab/filter clicks so Back works).
 - `_partials/pub_single_body.html` — single page for publications/talks: breadcrumb, full author names, venue/date, link buttons, abstract (`#abstract`), See Also. Never shows the internal type label.
 - `_partials/related_finder.html` — See Also, computed at build time: explicit `related_*` → `see_also` → Dataverse → subcategory siblings → scoring (+2 title token, +1 co-author, +2 tag; threshold 4, or 2 with < 3 explicit picks), dedup by normalised title, cap 8.

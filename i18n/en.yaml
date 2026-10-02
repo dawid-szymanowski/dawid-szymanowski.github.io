@@ -131,3 +131,5 @@
   translation: "Switch to dark mode"
 - id: scheme_to_light
   translation: "Switch to light mode"
+- id: featured_publications
+  translation: "Recent featured publications"
