@@ -7,7 +7,7 @@ intro: "Dawid Szymanowski is a researcher at the [Department of Earth and Planet
 # the figure is static/images/featured/<slug>.jpg; `summary` is one short line (about 140 characters).
 featured:
   - slug: "sc-550-sintered-calcite-reference-material-situ-u"
-    summary: "A nano-milled, sintered calcite that is homogeneous enough to calibrate in situ U–Pb dating of carbonates."
+    summary: "Calcite reference material that streamlines LA-ICPMS carbonate U–Pb geochronology."
   - slug: "analytical-strategies-207pb-235u-carbonate-geochronology"
     summary: "Implementation of ID-TIMS and LA-ICPMS ²⁰⁷Pb/²³⁵U dating of carbonates."
   - slug: "search-missing-half-world-class-copper-resource-chuquicamata"
