@@ -324,7 +324,7 @@ main:focus { outline: none; }
   .nav-links li { width: 100%; }
   .nav-links a { display: block; padding: 13px var(--gutter); border-bottom: 0; font-weight: 650; }
   .nav-links a.active { color: var(--color-accent); }
-  .pub-layout { grid-template-columns: 1fr; gap: 16px; }
+  .pub-layout { grid-template-columns: minmax(0, 1fr); gap: 16px; }
   .pub-filters { position: static; max-height: none; display: grid; grid-template-columns: 1fr 1fr; gap: 0 14px; }
   .pub-filters .f-years, #f-reset { grid-column: 1 / -1; }
   .year-box { max-height: 120px; display: flex; flex-wrap: wrap; gap: 2px 14px; }
@@ -366,6 +366,7 @@ main:focus { outline: none; }
   background: var(--color-card-bg); box-shadow: 0 8px 22px rgba(var(--shadow-rgb), 0.043); font-size: 0.95rem;
 }
 .pub-list .pub-row[hidden] { display: none; }
+.pub-list, .pub-list .pub-row { min-width: 0; }   /* long BibTeX lines must not widen the tile */
 .pub-badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
 .pub-badge { display: inline-block; padding: 2px 9px; border: 1px solid var(--color-border); border-radius: 999px; background: var(--color-raised); color: var(--color-badge-text); font-size: 0.78rem; font-weight: 760; line-height: 1.5; }
 .pub-card-title { font-family: var(--font-sans); font-size: 1.06rem; font-weight: 700; line-height: 1.35; margin: 0 0 4px; }
@@ -386,7 +387,7 @@ main:focus { outline: none; }
 .pub-panel-head { margin: 0 0 6px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-text-muted); }
 .pub-abstract { margin: 0; line-height: 1.6; max-width: 52rem; }
 .pub-cite-text { margin: 0 0 10px; }
-.pub-bibtex { margin: 0 0 10px; padding: 10px 12px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 6px; font-size: 0.78rem; line-height: 1.45; overflow-x: auto; white-space: pre; }
+.pub-bibtex { margin: 0 0 10px; padding: 10px 12px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 6px; font-size: 0.78rem; line-height: 1.45; overflow-x: auto; white-space: pre-wrap; overflow-wrap: anywhere; max-width: 100%; }
 
 /* Journal names: bold italic in the accent colour */
 .journal { font-style: italic; font-weight: 700; color: var(--color-accent-ink); }
