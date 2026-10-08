@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.1130/B35971.1"
   - name: "PDF"
     url: "files/waning-saxothuringian-ocean-evidenced-famennian-tephra-bearing-siliceous.pdf"
+related_papers: ["u-pb-geochronology-malokaroy-series-kazakhstan-constrains-global", "transminas-pirenopolis-dike-swarms-evidence-central-south-atlantic", "constraining-timescales-mafic-magmatism-central-karoo-large-igneous", "neogene-plant-macrofossils-west-antarctica-reveal-persistence-nothofagaceae", "timing-tempo-organic-carbon-burial-monterey-formation-santa"]
 research_areas: ["lip"]
 tags: ["Devonian", "tephra", "Poland", "Variscan orogeny"]
 keywords: ["Zircon", "LA-ICPMS", "Earth history"]

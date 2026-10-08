@@ -12,6 +12,7 @@ links:
   - name: "PDF"
     url: "files/sc-550-sintered-calcite-reference-material-situ-u.pdf"
 author_notes: "Tavazzani, Kueter and Szymanowski contributed equally."
+related_papers: ["technical-note-ra138-calcite-u-pb-icp-ms", "gz7-gz8-two-zircon-reference-materials-sims-u", "analytical-strategies-207pb-235u-carbonate-geochronology", "isotope-dilution-anchoring-zircon-reference-materials-accurate-ti", "long-term-repeatability-interlaboratory-reproducibility-high-precision-id"]
 research_areas: ["refmat"]
 tags: ["carbonate geochronology", "reference materials", "LA-ICP-MS", "U–Pb geochronology"]
 keywords: ["ID-TIMS", "LA-ICPMS", "Carbonate", "Reference material"]

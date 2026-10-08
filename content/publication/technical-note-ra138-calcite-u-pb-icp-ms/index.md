@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.5194/gchron-6-465-2024"
   - name: "PDF"
     url: "files/technical-note-ra138-calcite-u-pb-icp-ms.pdf"
+related_papers: ["sc-550-sintered-calcite-reference-material-situ-u", "isotope-dilution-anchoring-zircon-reference-materials-accurate-ti", "gz7-gz8-two-zircon-reference-materials-sims-u", "analytical-strategies-207pb-235u-carbonate-geochronology", "interlaboratory-reproducibility-id-tims-u-pb-geochronology-evaluated"]
 research_areas: ["refmat"]
 tags: ["carbonate geochronology", "reference materials", "LA-ICP-MS", "U–Pb geochronology"]
 keywords: ["ID-TIMS", "LA-ICPMS", "Carbonate", "Reference material"]

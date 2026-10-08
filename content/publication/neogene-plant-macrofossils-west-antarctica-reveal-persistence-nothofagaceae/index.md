@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.1038/s43247-025-02921-x"
   - name: "PDF"
     url: "files/neogene-plant-macrofossils-west-antarctica-reveal-persistence-nothofagaceae.pdf"
+related_papers: ["timing-tempo-organic-carbon-burial-monterey-formation-santa", "u-pb-geochronology-malokaroy-series-kazakhstan-constrains-global", "waning-saxothuringian-ocean-evidenced-famennian-tephra-bearing-siliceous", "constraining-timescales-mafic-magmatism-central-karoo-large-igneous", "transminas-pirenopolis-dike-swarms-evidence-central-south-atlantic"]
 research_areas: ["lip"]
 tags: ["Antarctica", "paleoclimate", "Miocene", "geochronology"]
 keywords: ["Zircon", "LA-ICPMS", "Earth history", "Paleoclimate"]

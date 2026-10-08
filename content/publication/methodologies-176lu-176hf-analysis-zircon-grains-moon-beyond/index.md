@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.1021/acsearthspacechem.3c00093"
   - name: "PDF"
     url: "files/methodologies-176lu-176hf-analysis-zircon-grains-moon-beyond.pdf"
+related_papers: ["completion-lunar-magma-ocean-solidification-4-43-ga", "high-precision-u-pb-zircon-dating-identifies-major", "geochronological-geochemical-effects-zircon-chemical-abrasion-insights-single", "microid-tims-spatially-resolved-high-precision-u-pb", "interlaboratory-reproducibility-id-tims-u-pb-geochronology-evaluated"]
 research_areas: ["moon", "methods"]
 tags: ["Moon", "Lu–Hf", "zircon", "isotope geochemistry"]
 keywords: ["Zircon", "Moon", "Analytical methods", "Hf isotopes"]

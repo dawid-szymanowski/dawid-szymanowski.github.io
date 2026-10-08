@@ -9,6 +9,7 @@ abstract: "Recent U-Pb high-precision geochronological studies have shown rapid 
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.25131/sajg.125.0009"
+related_papers: ["onset-long-lived-silicic-alkaline-magmatism-eastern-north", "eruption-history-columbia-river-basalt-group-constrained-high", "transminas-pirenopolis-dike-swarms-evidence-central-south-atlantic", "widespread-silicic-alkaline-magmatism-synchronous-deccan-traps-flood", "u-pb-geochronology-malokaroy-series-kazakhstan-constrains-global"]
 research_areas: ["lip"]
 tags: ["large igneous provinces", "Karoo", "dolerites", "U–Pb geochronology"]
 keywords: ["Zircon", "ID-TIMS", "LIP", "Earth history", "Magma reservoir"]

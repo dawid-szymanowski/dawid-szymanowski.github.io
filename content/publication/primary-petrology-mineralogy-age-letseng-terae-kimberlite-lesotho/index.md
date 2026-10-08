@@ -9,6 +9,7 @@ abstract: "The Letšeng-la-Terae kimberlite (Lesotho), famous for its large high
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1007/s00410-018-1502-1"
+related_papers: ["bridging-basalts-rhyolites-yellowstone-snake-river-plain-volcanic", "transminas-pirenopolis-dike-swarms-evidence-central-south-atlantic", "sink-sink-thermal-density-structure-modern-northern-andean", "constraining-timescales-mafic-magmatism-central-karoo-large-igneous", "technical-note-ra138-calcite-u-pb-icp-ms"]
 research_areas: ["magma"]
 tags: ["kimberlites", "Lesotho", "petrology"]
 keywords: ["ID-TIMS"]

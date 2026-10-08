@@ -18,6 +18,7 @@ links:
   - name: "ASU News"
     url: "https://news.asu.edu/20240724-science-and-technology-zircon-crystals-serve-time-stamps-lunar-impact-events"
 author_notes: "Barboni and Szymanowski contributed equally."
+related_papers: ["completion-lunar-magma-ocean-solidification-4-43-ga", "methodologies-176lu-176hf-analysis-zircon-grains-moon-beyond", "shifty-toba-magma-reservoir-improved-eruption-chronology-petrochronological", "red-bole-zircon-record-cryptic-silicic-volcanism-deccan", "tracing-widespread-early-miocene-ignimbrite-eruptions-petrogenesis-onset"]
 research_areas: ["moon", "methods"]
 tags: ["Moon", "zircon", "ID-TIMS", "impacts"]
 keywords: ["Zircon", "ID-TIMS", "Moon", "Magma reservoir", "Hf isotopes"]

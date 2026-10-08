@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.1016/j.mex.2023.102406"
   - name: "PDF"
     url: "files/agespectraanalyst-matlab-based-package-model-zircon-age-distributions.pdf"
+related_papers: ["controls-zircon-age-distributions-volcanic-porphyry-plutonic-rocks", "recommendations-reporting-interpretation-isotope-dilution-u-pb-geochronological", "geochronological-geochemical-effects-zircon-chemical-abrasion-insights-single", "microid-tims-spatially-resolved-high-precision-u-pb", "u-pb-id-tims-geochronology-atona-amplifiers"]
 research_areas: ["magma", "methods"]
 tags: ["zircon age spectra", "software", "modelling", "magma reservoirs"]
 keywords: ["Zircon", "ID-TIMS", "Magma reservoir", "Analytical methods"]

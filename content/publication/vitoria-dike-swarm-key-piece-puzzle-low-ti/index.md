@@ -9,6 +9,7 @@ abstract: "During the Early Cretaceous, widespread tectono-magmatic activity alo
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1016/j.lithos.2025.108360"
+related_papers: ["transminas-pirenopolis-dike-swarms-evidence-central-south-atlantic", "widespread-silicic-alkaline-magmatism-synchronous-deccan-traps-flood", "high-precision-zircon-geochronology-geochemistry-evolved-magmatic-centres", "onset-long-lived-silicic-alkaline-magmatism-eastern-north", "constraining-timescales-mafic-magmatism-central-karoo-large-igneous"]
 research_areas: ["lip"]
 tags: ["large igneous provinces", "dike swarms", "South America"]
 keywords: ["LA-ICPMS", "LIP"]

@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.1016/j.epsl.2023.118343"
   - name: "PDF"
     url: "files/timing-tempo-organic-carbon-burial-monterey-formation-santa.pdf"
+related_papers: ["neogene-plant-macrofossils-west-antarctica-reveal-persistence-nothofagaceae", "u-pb-geochronology-malokaroy-series-kazakhstan-constrains-global", "waning-saxothuringian-ocean-evidenced-famennian-tephra-bearing-siliceous", "eruption-history-columbia-river-basalt-group-constrained-high", "constraining-timescales-mafic-magmatism-central-karoo-large-igneous"]
 research_areas: ["lip"]
 tags: ["Miocene", "paleoclimate", "Monterey Formation", "U–Pb geochronology"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Earth history", "Paleoclimate"]

@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.1130/G50973.1"
   - name: "PDF"
     url: "files/sink-sink-thermal-density-structure-modern-northern-andean.pdf"
+related_papers: ["microid-tims-spatially-resolved-high-precision-u-pb", "controls-zircon-age-distributions-volcanic-porphyry-plutonic-rocks", "primary-petrology-mineralogy-age-letseng-terae-kimberlite-lesotho", "high-precision-zircon-age-spectra-record-dynamics-evolution", "geochronological-geochemical-effects-zircon-chemical-abrasion-insights-single"]
 research_areas: ["magma"]
 tags: ["arcs", "xenoliths", "lower crust", "Andes"]
 keywords: ["Zircon", "ID-TIMS"]

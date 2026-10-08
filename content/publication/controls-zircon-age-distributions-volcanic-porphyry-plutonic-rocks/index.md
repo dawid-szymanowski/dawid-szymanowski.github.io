@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.5194/gchron-7-15-2025"
   - name: "PDF"
     url: "files/controls-zircon-age-distributions-volcanic-porphyry-plutonic-rocks.pdf"
+related_papers: ["agespectraanalyst-matlab-based-package-model-zircon-age-distributions", "high-precision-zircon-age-spectra-record-dynamics-evolution", "search-missing-half-world-class-copper-resource-chuquicamata", "timescales-magmatic-hydrothermal-activity-giant-san-rafael-tin", "geochronological-geochemical-effects-zircon-chemical-abrasion-insights-single"]
 research_areas: ["methods", "magma"]
 tags: ["zircon age spectra", "CA-ID-TIMS", "magma reservoirs", "porphyry copper"]
 keywords: ["Zircon", "ID-TIMS", "Magma reservoir", "Large eruption", "Ore deposit", "Pluton", "Analytical methods"]

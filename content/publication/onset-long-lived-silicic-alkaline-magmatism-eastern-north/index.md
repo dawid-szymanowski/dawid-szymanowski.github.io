@@ -9,6 +9,7 @@ abstract: "The White Mountain magma series is the largest Mesozoic felsic igneou
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1130/G50181.1"
+related_papers: ["transminas-pirenopolis-dike-swarms-evidence-central-south-atlantic", "constraining-timescales-mafic-magmatism-central-karoo-large-igneous", "high-precision-zircon-geochronology-geochemistry-evolved-magmatic-centres", "widespread-silicic-alkaline-magmatism-synchronous-deccan-traps-flood", "eruption-history-columbia-river-basalt-group-constrained-high"]
 research_areas: ["lip"]
 tags: ["large igneous provinces", "CAMP", "silicic magmatism", "U–Pb geochronology"]
 keywords: ["Zircon", "ID-TIMS", "LIP", "Earth history", "Magma reservoir", "Pluton"]

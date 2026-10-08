@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.1016/j.epsl.2025.119624"
   - name: "PDF"
     url: "files/timescales-magmatic-hydrothermal-activity-giant-san-rafael-tin.pdf"
+related_papers: ["search-missing-half-world-class-copper-resource-chuquicamata", "controls-zircon-age-distributions-volcanic-porphyry-plutonic-rocks", "evaluating-potential-rhyolitic-glass-lithium-source-brine-deposits", "modulation-zircon-solubility-crystal-melt-dynamics", "constraining-timescales-mafic-magmatism-central-karoo-large-igneous"]
 research_areas: ["ore"]
 tags: ["tin deposits", "zircon", "magmatic-hydrothermal", "Peru"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Magma reservoir", "Ore deposit"]

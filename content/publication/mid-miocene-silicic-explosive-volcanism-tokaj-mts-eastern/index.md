@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.1016/j.gr.2024.01.004"
   - name: "PDF"
     url: "files/mid-miocene-silicic-explosive-volcanism-tokaj-mts-eastern.pdf"
+related_papers: ["tracing-widespread-early-miocene-ignimbrite-eruptions-petrogenesis-onset", "14-04-ma-hrabovec-tuff-megabed-subaqueous-deposit", "shifty-toba-magma-reservoir-improved-eruption-chronology-petrochronological", "red-bole-zircon-record-cryptic-silicic-volcanism-deccan", "explosive-effusive-transition-within-miocene-fataga-suite-gran"]
 research_areas: ["magma"]
 tags: ["Pannonian Basin", "explosive eruptions", "Miocene", "zircon"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Magma reservoir", "Large eruption", "Hf isotopes", "Pannonian Basin"]

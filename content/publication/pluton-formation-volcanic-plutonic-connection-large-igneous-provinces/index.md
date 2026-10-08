@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.1093/petrology/egaf050"
   - name: "PDF"
     url: "files/pluton-formation-volcanic-plutonic-connection-large-igneous-provinces.pdf"
+related_papers: ["high-precision-zircon-geochronology-geochemistry-evolved-magmatic-centres", "red-bole-zircon-record-cryptic-silicic-volcanism-deccan", "zircon-geochronology-geochemical-constraints-geometry-solidification-timescales-dufek", "eruption-history-columbia-river-basalt-group-constrained-high", "high-precision-zircon-age-spectra-record-dynamics-evolution"]
 research_areas: ["lip", "magma"]
 tags: ["large igneous provinces", "Paraná-Etendeka", "plutons", "Namibia", "zircon"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "LIP", "Magma reservoir", "Large eruption", "Pluton", "Hf isotopes"]

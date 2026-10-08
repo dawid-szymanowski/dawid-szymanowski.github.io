@@ -9,6 +9,7 @@ abstract: "Knowledge of the conditions of magma storage prior to volcanic erupti
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1016/j.epsl.2019.01.007"
+related_papers: ["protracted-near-solidus-storage-pre-eruptive-rejuvenation-large", "high-precision-zircon-age-spectra-record-dynamics-evolution", "shifty-toba-magma-reservoir-improved-eruption-chronology-petrochronological", "post-caldera-volcanism-heise-volcanic-field-implications-petrogenetic", "u-th-zircon-dating-reveals-correlation-eruptive-styles"]
 research_areas: ["magma"]
 tags: ["Kneeling Nun Tuff", "supereruptions", "petrochronology", "magma reservoirs", "zircon"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Magma reservoir", "Large eruption", "Caldera"]

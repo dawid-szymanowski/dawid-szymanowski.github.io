@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.1038/s41467-018-05688-2"
   - name: "PDF"
     url: "files/post-eruptive-mobility-lithium-volcanic-rocks.pdf"
+related_papers: ["evaluating-potential-rhyolitic-glass-lithium-source-brine-deposits", "groundmass-crystallisation-cooling-rates-lava-like-ignimbrites-greys", "obsidian-pyroclasts-yellowstone-snake-river-plain-ignimbrites-dominantly", "bridging-basalts-rhyolites-yellowstone-snake-river-plain-volcanic", "post-caldera-volcanism-heise-volcanic-field-implications-petrogenetic"]
 research_areas: ["ore", "magma"]
 tags: ["lithium", "ignimbrite", "diffusion", "Yellowstone–Snake River Plain"]
 keywords: ["Lithium", "Yellowstone–Snake River Plain"]

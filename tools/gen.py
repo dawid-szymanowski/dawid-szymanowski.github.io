@@ -159,6 +159,14 @@ for i, p in enumerate([q for q in UNDER_REVIEW if q.get("doi")]):
     write(f"{C}/publication/{slug}/index.md", pub_md(q, slug, "under_review", p["venue"], p.get("date", "2026-09-01")))
     for a in p["authors"]: all_people[a] = all_people.get(a, 0) + 1
 
+# ---- "See also": five most similar papers by theme (title, abstract, tags, keywords) ----
+from related import compute as related_compute
+for slug, rel in related_compute(SITE).items():
+    f = f"{C}/publication/{slug}/index.md"
+    t = open(f).read()
+    t = t.replace("\nresearch_areas:", f"\nrelated_papers: {ylist(rel)}\nresearch_areas:", 1)
+    open(f, "w").write(t)
+
 write(f"{C}/publication/_index.md", """---
 title: "Publications"
 ---

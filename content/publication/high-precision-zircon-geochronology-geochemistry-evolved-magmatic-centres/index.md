@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.1016/j.lithos.2024.107651"
   - name: "PDF"
     url: "files/high-precision-zircon-geochronology-geochemistry-evolved-magmatic-centres.pdf"
+related_papers: ["pluton-formation-volcanic-plutonic-connection-large-igneous-provinces", "zircon-geochronology-geochemical-constraints-geometry-solidification-timescales-dufek", "onset-long-lived-silicic-alkaline-magmatism-eastern-north", "vitoria-dike-swarm-key-piece-puzzle-low-ti", "widespread-silicic-alkaline-magmatism-synchronous-deccan-traps-flood"]
 research_areas: ["lip"]
 tags: ["large igneous provinces", "Paraná-Etendeka", "Namibia", "zircon"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "LIP", "Pluton"]

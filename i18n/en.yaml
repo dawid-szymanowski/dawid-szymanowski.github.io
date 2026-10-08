@@ -133,3 +133,7 @@
   translation: "Switch to light mode"
 - id: featured_publications
   translation: "Featured papers"
+- id: label_article
+  translation: "Article"
+- id: label_preprint
+  translation: "Preprint"

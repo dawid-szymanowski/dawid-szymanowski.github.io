@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.1016/j.chemgeo.2020.119830"
   - name: "PDF"
     url: "files/u-th-zircon-dating-reveals-correlation-eruptive-styles.pdf"
+related_papers: ["protracted-near-solidus-storage-pre-eruptive-rejuvenation-large", "maturation-rejuvenation-silicic-magma-reservoir-high-resolution-chronology", "shifty-toba-magma-reservoir-improved-eruption-chronology-petrochronological", "high-precision-zircon-age-spectra-record-dynamics-evolution", "explosive-effusive-transition-within-miocene-fataga-suite-gran"]
 research_areas: ["magma"]
 tags: ["U–Th dating", "zircon", "explosive eruptions", "Greece"]
 keywords: ["Zircon", "LA-ICPMS", "Magma reservoir", "Caldera"]

@@ -9,6 +9,7 @@ abstract: "The East Slovak Basin forms part of the Miocene Pannonian back-arc Ba
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1016/j.jvolgeores.2026.108636"
+related_papers: ["tracing-widespread-early-miocene-ignimbrite-eruptions-petrogenesis-onset", "mid-miocene-silicic-explosive-volcanism-tokaj-mts-eastern", "explosive-effusive-transition-within-miocene-fataga-suite-gran", "obsidian-pyroclasts-yellowstone-snake-river-plain-ignimbrites-dominantly", "shifty-toba-magma-reservoir-improved-eruption-chronology-petrochronological"]
 research_areas: ["magma"]
 tags: ["Pannonian Basin", "ignimbrite", "explosive eruptions", "Miocene"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Large eruption", "Pannonian Basin"]

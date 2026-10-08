@@ -9,6 +9,7 @@ abstract: "The Heise volcanic field is the second youngest caldera complex of th
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1093/petrology/egx007"
+related_papers: ["bridging-basalts-rhyolites-yellowstone-snake-river-plain-volcanic", "geochronological-isotopic-records-crustal-storage-assimilation-wolverine-creek", "groundmass-crystallisation-cooling-rates-lava-like-ignimbrites-greys", "obsidian-pyroclasts-yellowstone-snake-river-plain-ignimbrites-dominantly", "maturation-rejuvenation-silicic-magma-reservoir-high-resolution-chronology"]
 research_areas: ["magma"]
 tags: ["Heise volcanic field", "Yellowstone–Snake River Plain", "caldera", "petrogenesis"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Magma reservoir", "Large eruption", "Caldera", "Yellowstone–Snake River Plain"]

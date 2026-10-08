@@ -9,6 +9,7 @@ abstract: "Felsic pyroclastic deposits of overall low crystallinity erupted from
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1016/j.epsl.2020.116251"
+related_papers: ["cumulate-recycling-igneous-systems-volcanic-record", "explosive-effusive-transition-within-miocene-fataga-suite-gran", "modulation-zircon-solubility-crystal-melt-dynamics", "maturation-rejuvenation-silicic-magma-reservoir-high-resolution-chronology", "protracted-near-solidus-storage-pre-eruptive-rejuvenation-large"]
 research_areas: ["magma"]
 tags: ["cumulate melting", "zoned tuffs", "magma reservoirs"]
 keywords: ["LA-ICPMS", "Magma reservoir", "Large eruption"]

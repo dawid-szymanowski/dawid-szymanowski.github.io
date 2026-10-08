@@ -9,6 +9,7 @@ abstract: "Magmatic evolution creates crystal cumulates. In the current paradigm
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1016/j.lithos.2023.107284"
+related_papers: ["europium-barium-enrichments-compositionally-zoned-felsic-tuffs-smoking", "modulation-zircon-solubility-crystal-melt-dynamics", "explosive-effusive-transition-within-miocene-fataga-suite-gran", "high-precision-zircon-age-spectra-record-dynamics-evolution", "protracted-near-solidus-storage-pre-eruptive-rejuvenation-large"]
 research_areas: ["magma"]
 tags: ["cumulate melting", "magma reservoirs", "volcanic rocks"]
 keywords: ["LA-ICPMS", "Magma reservoir", "Large eruption", "Review"]

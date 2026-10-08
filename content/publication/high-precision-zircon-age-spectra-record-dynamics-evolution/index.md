@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.1016/j.epsl.2023.118432"
   - name: "PDF"
     url: "files/high-precision-zircon-age-spectra-record-dynamics-evolution.pdf"
+related_papers: ["maturation-rejuvenation-silicic-magma-reservoir-high-resolution-chronology", "protracted-near-solidus-storage-pre-eruptive-rejuvenation-large", "controls-zircon-age-distributions-volcanic-porphyry-plutonic-rocks", "pluton-formation-volcanic-plutonic-connection-large-igneous-provinces", "shifty-toba-magma-reservoir-improved-eruption-chronology-petrochronological"]
 research_areas: ["magma"]
 tags: ["zircon age spectra", "magma reservoirs", "ID-TIMS", "Southern Alps"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Magma reservoir", "Large eruption", "Caldera", "Pluton"]

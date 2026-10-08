@@ -9,6 +9,7 @@ abstract: "Large igneous province volcanism of the Columbia River Basalt Group (
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1016/j.epsl.2023.118269"
+related_papers: ["constraining-timescales-mafic-magmatism-central-karoo-large-igneous", "red-bole-zircon-record-cryptic-silicic-volcanism-deccan", "onset-long-lived-silicic-alkaline-magmatism-eastern-north", "pluton-formation-volcanic-plutonic-connection-large-igneous-provinces", "transminas-pirenopolis-dike-swarms-evidence-central-south-atlantic"]
 research_areas: ["lip"]
 tags: ["large igneous provinces", "Columbia River Basalt", "flood basalts", "U–Pb geochronology"]
 keywords: ["Zircon", "ID-TIMS", "LIP", "Earth history", "Magma reservoir", "Large eruption", "Hf isotopes"]

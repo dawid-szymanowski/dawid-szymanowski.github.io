@@ -13,6 +13,7 @@ links:
     url: "https://www.ethz.ch/en/news-and-events/eth-news/news/2017/10/magma-chambers-have-sponge-like-structure.html"
   - name: "ETH News (DE)"
     url: "https://ethz.ch/de/news-und-veranstaltungen/eth-news/news/2017/10/magmakammer-mit-schwammstruktur.html"
+related_papers: ["maturation-rejuvenation-silicic-magma-reservoir-high-resolution-chronology", "high-precision-zircon-age-spectra-record-dynamics-evolution", "shifty-toba-magma-reservoir-improved-eruption-chronology-petrochronological", "u-th-zircon-dating-reveals-correlation-eruptive-styles", "groundmass-crystallisation-cooling-rates-lava-like-ignimbrites-greys"]
 research_areas: ["magma"]
 tags: ["Kneeling Nun Tuff", "supereruptions", "petrochronology", "magma reservoirs", "zircon", "titanite"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Magma reservoir", "Large eruption", "Caldera"]

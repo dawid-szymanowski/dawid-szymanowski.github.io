@@ -9,6 +9,7 @@ abstract: "Lithium is an economically important element that is increasingly ext
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.5382/econgeo.4866"
+related_papers: ["post-eruptive-mobility-lithium-volcanic-rocks", "obsidian-pyroclasts-yellowstone-snake-river-plain-ignimbrites-dominantly", "groundmass-crystallisation-cooling-rates-lava-like-ignimbrites-greys", "bridging-basalts-rhyolites-yellowstone-snake-river-plain-volcanic", "post-caldera-volcanism-heise-volcanic-field-implications-petrogenetic"]
 research_areas: ["ore"]
 tags: ["lithium", "brines", "rhyolite", "Yellowstone–Snake River Plain"]
 keywords: ["LA-ICPMS", "Magma reservoir", "Large eruption", "Ore deposit", "Lithium", "Yellowstone–Snake River Plain"]

@@ -9,6 +9,7 @@ abstract: "The temperature-dependence of Ti incorporation into zircon can be use
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1016/j.chemgeo.2018.02.001"
+related_papers: ["gz7-gz8-two-zircon-reference-materials-sims-u", "technical-note-ra138-calcite-u-pb-icp-ms", "sc-550-sintered-calcite-reference-material-situ-u", "u-pb-id-tims-geochronology-atona-amplifiers", "id-tims-u-pb-geochronology-0-1-level"]
 research_areas: ["refmat"]
 tags: ["reference materials", "Ti-in-zircon", "isotope dilution", "zircon"]
 keywords: ["Zircon", "LA-ICPMS", "Reference material", "Analytical methods"]

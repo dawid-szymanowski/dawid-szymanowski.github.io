@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.1130/G47405.1"
   - name: "PDF"
     url: "files/modulation-zircon-solubility-crystal-melt-dynamics.pdf"
+related_papers: ["europium-barium-enrichments-compositionally-zoned-felsic-tuffs-smoking", "agespectraanalyst-matlab-based-package-model-zircon-age-distributions", "cumulate-recycling-igneous-systems-volcanic-record", "explosive-effusive-transition-within-miocene-fataga-suite-gran", "u-th-zircon-dating-reveals-correlation-eruptive-styles"]
 research_areas: ["magma"]
 tags: ["zircon saturation", "cumulate melting", "magma reservoirs"]
 keywords: ["Zircon", "Magma reservoir"]

@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.1111/ggr.12239"
   - name: "PDF"
     url: "files/gz7-gz8-two-zircon-reference-materials-sims-u.pdf"
+related_papers: ["isotope-dilution-anchoring-zircon-reference-materials-accurate-ti", "technical-note-ra138-calcite-u-pb-icp-ms", "sc-550-sintered-calcite-reference-material-situ-u", "long-term-repeatability-interlaboratory-reproducibility-high-precision-id", "id-tims-u-pb-geochronology-0-1-level"]
 research_areas: ["refmat"]
 tags: ["reference materials", "zircon", "SIMS", "Ti-in-zircon"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Reference material"]

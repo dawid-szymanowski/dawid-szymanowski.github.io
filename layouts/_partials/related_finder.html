@@ -4,7 +4,10 @@
   Priority 1b : see_also front matter ({url,title} external or {section,slug} internal)
   Priority 1c : dataverse_url (or a Dataverse URL found in the abstract)
   Priority 2  : siblings sharing a subcategory in data/research_areas.json
-  Priority 3  : scoring backfill: +2 per shared title token, +1 per shared co-author, +2 per shared tag
+  Priority 3  : scoring backfill: +2 per shared title token, +1 per shared co-author, +2 per shared tag,
+                +3 per shared thematic keyword (keywords other than Zircon / ID-TIMS / LA-ICPMS)
+  related_papers is written by tools/gen.py (tools/related.py: thematic similarity of title, abstract,
+  tags and keywords) and is shown in its own order. At most five entries are shown.
 */ -}}
 {{- $p := . -}}
 {{- $pool := union (union (where site.RegularPages "Section" "publication") (where site.RegularPages "Section" "talk")) (where site.RegularPages "Section" "software") -}}
@@ -17,12 +20,12 @@
 {{- range $field, $sec := $map -}}
   {{- with index $p.Params $field -}}
     {{- $slugs := cond (reflect.IsSlice .) . (slice .) -}}
-    {{- range $slugs -}}
-      {{- with site.GetPage (printf "/%s/%s" $sec .) -}}
+    {{- range $i, $slug := $slugs -}}
+      {{- with site.GetPage (printf "/%s/%s" $sec $slug) -}}
         {{- $n := lower (replaceRE `[^\p{L}\p{N}]` "" .Title) -}}
         {{- if not (in $seen $n) -}}
           {{- $seen = $seen | append $n -}}
-          {{- $rows = $rows | append (dict "title" .Title "url" .RelPermalink "kind" (partial "kind_label.html" .) "score" 1000 "year" (.Date.Format "2006")) -}}
+          {{- $rows = $rows | append (dict "title" .Title "url" .RelPermalink "kind" (partial "kind_label.html" .) "score" (sub 1000 $i) "year" (.Date.Format "2006")) -}}
           {{- $explicit = add $explicit 1 -}}
         {{- end -}}
       {{- end -}}
@@ -56,6 +59,8 @@
 {{- $myTok := partial "title_tokens.html" $p.Title -}}
 {{- $myAuth := partial "author_keys.html" $p.Params.authors -}}
 {{- $myTags := apply ($p.Params.tags | default slice) "lower" "." -}}
+{{- $generic := slice "Zircon" "ID-TIMS" "LA-ICPMS" -}}
+{{- $myKw := complement $generic ($p.Params.keywords | default slice) -}}
 {{- $subTags := slice -}}
 {{- range site.Data.research_areas.areas }}{{ range .subcategories }}
   {{- $st := apply .tags "lower" "." -}}
@@ -71,6 +76,7 @@
       {{- $tok := partial "title_tokens.html" .Title -}}
       {{- $tags := apply (.Params.tags | default slice) "lower" "." -}}
       {{- $score := add (mul 2 (len (intersect $myTok $tok))) (add (len (intersect $myAuth (partial "author_keys.html" .Params.authors))) (mul 2 (len (intersect $myTags $tags)))) -}}
+      {{- $score = add $score (mul 3 (len (intersect $myKw (.Params.keywords | default slice)))) -}}
       {{- $sibling := and (gt (len $subTags) 0) (gt (len (intersect $subTags $tags)) 0) -}}
       {{- if $sibling }}{{ $score = add $score 3 }}{{ end -}}
       {{- if and $isResponse (ge (len (intersect $myTok $tok)) 2) }}{{ $score = add $score 500 }}{{ end -}}
@@ -84,7 +90,7 @@
 {{- end -}}
 
 {{- $rows = sort (sort $rows "year" "desc") "score" "desc" -}}
-{{- with first 8 $rows }}
+{{- with first 5 $rows }}
 <section class="gk-see-also" aria-labelledby="see-also-h">
   <h2 id="see-also-h">{{ i18n "see_also" }}</h2>
   <ul>

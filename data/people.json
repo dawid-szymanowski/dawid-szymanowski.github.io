@@ -993,18 +993,18 @@
   "given": "T.",
   "key": "muedi"
  },
- "Samuel Müller": {
-  "slug": "samuel-muller",
-  "short": "Müller S.",
-  "family": "Müller",
-  "given": "Samuel",
-  "key": "muller"
- },
  "Inigo A. Müller": {
   "slug": "inigo-a-muller",
   "short": "Müller I.A.",
   "family": "Müller",
   "given": "Inigo A.",
+  "key": "muller"
+ },
+ "Samuel Müller": {
+  "slug": "samuel-muller",
+  "short": "Müller S.",
+  "family": "Müller",
+  "given": "Samuel",
   "key": "muller"
  },
  "Joshua Murray": {

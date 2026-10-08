@@ -9,6 +9,7 @@ abstract: "Deccan Traps (DT) volcanism and the Chicxulub bolide impact have been
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1016/j.epsl.2020.116616"
+related_papers: ["vitoria-dike-swarm-key-piece-puzzle-low-ti", "red-bole-zircon-record-cryptic-silicic-volcanism-deccan", "constraining-timescales-mafic-magmatism-central-karoo-large-igneous", "onset-long-lived-silicic-alkaline-magmatism-eastern-north", "high-precision-zircon-geochronology-geochemistry-evolved-magmatic-centres"]
 research_areas: ["lip"]
 tags: ["large igneous provinces", "Deccan Traps", "silicic magmatism", "U–Pb geochronology"]
 keywords: ["Zircon", "ID-TIMS", "LIP"]

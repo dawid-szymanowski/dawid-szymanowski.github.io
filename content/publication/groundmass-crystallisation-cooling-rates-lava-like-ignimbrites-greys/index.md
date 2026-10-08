@@ -9,6 +9,7 @@ abstract: "Constraining magmatic and eruptive processes is key to understanding 
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1007/s00445-015-0972-5"
+related_papers: ["post-caldera-volcanism-heise-volcanic-field-implications-petrogenetic", "bridging-basalts-rhyolites-yellowstone-snake-river-plain-volcanic", "obsidian-pyroclasts-yellowstone-snake-river-plain-ignimbrites-dominantly", "geochronological-isotopic-records-crustal-storage-assimilation-wolverine-creek", "post-eruptive-mobility-lithium-volcanic-rocks"]
 research_areas: ["magma"]
 tags: ["ignimbrite", "Yellowstone–Snake River Plain", "cooling rates"]
 keywords: ["LA-ICPMS", "Magma reservoir", "Large eruption", "Caldera", "Yellowstone–Snake River Plain"]

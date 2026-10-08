@@ -9,6 +9,7 @@ abstract: "We document recent advances in analytical protocols that employ 10¹�
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1039/c6ja00278a"
+related_papers: ["u-pb-id-tims-geochronology-atona-amplifiers", "interlaboratory-reproducibility-id-tims-u-pb-geochronology-evaluated", "recommendations-reporting-interpretation-isotope-dilution-u-pb-geochronological", "microid-tims-spatially-resolved-high-precision-u-pb", "long-term-repeatability-interlaboratory-reproducibility-high-precision-id"]
 research_areas: ["methods"]
 tags: ["ID-TIMS", "mass spectrometry", "U–Pb geochronology"]
 keywords: ["Zircon", "ID-TIMS", "Analytical methods"]

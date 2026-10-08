@@ -13,6 +13,7 @@ links:
     url: "files/completion-lunar-magma-ocean-solidification-4-43-ga.pdf"
   - name: "Press release (UChicago News)"
     url: "https://news.uchicago.edu/story/lunar-rocks-help-scientists-pinpoint-when-moon-crystallized"
+related_papers: ["methodologies-176lu-176hf-analysis-zircon-grains-moon-beyond", "high-precision-u-pb-zircon-dating-identifies-major", "zircon-geochronology-geochemical-constraints-geometry-solidification-timescales-dufek", "shifty-toba-magma-reservoir-improved-eruption-chronology-petrochronological", "red-bole-zircon-record-cryptic-silicic-volcanism-deccan"]
 research_areas: ["moon"]
 tags: ["Moon", "lunar magma ocean", "Lu–Hf", "zircon"]
 keywords: ["Zircon", "ID-TIMS", "Moon", "Hf isotopes"]

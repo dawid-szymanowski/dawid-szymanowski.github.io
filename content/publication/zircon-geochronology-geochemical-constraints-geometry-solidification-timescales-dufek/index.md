@@ -9,6 +9,7 @@ abstract: "The ~182 Ma Dufek Intrusion of Antarctica, associated with the Ferrar
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1093/petrology/egag084"
+related_papers: ["high-precision-zircon-geochronology-geochemistry-evolved-magmatic-centres", "pluton-formation-volcanic-plutonic-connection-large-igneous-provinces", "lateral-magma-propagation-during-emplacement-gloria-pluton-central", "onset-long-lived-silicic-alkaline-magmatism-eastern-north", "red-bole-zircon-record-cryptic-silicic-volcanism-deccan"]
 research_areas: ["lip"]
 tags: ["layered intrusions", "zircon", "Antarctica", "ID-TIMS"]
 keywords: ["Zircon", "ID-TIMS", "LIP", "Pluton", "Hf isotopes"]

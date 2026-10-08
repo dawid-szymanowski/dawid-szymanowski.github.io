@@ -9,6 +9,7 @@ abstract: "We document the performance of new ATONA (‘aA to nA’) amplifiers 
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1039/d0ja00135j"
+related_papers: ["id-tims-u-pb-geochronology-0-1-level", "interlaboratory-reproducibility-id-tims-u-pb-geochronology-evaluated", "long-term-repeatability-interlaboratory-reproducibility-high-precision-id", "recommendations-reporting-interpretation-isotope-dilution-u-pb-geochronological", "microid-tims-spatially-resolved-high-precision-u-pb"]
 research_areas: ["methods"]
 tags: ["ID-TIMS", "mass spectrometry", "amplifiers", "U–Pb geochronology"]
 keywords: ["Zircon", "ID-TIMS", "Analytical methods"]

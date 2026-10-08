@@ -9,6 +9,7 @@ abstract: "Many magmatic provinces produce strongly bimodal volcanism with abund
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1016/j.epsl.2015.01.041"
+related_papers: ["geochronological-isotopic-records-crustal-storage-assimilation-wolverine-creek", "post-caldera-volcanism-heise-volcanic-field-implications-petrogenetic", "obsidian-pyroclasts-yellowstone-snake-river-plain-ignimbrites-dominantly", "groundmass-crystallisation-cooling-rates-lava-like-ignimbrites-greys", "maturation-rejuvenation-silicic-magma-reservoir-high-resolution-chronology"]
 research_areas: ["magma"]
 tags: ["Yellowstone–Snake River Plain", "intermediate magmas", "petrogenesis"]
 keywords: ["LA-ICPMS", "Magma reservoir", "Large eruption", "Caldera", "Yellowstone–Snake River Plain"]

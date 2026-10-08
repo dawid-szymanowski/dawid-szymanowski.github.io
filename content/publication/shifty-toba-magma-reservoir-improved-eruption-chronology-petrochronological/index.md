@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.1016/j.epsl.2023.118408"
   - name: "PDF"
     url: "files/shifty-toba-magma-reservoir-improved-eruption-chronology-petrochronological.pdf"
+related_papers: ["maturation-rejuvenation-silicic-magma-reservoir-high-resolution-chronology", "protracted-near-solidus-storage-pre-eruptive-rejuvenation-large", "geochronological-isotopic-records-crustal-storage-assimilation-wolverine-creek", "high-precision-zircon-age-spectra-record-dynamics-evolution", "post-caldera-volcanism-heise-volcanic-field-implications-petrogenetic"]
 research_areas: ["magma"]
 tags: ["Toba", "supereruptions", "petrochronology", "magma reservoirs", "zircon"]
 keywords: ["Zircon", "ID-TIMS", "Magma reservoir", "Large eruption", "Caldera", "Hf isotopes"]

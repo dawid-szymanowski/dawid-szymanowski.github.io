@@ -9,6 +9,7 @@ abstract: "The appearance of vase-shaped microfossils (VSMs) in the sedimentary 
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1016/j.precamres.2025.107888"
+related_papers: ["waning-saxothuringian-ocean-evidenced-famennian-tephra-bearing-siliceous", "constraining-timescales-mafic-magmatism-central-karoo-large-igneous", "timing-tempo-organic-carbon-burial-monterey-formation-santa", "transminas-pirenopolis-dike-swarms-evidence-central-south-atlantic", "neogene-plant-macrofossils-west-antarctica-reveal-persistence-nothofagaceae"]
 research_areas: ["lip"]
 tags: ["Neoproterozoic", "microfossils", "Kazakhstan", "U–Pb geochronology"]
 keywords: ["Zircon", "ID-TIMS", "Earth history"]

@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.5194/gchron-6-1-2024"
   - name: "PDF"
     url: "files/geochronological-geochemical-effects-zircon-chemical-abrasion-insights-single.pdf"
+related_papers: ["microid-tims-spatially-resolved-high-precision-u-pb", "recommendations-reporting-interpretation-isotope-dilution-u-pb-geochronological", "long-term-repeatability-interlaboratory-reproducibility-high-precision-id", "id-tims-u-pb-geochronology-0-1-level", "interlaboratory-reproducibility-id-tims-u-pb-geochronology-evaluated"]
 research_areas: ["methods"]
 tags: ["chemical abrasion", "ID-TIMS", "zircon", "Pb loss"]
 keywords: ["Zircon", "ID-TIMS", "Analytical methods"]

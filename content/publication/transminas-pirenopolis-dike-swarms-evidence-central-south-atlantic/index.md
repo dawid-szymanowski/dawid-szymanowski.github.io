@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.1016/j.gsf.2026.102306"
   - name: "PDF"
     url: "files/transminas-pirenopolis-dike-swarms-evidence-central-south-atlantic.pdf"
+related_papers: ["vitoria-dike-swarm-key-piece-puzzle-low-ti", "onset-long-lived-silicic-alkaline-magmatism-eastern-north", "constraining-timescales-mafic-magmatism-central-karoo-large-igneous", "eruption-history-columbia-river-basalt-group-constrained-high", "widespread-silicic-alkaline-magmatism-synchronous-deccan-traps-flood"]
 research_areas: ["lip"]
 tags: ["large igneous provinces", "dike swarms", "South America", "CAMP"]
 keywords: ["LA-ICPMS", "LIP", "Earth history"]

@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.1016/j.chemgeo.2022.121242"
   - name: "PDF"
     url: "files/explosive-effusive-transition-within-miocene-fataga-suite-gran.pdf"
+related_papers: ["europium-barium-enrichments-compositionally-zoned-felsic-tuffs-smoking", "obsidian-pyroclasts-yellowstone-snake-river-plain-ignimbrites-dominantly", "maturation-rejuvenation-silicic-magma-reservoir-high-resolution-chronology", "u-th-zircon-dating-reveals-correlation-eruptive-styles", "protracted-near-solidus-storage-pre-eruptive-rejuvenation-large"]
 research_areas: ["magma"]
 tags: ["explosive eruptions", "Gran Canaria", "volcanic rocks"]
 keywords: ["LA-ICPMS", "Magma reservoir", "Large eruption"]

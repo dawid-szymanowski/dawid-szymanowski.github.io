@@ -9,6 +9,7 @@ abstract: "The Carpathian-Pannonian Region (CPR) hosted some of the largest sili
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1016/j.gr.2022.12.015"
+related_papers: ["mid-miocene-silicic-explosive-volcanism-tokaj-mts-eastern", "14-04-ma-hrabovec-tuff-megabed-subaqueous-deposit", "red-bole-zircon-record-cryptic-silicic-volcanism-deccan", "shifty-toba-magma-reservoir-improved-eruption-chronology-petrochronological", "explosive-effusive-transition-within-miocene-fataga-suite-gran"]
 research_areas: ["magma"]
 tags: ["Pannonian Basin", "ignimbrite", "explosive eruptions", "Miocene"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Magma reservoir", "Large eruption", "Hf isotopes", "Pannonian Basin"]

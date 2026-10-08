@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.1130/G49613.1"
   - name: "PDF"
     url: "files/red-bole-zircon-record-cryptic-silicic-volcanism-deccan.pdf"
+related_papers: ["widespread-silicic-alkaline-magmatism-synchronous-deccan-traps-flood", "pluton-formation-volcanic-plutonic-connection-large-igneous-provinces", "eruption-history-columbia-river-basalt-group-constrained-high", "mid-miocene-silicic-explosive-volcanism-tokaj-mts-eastern", "constraining-timescales-mafic-magmatism-central-karoo-large-igneous"]
 research_areas: ["lip"]
 tags: ["large igneous provinces", "Deccan Traps", "zircon", "silicic magmatism"]
 keywords: ["Zircon", "ID-TIMS", "LIP", "Magma reservoir", "Large eruption", "Hf isotopes"]

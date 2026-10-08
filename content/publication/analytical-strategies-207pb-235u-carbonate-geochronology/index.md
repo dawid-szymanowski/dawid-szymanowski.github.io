@@ -9,6 +9,7 @@ abstract: "In carbonate U–Pb geochronology, unknown initial ²³⁴U/²³⁸U 
 links:
   - name: "Preprint"
     url: "https://doi.org/10.5194/egusphere-2026-4403"
+related_papers: ["sc-550-sintered-calcite-reference-material-situ-u", "long-term-repeatability-interlaboratory-reproducibility-high-precision-id", "technical-note-ra138-calcite-u-pb-icp-ms", "interlaboratory-reproducibility-id-tims-u-pb-geochronology-evaluated", "recommendations-reporting-interpretation-isotope-dilution-u-pb-geochronological"]
 research_areas: ["refmat", "methods"]
 tags: ["carbonate geochronology", "ID-TIMS", "LA-ICP-MS", "U–Pb geochronology"]
 keywords: ["ID-TIMS", "LA-ICPMS", "Carbonate", "Analytical methods"]

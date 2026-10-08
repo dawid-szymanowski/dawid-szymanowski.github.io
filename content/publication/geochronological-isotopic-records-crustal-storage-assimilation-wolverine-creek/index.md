@@ -9,6 +9,7 @@ abstract: "Understanding the processes of differentiation of the Yellowstone–S
 links:
   - name: "Publisher's Version"
     url: "https://doi.org/10.1007/s00410-016-1314-0"
+related_papers: ["bridging-basalts-rhyolites-yellowstone-snake-river-plain-volcanic", "post-caldera-volcanism-heise-volcanic-field-implications-petrogenetic", "groundmass-crystallisation-cooling-rates-lava-like-ignimbrites-greys", "obsidian-pyroclasts-yellowstone-snake-river-plain-ignimbrites-dominantly", "shifty-toba-magma-reservoir-improved-eruption-chronology-petrochronological"]
 research_areas: ["magma"]
 tags: ["Heise volcanic field", "Yellowstone–Snake River Plain", "crustal assimilation", "zircon"]
 keywords: ["Zircon", "ID-TIMS", "Magma reservoir", "Large eruption", "Caldera", "Hf isotopes", "Yellowstone–Snake River Plain"]

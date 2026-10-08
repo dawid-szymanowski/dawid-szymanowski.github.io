@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.1130/g45361.1"
   - name: "PDF"
     url: "files/lateral-magma-propagation-during-emplacement-gloria-pluton-central.pdf"
+related_papers: ["search-missing-half-world-class-copper-resource-chuquicamata", "high-precision-zircon-geochronology-geochemistry-evolved-magmatic-centres", "pluton-formation-volcanic-plutonic-connection-large-igneous-provinces", "onset-long-lived-silicic-alkaline-magmatism-eastern-north", "zircon-geochronology-geochemical-constraints-geometry-solidification-timescales-dufek"]
 research_areas: ["magma"]
 tags: ["plutons", "magma emplacement", "Chile", "zircon"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Pluton"]

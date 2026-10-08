@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.1007/s00445-021-01448-1"
   - name: "PDF"
     url: "files/obsidian-pyroclasts-yellowstone-snake-river-plain-ignimbrites-dominantly.pdf"
+related_papers: ["bridging-basalts-rhyolites-yellowstone-snake-river-plain-volcanic", "post-caldera-volcanism-heise-volcanic-field-implications-petrogenetic", "groundmass-crystallisation-cooling-rates-lava-like-ignimbrites-greys", "geochronological-isotopic-records-crustal-storage-assimilation-wolverine-creek", "evaluating-potential-rhyolitic-glass-lithium-source-brine-deposits"]
 research_areas: ["magma"]
 tags: ["Yellowstone–Snake River Plain", "ignimbrite", "obsidian", "volcanic conduits"]
 keywords: ["LA-ICPMS", "Magma reservoir", "Large eruption", "Yellowstone–Snake River Plain"]

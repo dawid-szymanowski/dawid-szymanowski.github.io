@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.5194/gchron-7-409-2025"
   - name: "PDF"
     url: "files/interlaboratory-reproducibility-id-tims-u-pb-geochronology-evaluated.pdf"
+related_papers: ["long-term-repeatability-interlaboratory-reproducibility-high-precision-id", "recommendations-reporting-interpretation-isotope-dilution-u-pb-geochronological", "id-tims-u-pb-geochronology-0-1-level", "u-pb-id-tims-geochronology-atona-amplifiers", "microid-tims-spatially-resolved-high-precision-u-pb"]
 research_areas: ["methods"]
 tags: ["ID-TIMS", "interlaboratory reproducibility", "EARTHTIME", "U–Pb geochronology"]
 keywords: ["Zircon", "ID-TIMS", "Analytical methods"]

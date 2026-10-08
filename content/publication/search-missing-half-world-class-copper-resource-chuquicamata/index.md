@@ -11,6 +11,7 @@ links:
     url: "https://doi.org/10.5382/econgeo.5237"
   - name: "PDF"
     url: "files/search-missing-half-world-class-copper-resource-chuquicamata.pdf"
+related_papers: ["timescales-magmatic-hydrothermal-activity-giant-san-rafael-tin", "controls-zircon-age-distributions-volcanic-porphyry-plutonic-rocks", "lateral-magma-propagation-during-emplacement-gloria-pluton-central", "high-precision-zircon-geochronology-geochemistry-evolved-magmatic-centres", "zircon-geochronology-geochemical-constraints-geometry-solidification-timescales-dufek"]
 research_areas: ["ore"]
 tags: ["porphyry copper", "zircon", "molybdenite", "Chile"]
 keywords: ["Zircon", "ID-TIMS", "LA-ICPMS", "Ore deposit", "Pluton"]
