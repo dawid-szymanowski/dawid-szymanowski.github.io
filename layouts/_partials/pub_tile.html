@@ -27,7 +27,7 @@
   {{- end }}
   {{- /* Altmetric + Dimensions badges (articles only; preprints are not indexed and would show "?") */}}
   {{- if not $isReview }}{{ with $p.Params.doi }}
-  <span class="pub-cites"><span class="altmetric-embed" data-doi="{{ . }}" data-hide-no-mentions="true"></span><span class="__dimensions_badge_embed__" data-doi="{{ . }}" data-style="small_rectangle" data-legend="never" data-hide-zero-citations="true"></span></span>
+  <span class="pub-cites"><span class="altmetric-embed" data-doi="{{ . }}" data-hide-no-mentions="true" data-hide-less-than="10"></span><span class="__dimensions_badge_embed__" data-doi="{{ . }}" data-style="small_rectangle" data-legend="never" data-hide-zero-citations="true"></span></span>
   {{- end }}{{ end }}
 </div>
 {{- with $p.Params.abstract }}
