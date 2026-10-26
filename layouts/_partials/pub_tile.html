@@ -25,9 +25,9 @@
   {{- $url := .url }}{{ if not (findRE `^https?://` $url) }}{{ $url = $url | relURL }}{{ end }}
   <a class="pub-btn" href="{{ $url }}" rel="noopener">{{ if eq .name "Publisher's Version" }}{{ i18n "publisher_version" }}{{ else }}{{ .name }}{{ end }}</a>
   {{- end }}
-  {{- /* Dimensions citation badge (articles only; preprints are not indexed and would show "?") */}}
+  {{- /* Altmetric + Dimensions badges (articles only; preprints are not indexed and would show "?") */}}
   {{- if not $isReview }}{{ with $p.Params.doi }}
-  <span class="pub-cites"><span class="__dimensions_badge_embed__" data-doi="{{ . }}" data-style="large_rectangle" data-legend="never" data-hide-zero-citations="true"></span></span>
+  <span class="pub-cites"><span class="altmetric-embed" data-badge-type="1" data-doi="{{ . }}" data-hide-no-mentions="true"></span><span class="__dimensions_badge_embed__" data-doi="{{ . }}" data-style="large_rectangle" data-legend="never" data-hide-zero-citations="true"></span></span>
   {{- end }}{{ end }}
 </div>
 {{- with $p.Params.abstract }}

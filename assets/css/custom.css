@@ -379,7 +379,9 @@ main:focus { outline: none; }
 .pub-venue { margin: 0; font-size: 0.93rem; }
 .pub-actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
 .pub-cites { margin-left: auto; display: inline-flex; align-items: center; min-height: 26px; }   /* Dimensions badge, right end of the button row */
-.pub-cites:empty, .pub-cites .__dimensions_badge_embed__:empty { display: none; }
+.pub-cites { gap: 6px; }
+.pub-cites:empty, .pub-cites .__dimensions_badge_embed__:empty, .pub-cites .altmetric-embed:empty, .pub-cites .altmetric-embed.altmetric-hidden { display: none; }
+.pub-cites .altmetric-embed a { display: block !important; line-height: 0; }
 .pub-btn {
   display: inline-flex; align-items: center; padding: 4px 9px; border: 1px solid var(--color-border); border-radius: 6px;
   background: var(--color-raised); color: var(--color-text); font: inherit; font-size: 0.8rem; font-weight: 650; line-height: 1.4;
