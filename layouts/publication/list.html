@@ -90,6 +90,8 @@
   </section>
 </div>
 
+{{- /* Dimensions citation badges in the publication tiles (loads from badge.dimensions.ai) */}}
+<script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 <script>
 (function () {
   var data = {{ $entries | jsonify | safeJS }};
