@@ -9,7 +9,7 @@ featured:
   - slug: "sc-550-sintered-calcite-reference-material-situ-u"
     summary: "A nano-milled, sintered calcite reference material that streamlines LA-ICPMS carbonate U–Pb geochronology."
   - slug: "analytical-strategies-207pb-235u-carbonate-geochronology"
-    summary: "Implementation of ID-TIMS and LA-ICPMS ²⁰⁷Pb/²³⁵U dating of carbonates."
+    summary: "Implementation of ID-TIMS and LA-ICPMS ²⁰⁷Pb/²³⁵U dating of carbonates, a more accurate alternative to the conventional method."
   - slug: "search-missing-half-world-class-copper-resource-chuquicamata"
     summary: "Zircon and molybdenite dates rule out Ministro Hales as Chuquicamata’s displaced half and point to a target beneath the city of Calama."
 ---
