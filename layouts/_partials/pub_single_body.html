@@ -27,7 +27,7 @@
     {{- end }}
     {{- if and (eq $p.Section "publication") (not $isReview) }}{{ with $p.Params.doi }}
     {{- /* Altmetric + Dimensions badges: same rules as the Publications tiles (articles only; hidden below score 10 / until first citation) */}}
-    <span class="pub-cites"><span class="altmetric-embed" data-doi="{{ . }}" data-hide-no-mentions="true" data-hide-less-than="10"></span><span class="__dimensions_badge_embed__" data-doi="{{ . }}" data-style="small_rectangle" data-legend="never" data-hide-zero-citations="true"></span></span>
+    <span class="pub-cites pub-cites--circle"><span class="altmetric-embed" data-badge-type="donut" data-doi="{{ . }}" data-hide-no-mentions="true" data-hide-less-than="10"></span><span class="__dimensions_badge_embed__" data-doi="{{ . }}" data-style="small_circle" data-legend="never" data-hide-zero-citations="true"></span></span>
     {{- end }}{{ end }}
   </p>
   {{- end }}
