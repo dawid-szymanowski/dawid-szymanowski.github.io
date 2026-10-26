@@ -381,8 +381,9 @@ main:focus { outline: none; }
 .pub-cites { margin-left: auto; display: inline-flex; align-items: center; min-height: 26px; }   /* Dimensions badge, right end of the button row */
 .pub-cites { gap: 8px; }
 .pub-cites:empty, .pub-cites .__dimensions_badge_embed__:empty, .pub-cites .altmetric-embed:empty, .pub-cites .altmetric-embed.altmetric-hidden { display: none; }
-.pub-cites > * { display: block; line-height: 0; }   /* both badges are 88×18 px; no baseline offset */
-.pub-cites a { display: block !important; line-height: 0; }
+.pub-cites > * { display: block; line-height: 0; height: 18px; }   /* both badges are 88×18 px; pin them to the same top edge */
+.pub-cites a, .pub-cites svg, .pub-cites img { display: block !important; vertical-align: top !important; line-height: 0; }
+.pub-cites .altmetric-embed img { width: 88px !important; height: 18px !important; }
 .pub-btn {
   display: inline-flex; align-items: center; padding: 4px 9px; border: 1px solid var(--color-border); border-radius: 6px;
   background: var(--color-raised); color: var(--color-text); font: inherit; font-size: 0.8rem; font-weight: 650; line-height: 1.4;
